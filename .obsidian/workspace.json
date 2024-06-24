@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "b0d4aaa1e2111440",
+    "type": "split",
+    "children": [
+      {
+        "id": "12a6f78108824198",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "918c9d20c91939c2",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Demo.md"
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d210c08461a5bf67",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a0f88dc8ac5ce9a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "adf3692313cd52c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "97690381c26176f6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6207bc320e3b7d42",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 502.5
+  },
+  "right": {
+    "id": "8d80bffdbad3e785",
+    "type": "split",
+    "children": [
+      {
+        "id": "46e9c8c03dc3611f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71e981de07f0a9a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Demo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a54a697ccdb711b8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/Demo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f8d1e4403fb9d31f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1b553e621b1f7334",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/Demo.md"
+              }
+            }
+          },
+          {
+            "id": "496724213ea377a5",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 689.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-projects:Open projects": false,
+      "obsidian-spaced-repetition:Review flashcards": false
+    }
+  },
+  "active": "918c9d20c91939c2",
+  "lastOpenFiles": [
+    "HackMD_User/Vim.md",
+    "HackMD_User/Varmeta.md",
+    "HackMD_User/Untitled.md",
+    "HackMD_User/Untitled (1).md",
+    "HackMD_User/Typescript.md",
+    "HackMD_User/Think English.md",
+    "HackMD_User/Theory.md",
+    "HackMD_User/Sleep.md",
+    "HackMD_User/Sequelize.md",
+    "HackMD_User/Search inside yourself.md",
+    "HackMD_User/SQL.md",
+    "HackMD_User/Regex.md",
+    "HackMD_User/Redis.md",
+    "HackMD_User/Reactjs.md",
+    "HackMD_User/Python.md",
+    "HackMD_User/Project - Website.md",
+    "HackMD_User/Operating System.md",
+    "HackMD_User/Nodejs And ExpressJs.md",
+    "HackMD_User/NestJS.md",
+    "HackMD_User/Need Learn.md",
+    "HackMD_User/MongoDB & Mongoose.md",
+    "HackMD_User/Kubernetes.md",
+    "HackMD_User/Kotlin And Android.md",
+    "HackMD_User/Khi bạn đang mơ người khác đang nỗ lực.md",
+    "HackMD_User/Keyb.md",
+    "HackMD_User/Java.md",
+    "HackMD_User",
+    "Excalidraw/Destination B1 Pre Intermediate Student Book + key.pdf",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5736",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5735",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5734",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5733",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5732",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5731",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5730",
+    "4000_Essential_English_Words_-_front_and_back_-_all_books/5729",
+    "Pasted image 20240624231923.png",
+    "Pasted Image 20240624211405_774.png",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}
