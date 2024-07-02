@@ -82,6 +82,7 @@ while (true) {
 ```
 
 :::
+[[Demo]]
 
 :::warning
 JS là đơn luồng, NodeJS có thể gọi là đa luồng vì nó thực hiện các tác vụ tốn time ở Libuv theo phong cách multithreading

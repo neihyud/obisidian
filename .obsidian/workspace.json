@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "12a6f78108824198",
+        "id": "de210f9853ed61ce",
         "type": "tabs",
         "children": [
           {
-            "id": "918c9d20c91939c2",
+            "id": "1536b43c613a25ac",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "image",
               "state": {
-                "file": "Excalidraw/Demo.md"
+                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png"
               }
             }
           }
@@ -63,12 +63,24 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "940419b878c26404",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HackMD_User/Books/Search inside yourself.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 502.5
+    "width": 381.5
   },
   "right": {
     "id": "8d80bffdbad3e785",
@@ -84,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Demo.md",
+                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Demo.md",
+                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Demo.md"
+                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png"
               }
             }
           },
@@ -152,54 +164,62 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-kanban:Create new board": false,
-      "omnisearch:Omnisearch": false,
       "obsidian-projects:Open projects": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "omnisearch:Omnisearch": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "918c9d20c91939c2",
+  "active": "1536b43c613a25ac",
   "lastOpenFiles": [
-    "HackMD_User/Vim.md",
-    "HackMD_User/Varmeta.md",
-    "HackMD_User/Untitled.md",
-    "HackMD_User/Untitled (1).md",
-    "HackMD_User/Typescript.md",
-    "HackMD_User/Think English.md",
-    "HackMD_User/Theory.md",
-    "HackMD_User/Sleep.md",
-    "HackMD_User/Sequelize.md",
-    "HackMD_User/Search inside yourself.md",
-    "HackMD_User/SQL.md",
-    "HackMD_User/Regex.md",
-    "HackMD_User/Redis.md",
-    "HackMD_User/Reactjs.md",
-    "HackMD_User/Python.md",
-    "HackMD_User/Project - Website.md",
-    "HackMD_User/Operating System.md",
-    "HackMD_User/Nodejs And ExpressJs.md",
-    "HackMD_User/NestJS.md",
-    "HackMD_User/Need Learn.md",
-    "HackMD_User/MongoDB & Mongoose.md",
-    "HackMD_User/Kubernetes.md",
-    "HackMD_User/Kotlin And Android.md",
-    "HackMD_User/Khi bạn đang mơ người khác đang nỗ lực.md",
-    "HackMD_User/Keyb.md",
-    "HackMD_User/Java.md",
-    "HackMD_User",
+    "Untitled.canvas",
+    "BoaP - Atomic Habits/atomic_habit_img_1.png",
+    "Test.md",
+    "TESt.png",
+    "Voca/Voca.md",
+    "BoaP - Atomic Habits/BoaP - Atomic Habits.excalidraw",
     "Excalidraw/Destination B1 Pre Intermediate Student Book + key.pdf",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5736",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5735",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5734",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5733",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5732",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5731",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5730",
-    "4000_Essential_English_Words_-_front_and_back_-_all_books/5729",
+    "BoaP/BoaP - Atomic Habits.excalidraw",
+    "BoaP/BoaP - Atomic Habits - medium.png",
+    "Blog/How to read source Extension.md",
+    "HackMD_User/System Design Primer.md",
+    "Blog",
+    "Entertaiment/Common.md",
+    "Excalidraw/Demo.md",
+    "Pronounce.md",
+    "faɪnd.md",
+    "Entertaiment",
+    "HackMD_User/Books/Atomatic Habits.md",
+    "BoaP - Atomic Habits/BoaP - Atomic Habits - large.png",
+    "BoaP - Atomic Habits/BoaP - Atomic Habits - medium.png",
+    "HackMD_User/Devops/Kubernetes.md",
+    "HackMD_User/Database/Hệ quản trị cơ sở dữ liệu.md",
+    "Excalidraw/Drawing 2024-06-25 12.05.17.excalidraw.md",
+    "HackMD_User/Project - Website.md",
+    "HackMD_User/Devops/Operating System.md",
+    "HackMD_User/Code 101.md",
+    "HackMD_User/Database/SQL.md",
+    "HackMD_User/Database",
+    "HackMD_User/Theory.md",
+    "HackMD_User/Untitled (1).md",
+    "HackMD_User/Varmeta.md",
+    "HackMD_User/Keyb.md",
+    "HackMD_User/Devops",
+    "HackMD_User/Programming",
+    "HackMD_User/Java.md",
+    "HackMD_User/IT Helper - Bug.md",
+    "HackMD_User/IT Helper.md",
+    "HackMD_User/IDEA.md",
+    "HackMD_User/Books/Sleep.md",
+    "HackMD_User/Books",
+    "BoaP - Atomic Habits/BoaP - Atomic Habits.svg",
+    "BoaP/BoaP - Atomic Habits.svg",
+    "BoaP - Atomic Habits",
+    "BoaP/BoaP - Atomic Habits - large.png",
     "Pasted image 20240624231923.png",
     "Pasted Image 20240624211405_774.png",
-    "Untitled 1.canvas",
-    "Untitled.canvas"
+    "Untitled 1.canvas"
   ]
 }
