@@ -33,4 +33,14 @@ tags: [Design System]
 		- Read 1 MB sequentially from network 10,000,000 ns
 		- Read 1 MB sequentially from disk 30,000,000 ns
 		- Send packet CA->Netherlands->CA 150,000,000 ns
-		- [[#^3fda03]]
+	- **Other**:
+		- Notice the magnitude differences in the performance of different options.
+		- Datacenters are far away so it takes a long time to send anything between them.
+		- Memory is fast and disks are slow.
+		- By using a cheap compression algorithm a lot (by a factor of 2) of network bandwidth can be saved.
+		- Writes are 40 times more expensive than reads.
+		- Global shared data is expensive. This is a fundamental limitation of distributed systems. The lock contention in shared heavily written objects kills performance as transactions become serialized and slow.
+		- Architect for scaling writes.
+		- Optimize for low write contention.
+		- Optimize wide. Make writes as parallel as you can.
+		

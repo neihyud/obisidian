@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "de210f9853ed61ce",
+        "id": "a9846b489f33cd99",
         "type": "tabs",
         "children": [
           {
-            "id": "1536b43c613a25ac",
+            "id": "6ba3b0030ad1ebbf",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png"
+                "file": "BookMark/Book Mark.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
@@ -47,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#book",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,11 +77,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 381.5
+    "width": 266.5
   },
   "right": {
     "id": "8d80bffdbad3e785",
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png",
+                "file": "BookMark/Book Mark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png",
+                "file": "BookMark/Book Mark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BoaP - Atomic Habits/atomic_habit_img_1.png"
+                "file": "BookMark/Book Mark.md"
               }
             }
           },
@@ -172,25 +174,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1536b43c613a25ac",
+  "active": "6ba3b0030ad1ebbf",
   "lastOpenFiles": [
+    "Excalidraw/Demo.md",
+    "BookMark/Book Mark.md",
+    "Excalidraw/Drawing 2024-07-03 23.00.58.excalidraw.md",
+    "TEst.md",
+    "Voca/Voca.md",
+    "Pasted image 20240624231923.png.md",
+    "Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 17.mp3",
+    "Design System/System Design Primer.md",
+    "English/Common.md",
+    "Entertaiment/Common.md",
     "Untitled.canvas",
+    "().md",
+    "Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
+    "BookMark",
+    "Book/ShipOrSheep/A/02 - A2.mp3",
+    "Book/ShipOrSheep/A/07 - A7.mp3",
+    "Book/ShipOrSheep/ship or sheep.pdf",
+    "Book/ShipOrSheep/A/03 - A3.mp3",
+    "Book/ShipOrSheep/A/01 - A1.mp3",
+    "Excalidraw/Untitled.md",
+    "Book/EnglishPronunciation/CD/English pronunciation in Use CD5/Track 38.mp3",
+    "Book/EnglishPronunciation/CD/English pronunciation in Use CD5/Track 37.mp3",
     "BoaP - Atomic Habits/atomic_habit_img_1.png",
     "Test.md",
     "TESt.png",
-    "Voca/Voca.md",
-    "BoaP - Atomic Habits/BoaP - Atomic Habits.excalidraw",
-    "Excalidraw/Destination B1 Pre Intermediate Student Book + key.pdf",
-    "BoaP/BoaP - Atomic Habits.excalidraw",
     "BoaP/BoaP - Atomic Habits - medium.png",
     "Blog/How to read source Extension.md",
-    "HackMD_User/System Design Primer.md",
-    "Blog",
-    "Entertaiment/Common.md",
-    "Excalidraw/Demo.md",
     "Pronounce.md",
     "faɪnd.md",
-    "Entertaiment",
     "HackMD_User/Books/Atomatic Habits.md",
     "BoaP - Atomic Habits/BoaP - Atomic Habits - large.png",
     "BoaP - Atomic Habits/BoaP - Atomic Habits - medium.png",
@@ -201,22 +215,11 @@
     "HackMD_User/Devops/Operating System.md",
     "HackMD_User/Code 101.md",
     "HackMD_User/Database/SQL.md",
-    "HackMD_User/Database",
     "HackMD_User/Theory.md",
     "HackMD_User/Untitled (1).md",
     "HackMD_User/Varmeta.md",
-    "HackMD_User/Keyb.md",
-    "HackMD_User/Devops",
-    "HackMD_User/Programming",
-    "HackMD_User/Java.md",
-    "HackMD_User/IT Helper - Bug.md",
-    "HackMD_User/IT Helper.md",
-    "HackMD_User/IDEA.md",
-    "HackMD_User/Books/Sleep.md",
-    "HackMD_User/Books",
     "BoaP - Atomic Habits/BoaP - Atomic Habits.svg",
     "BoaP/BoaP - Atomic Habits.svg",
-    "BoaP - Atomic Habits",
     "BoaP/BoaP - Atomic Habits - large.png",
     "Pasted image 20240624231923.png",
     "Pasted Image 20240624211405_774.png",
