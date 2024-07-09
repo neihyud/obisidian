@@ -3,7 +3,7 @@ title: Search inside yourself
 tags: [Book]
 
 ---
-
+Go
 ###### tags: `Book`
 
 # Search inside yourself

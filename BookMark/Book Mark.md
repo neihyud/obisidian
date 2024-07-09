@@ -8,6 +8,7 @@
 | **JS**       | https://javascriptpatterns.vercel.app/patterns/design-patterns/factory-pattern     |       |
 | Book         | https://toihocdesignpattern.com/series-bai-dich-clean-code-tieng-viet.html         |       |
 |              | https://assets.digitalocean.com/books/python/how-to-code-in-python.pdf             |       |
+|              |                                                                                    |       |
 
 | #Backend |                                                                 |
 | -------- | --------------------------------------------------------------- |
@@ -61,6 +62,7 @@
 | **Machine Learning** | https://github.com/chiphuyen/machine-learning-systems-design                      |           |
 | **Rust**             | https://rust-trends.com/newsletter/rust-101-the-best-learning-resources-compiled/ |           |
 | Hands-on hacking     | https://tryhackme.com/r/hacktivities                                              |           |
+| **#Golang**          | https://github.com/avelino/awesome-go                                             |           |
  
 
 | #Computer-Science |                                                |
