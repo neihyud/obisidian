@@ -9,6 +9,13 @@ kanban-plugin: board
 - [ ] connect
 - [ ] tourist
 - [ ] creatively
+- [ ] allowed
+- [ ] build
+- [ ] knowlegde
+- [ ] sites
+- [ ] advent
+- [ ] user
+- [ ] opportunity
 
 
 ## Remain
@@ -39,6 +46,8 @@ kanban-plugin: board
 ## Idea
 
 - [ ] create list word pronounce to learn pronounce and base on elsa to mark (send sound to get mark) (áp dụng cho ipa)
+- [ ] Dựa vào https://github.com/Mrntn161/LLM-Dictionary-vn.git
+	custom cho từ điển riêng mình
 
 
 

@@ -1,0 +1,5 @@
+- Consensu ( đồng thuận ):
+	- node tham gia đồng thuận là toàn bộ node?
+- smart constract hoạt động code ntn?
+- gnoland để làm gì và hiện tại đang làm gì?
+- txh: thử deploy một node trên smart contract gnoland cần lấy các tham số gì 

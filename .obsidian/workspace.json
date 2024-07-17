@@ -4,16 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "3e5d77f49fe37b08",
+        "id": "ba5ab377f47a3e6b",
         "type": "tabs",
+        "dimension": 73.35403726708074,
         "children": [
           {
-            "id": "80a64bc531069f5b",
+            "id": "ea51e7ccdeb957ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackMD_User/Programming/Go.md",
+                "file": "_IceTea/Block Chain/gno.land/BlockChain.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      },
+      {
+        "id": "b8090a03fa24f9a2",
+        "type": "tabs",
+        "dimension": 26.645962732919255,
+        "children": [
+          {
+            "id": "70c0e6161ac5fafa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vocabulary.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,8 +69,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:Go",
-                "matchingCase": false,
+                "query": "on chain",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -77,8 +98,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -93,18 +113,26 @@
         "type": "tabs",
         "children": [
           {
+            "id": "d5cee78969e352e8",
+            "type": "leaf",
+            "state": {
+              "type": "llm-dictionary-view",
+              "state": {}
+            }
+          },
+          {
             "id": "71e981de07f0a9a2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HackMD_User/Programming/Go.md",
+                "file": "_IceTea/Block Chain/gno.land/BlockChain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -115,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HackMD_User/Programming/Go.md",
+                "file": "_IceTea/Block Chain/gno.land/BlockChain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HackMD_User/Programming/Go.md"
+                "file": "_IceTea/Block Chain/gno.land/BlockChain.md"
               }
             }
           },
@@ -150,79 +178,78 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 689.5,
+    "width": 578.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-projects:Open projects": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "templater-obsidian:Templater": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "80a64bc531069f5b",
+  "active": "ea51e7ccdeb957ee",
   "lastOpenFiles": [
-    "Voca/Voca.md",
-    "HackMD_User/Programming/Go.md",
+    "Vocabulary.md",
+    "_IceTea/Block Chain/gno.land/BlockChain.md",
+    "_IceTea/Block Chain/gno.land/assets/concept-block.png",
+    "_IceTea/Block Chain/gno.land/assets/blockchain-concept.png",
+    "_IceTea/Block Chain/gno.land/assets/Pasted image 20240716231010.png",
+    "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
     "Untitled Kanban.md",
-    "Untitled Kanban 1.md",
+    "Voca/Voc.md",
+    "Voca/Voca.md",
+    "_IceTea/Block Chain/gno.land/Account.md",
+    "_IceTea/Block Chain/gno.land/Mnemonic.md",
+    "_IceTea/Block Chain/gno.land/Question.md",
+    "_IceTea/Block Chain/gno.land/Smart Contract.md",
+    "Voca/Untitled.md",
+    "Untitled Kanban 2.md",
+    "Book/assets/Pasted image 20240716081338.png",
+    "Book/Docs.md",
+    "Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
+    "Book/assets",
+    "Book/ShipOrSheep/ship or sheep.pdf",
+    "Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 48.mp3",
+    "Image/Pasted image 20240709175205.png",
+    "_IceTea/Block Chain/gno.land/assets/Pasted image 20240715095923.png",
+    "_IceTea/Block Chain/gno.land/assets/Pasted image 20240715103042.png",
+    "_IceTea/Block Chain/gno.land/assets",
+    "HackMD_User/Programming/Go.md",
+    "^sổ cái giao dịch.md",
+    "_IceTea/Design System/System Design Primer.md",
+    "Image/Pasted image 20240709215532.png",
+    "Image/Pasted image 20240709215509.png",
+    "_IceTea/Block Chain/gno.land/_resources/Pasted image 20240712101931.png",
+    "_resources",
+    "_IceTea/Block Chain/gno.land/_resources",
+    "_IceTea/Block Chain/gno.land",
+    "_IceTea/Block Chain",
+    "_IceTea",
+    "module path.md",
     "HackMD_User/Books/Search inside yourself.md",
-    "Pasted image 20240709215532.png",
-    "Image",
-    "Pasted image 20240709175205.png",
-    "Pasted image 20240709215509.png",
     "Excalidraw/Demo.md",
     "BookMark/Book Mark.md",
-    "module path.md",
-    "Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 18.mp3",
-    "HackMD_User/Programming/Untitled",
-    "Untitled",
     "English/Pronounce.md",
-    "English/source/p1.png",
-    "English/source",
-    "Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
     "English/Common.md",
-    "Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 17.mp3",
-    "Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 16.mp3",
     "Blog/How to read source Extension.md",
     "TEst.md",
     "2024-07-08.md",
-    "Excalidraw/Drawing 2024-07-03 23.00.58.excalidraw.md",
-    "Pasted image 20240624231923.png.md",
-    "Design System/System Design Primer.md",
-    "Entertaiment/Common.md",
     "Untitled.canvas",
-    "().md",
-    "BookMark",
-    "Book/ShipOrSheep/A/02 - A2.mp3",
-    "Excalidraw/Untitled.md",
-    "BoaP - Atomic Habits/atomic_habit_img_1.png",
-    "Test.md",
-    "TESt.png",
-    "BoaP/BoaP - Atomic Habits - medium.png",
-    "faɪnd.md",
-    "HackMD_User/Books/Atomatic Habits.md",
-    "BoaP - Atomic Habits/BoaP - Atomic Habits - large.png",
-    "BoaP - Atomic Habits/BoaP - Atomic Habits - medium.png",
-    "HackMD_User/Devops/Kubernetes.md",
-    "HackMD_User/Database/Hệ quản trị cơ sở dữ liệu.md",
-    "Excalidraw/Drawing 2024-06-25 12.05.17.excalidraw.md",
-    "HackMD_User/Project - Website.md",
-    "BoaP - Atomic Habits/BoaP - Atomic Habits.svg",
     "Untitled 1.canvas"
   ]
 }

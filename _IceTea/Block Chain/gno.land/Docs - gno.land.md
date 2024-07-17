@@ -1,0 +1,66 @@
+- Gno.land: layer 1 blockchain, cho phép thực thi smart contracts, sử dụng 'interprete version'  dựa trên Go
+- [[BlockChain]]
+- Intergrate Gno: specialized GnoVM
+- [[Mnemonic]]
+- GNOTs: loại tiền tệ hoặc token sử dụng trong Gno.land
+#  Concepts
+- **BlockChain**:
+	- chia sẻ thông tin minh bạch trong một mạng lưới kinh doanh
+	- dữ liệu có sự nhất quán: không thể thay đổi mà không có sự đồng ý của mạng lưới
+	- tạo một hệ thống chống làm giả, phi tập trung để ghi lại giao dịch
+	- đặc điểm: [blockchain](https://aws.amazon.com/vi/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc)
+		- phi tập trung: 
+			- từ một thực thể tập trung sang một mạng lưới phân tán.
+			- tính minh bạch
+		- bất biến:
+		- đồng thuận: 
+	- Các thành phần chung:
+		- Sổ cái phân tán: 
+			- CSDL dùng chung trong mạng lưới, tương tự một file dùng chung cho mọi người trong nhóm có thể chỉnh sửa
+			- không thể xóa mục nhập sau khi hoạt động đã được ghi lại
+		- **Smart Contract**: [[#######Smart Contract]]
+		- Mật mã hóa khóa công khai:
+			- tính năng bảo mật, xác định những người tham gia trong mạng lưới
+- [[Smart Contract]]: 
+	- digital contracts stored on a blockchain, automatically executed when predetermined terms and conditions are met (when called by a user on the blockchain)
+- **Realms**: (smart constract)
+	- refers to a specific instance of a smart contract, written in Gno
+	- Packages vs Realms:
+		- Pure Package
+			- contains functionalities and utilities, used in realms
+			- stateless => chỉ xem source code của họ trên on-chain
+			- default import path: `gno.land/p/~~~`
+			- can not import realms but can be imported to realms or packages
+		- Realms:
+			- Smart Contracts in Gno
+			- stateful: xem source code, biểu diễn trạng thái nội bộ của họ ( Render ())
+			- can own assets (tokens)
+			- default import path: `gno.land/r/~~~`
+			![[Pasted image 20240715095923.png]]
+	- **GnoVM**:
+		- a virtual machine that interprets Gno
+		- work with **Tendermint2**
+- Function:
+	- init():
+		- cornerstone, automatically triggered when new realm added onchain
+		- purposes:
+			- initial state, specifically, setting global variables
+			- communicates with another realm, ex: register itself in a registry
+- Proof of Contribute
+	- gno.land chain utilizes a reputation-based consensus mechanism instead of **proof-of-stake**
+	- Component:
+		- **gno.land**:
+			- powered by the TM2 engine
+			-  offers permissionless smart contracts with the `GnoVM` and can self-configure from contracts using the `GnoSDK`.
+		- **worxDAO**:
+			- The governance entity consisting of contributors, responsible for governing the `r/sys` realms, including `validators` and `config`.
+- **Onchain**:
+	- hoạt động, giao dịch, dữ liệu được ghi trực tiếp trên blockchain => 
+		- minh bạch: đều công khai và có thể kiểm tra được
+		- bảo mật: bảo vệ bởi cơ chế đồng thuận
+		- độ tin cậy cao: do tính không thay đổi được
+	- chi phí cao, chậm
+- Offchain: 
+	- các hoạt động, giao dịch, dữ liệu xử lý bên ngoài block chain
+		- chi phí thấp, nhanh, linh hoạt
+		- minh bạch, bảo mật thấp: do không công khai và thiếu cơ chế chấp nhận đồng thuận
