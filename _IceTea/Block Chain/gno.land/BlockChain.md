@@ -1,9 +1,24 @@
 ![[blockchain-concept.png|500]]
-![[concept-block.png|400]]- A blockchain is distributed: multiple copies are saved on many machines, and all match for it to be valid 
+![[concept-block.png|400]]
+- Data => chứa transaction data
+- A blockchain is distributed: multiple copies are saved on many machines, and all match for it to be valid 
+- **Core**: [Blockchain Architecture](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
+	- **Node**: has an independent copy of the whole blockchain ledger
+	- **Transaction**: smallest building block of blockchain system( records, information, ...) that serves as the purpose of blockchain
+	- **Block**: a data structure used to for keeping a set of transactions which is distributed to all nodes in the network
+	- **Chain**: a sequence of blocks in a sepecific order
+	- **Miners**: specific nodes which perform the block verification process before adding anything to the blockchain structure
+	- **Consensus (consensus protocol)** - a set of rules and arrangements to carry out blockchain operations
+	=> Any new record or transaction within the blockchain implies the building of a new block. Each record is then proven and digitally signed to ensure its genuineness. Before this block is added to the network, it should be verified by the majority of nodes in the system.
+- Khi một block được tạo, nó sẽ gửi đến tất cả các nodes bên trong hệ thống blockchain => verify block là chính xác => block được add vào local blockchain của mỗi node
+	=> tất cả nodes trong blockchain tạo moojt **consensus protocol**
+	**Consensus System**: set of network rules, 
+	
 - là một CSDL phân tán lưu trữ thông tin theo cách blocks và liên kết với nhau tạo thành chain
 	- block:
 		- đơn vị lưu trữ thông tin
 		- chứa dữ liệu giao dịch, dấu thời gian và một liên kết đến khối trước nó
+		- một block có thể chứa nhiều transaction
 	- chuỗi:
 		- kết nối với nhau tạo thành blockchain
 	- phi tập trung (decentralized): blockchain không có điểm kiểm soát, duy trì bởi một mạng lưới các node độc lập
@@ -16,7 +31,15 @@
 	- Proof of Work
 	- Merkle Tree Hash Methodology
 	- P2P Network
+- **Node**: là một bản sao của ledger
+- **Blockchain structures fall into 3 categories**:
+	- **Public blockchain**: data, access to the system is avaiable to anyone who wiling to participate
+	- **Private blockchain**: only by users from a specific organization or authorized users who have an invitation for participation.
+	- Consortium blockchain
+	![[type_category_blockchain.png]]
 ## BlockChain Work
+
+![[blockchain_work0.png|500]]
 - b1. Ghi lại giao dịch
 	Ai tham gia, xảy ra ở đâu, khi nào, vì sao, giá trị trao đổi, điều kiện tiên quyết
 - b2. Đạt được đồng thuận
@@ -50,5 +73,18 @@
 ###### Sổ cái giao dịch
 
 ###### Proof of Work
+[PoW - Example - JS](https://simplyexplained.com/blog/Implementing-proof-of-work-javascript-blockchain/)
 - verify the accuracy of new transaction added to blockchain
+- làm chậm tiến trình tạo block
+- ngăn chặn spam tạo khối: 
+	- trong bitcoin: 
+		- PoW yêu cầu hash một block bằng một số lượng cụ thể các số 0
+		- Quá trình tính toán để tìm kiếm một hash hợp lệ được gọi là "đào"
+	-  
 [Decentralized Autonomous Organization](https://www.investopedia.com/tech/what-dao/) (DAO)
+
+
+- Chỉ là lưu trữ các transaction, giữa các node, các node kết nối với nhau, khi một transaction được tạo ra từ một node, nó sẽ gửi đến các node khác để tính toán lại
+- smart contract: phải gọi lên mới thực hiện được
+
+![[stable-coin.png| 500]]

@@ -140,3 +140,7 @@ s = make([]byte, 5, 5)
 ```
 - zero value of slice = `nil`
 - slice no 
+
+### :::info
+- `go run <path_to_folder>`:  find all **package main** và **func main** in folder to run
+- `go run <path_to_folder> <param>`: param được truyền sau khi biên dịch -> cần handle param trong func **main** 

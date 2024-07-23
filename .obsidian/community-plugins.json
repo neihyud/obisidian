@@ -1,12 +1,8 @@
 [
-  "dataview",
   "obsidian-kanban",
   "obsidian-excalidraw-plugin",
   "omnisearch",
-  "obsidian-projects",
   "obsidian-spaced-repetition",
-  "templater-obsidian",
   "language-translator",
-  "obsidian42-brat",
   "llm-dictionary"
 ]

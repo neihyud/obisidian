@@ -16,6 +16,20 @@ kanban-plugin: board
 - [ ] advent
 - [ ] user
 - [ ] opportunity
+- [ ] discover
+- [ ] helps
+- [ ] thoughts
+- [ ] would
+- [ ] react
+- [ ] knowlegde
+- [ ] dislikes
+- [ ] tongue
+- [ ] phrase
+- [ ] context
+- [ ] takes
+- [ ] above
+- [ ] mentioned
+- [ ] pronunciation
 
 
 ## Remain
