@@ -23,10 +23,3 @@ Source code của extension có thể dễ đọc hoặc khó còn phụ thuộc
 Bằng cách này mình có thể hiểu cơ bản cách extension hoặt động hoặc đơn giản chỉ là những quyền mà extension đang sử dụng.
 
 Nếu bạn đang phát triển extension đây có thể là một gợi ý dành cho bạn.
-
-
-##### **CÁCH TRUY CẬP GITLAB KHI XÓA XÁC THỰC HAI LỚP**
-
-- Trong TH lưu ssh
-	- `ssh git@<domain-gitlab> 2fa_recovery_codes`: ssh git@gitlab.var-meta.com 2fa_recovery_codes
-	=> sau đó lấy một code để nhập vào 

@@ -10,7 +10,8 @@
 - adapting: điều chỉnh
 - adjust: điều chỉnh thay đổi để phù hợp
 - eliminatin: loại bỏ
-
+- critical: quan trọng
+- along with: cùng với
 
 
  **Do you like learning languages?**
@@ -21,3 +22,5 @@ yes. it often require much time to learn vocabulary, grammar rules, and pronunci
 First I will learn pronunciation, after practicing pronunciation I will practice listening along with writing and finally speaking.
 **Why do people learn more than one language?**
 I think people want to travel and talk to people in other countries and they need it for their job or to get a better job. Learning a new language can also help you understand different cultures and make new friends.
+
+---

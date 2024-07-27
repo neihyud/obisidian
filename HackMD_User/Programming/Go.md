@@ -7,8 +7,8 @@
 - `go mod tidy`: to update dependencies -> create new `go.sum` to authenticating the module
 - `pkg.go.dev` site to find published module
 
-**Introduction**
- - **Package**
+### Introduction
+- **Package**
 	 - program run package main first
 	- used to orgaized related code, 
 	- A package is a collection of source files in the same directory that are compiled together.
@@ -128,7 +128,15 @@ s := []int{2, 3, 5, 7, 11, 13}
 	printSlice(s) - len=2 cap=4 [5 7]
 ```
 zero value of slice = `nil`
-**Slice**
+#### Slice
+[ref - slice ](https://go.dev/blog/slices-intro)
+![[slice-5.png]]
+![[slice-2-4.png]]
+- A slice is a descriptor of an array segment. It consists of a pointer to the array, the length of the segment, and its capacity (the maximum length of the segment).
+	- The length is the number of elements referred to by the slice.
+	- The capacity is the number of elements in the underlying array (**beginning at the element referred to by the slice pointer**)
+- Slicing does not copy the slice’s data. It creates a new slice value that **points to the original array**
+- re-slicing a slice doesn’t make a copy of the underlying array. The **full array** will be kept in memory until it is no longer referenced.
 ```
 func make([]T, len, cap) []T
 
@@ -141,6 +149,41 @@ s = make([]byte, 5, 5)
 - zero value of slice = `nil`
 - slice no 
 
-### :::info
+ :::info
 - `go run <path_to_folder>`:  find all **package main** và **func main** in folder to run
 - `go run <path_to_folder> <param>`: param được truyền sau khi biên dịch -> cần handle param trong func **main** 
+
+#### Method
+- Go không có class mà sử dụng methos on types
+-  **method** is a function with a special _receiver_ argument.
+- The receiver appears in its own argument list between the `func` keyword and the method name.
+```go
+func (v Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+```
+
+## Concurrency
+### Goroutine
+- hàm **main** là một **goroutine**, nếu nó kết thúc thì các **goroutine khác cũng kết thúc**  
+- main goroutine sẽ luôn thực thi đầu tiên, các goroutine sau sẽ dựa vào **go runtime scheduler** để thực thi
+- A _goroutine_ is a lightweight thread managed by the Go runtime.
+- Tính năng để lập trình Concurrency
+- bản chất là các func hay method được thực thi độc lập, đồng thời nhưng vẫn có thể kết nối
+- chỉ sử dụng 2KB memory stack, trong khi OS Thread lên đến 2MB
+- có thể linh động tăng giảm bộ nhớ
+- có thể giao tiếp giữa các goroutine với nhau, thông qua **channel**
+- **channel**: hỗ trợ mutex lock -> tránh cùng read, write lên vùng dữ liệu
+	- **mutex lock**:  đảm bảo một quy trình đang sửa đổi một dữ liệu thì không một quy trình nó khác có quyền truy cập và sửa đổi nó 
+### Cơ chế block của Channel
+- Channel sẽ block nếu goroutines chưa sắn sàng
+```go
+package main
+
+func main() {
+	myChan := make(chan int)
+	myChan <- 1 // deadlock here
+}
+
+=> main goroutine block cho đến khi goroutine khác nhận dữ liệu từ myChan, nhưng không có goroutine nào nhận dữ liệu từ myChan => deadlock
+```

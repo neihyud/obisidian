@@ -4,47 +4,73 @@
     "type": "split",
     "children": [
       {
-        "id": "ac8b295c2546fcd5",
+        "id": "826e909514b4c5bc",
         "type": "tabs",
         "children": [
           {
-            "id": "e9f0f223ae10de66",
+            "id": "ae0b97c25fe9bc65",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "_IceTea/Row-Based+vs+Column-Based+Databases.pdf"
+              }
+            }
+          },
+          {
+            "id": "64086c38a331dd59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackMD_User/Programming/Go.md",
+                "file": "Blog/Custom Eslint File.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4b8aa0f3be668aa9",
+            "id": "b56fb4daf1566df2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "5bab145970de67c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "67c52c34fbd98b5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IceTea/Block Chain/gno.land/BlockChain.md",
+                "file": "_IceTea/Database/Fundamentals of Database Engineering.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1b553857dabee63f",
+            "id": "95ed28e44595ddc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
+                "file": "English/Book/Docs.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:G",
+                "query": "file:Data",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,43 +143,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d5cee78969e352e8",
-            "type": "leaf",
-            "state": {
-              "type": "llm-dictionary-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "71e981de07f0a9a2",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "a54a697ccdb711b8",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "f8d1e4403fb9d31f",
             "type": "leaf",
             "state": {
@@ -165,36 +154,86 @@
             }
           },
           {
-            "id": "1b553e621b1f7334",
+            "id": "296ab4e2aecfaa88",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "_IceTea/Block Chain/gno.land/Docs - gno.land.md"
-              }
+              "type": "aHR0cHM6Ly9jaGF0Z3B0LmNvbS8=",
+              "state": {}
             }
           },
           {
-            "id": "496724213ea377a5",
+            "id": "c07e19d2330532cb",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
               "state": {}
             }
+          },
+          {
+            "id": "f540bab4eea88763",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Blog/Custom Eslint File.md"
+              }
+            }
+          },
+          {
+            "id": "233874d352f24187",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Blog/Custom Eslint File.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bc2389352120b3e3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Blog/Custom Eslint File.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "71a4d12d29da23ec",
+            "type": "leaf",
+            "state": {
+              "type": "llm-dictionary-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "4c05f987545b427e",
+            "type": "leaf",
+            "state": {
+              "type": "aHR0cHM6Ly9jaGF0Z3B0LmNvbS8=",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 578.5,
+    "width": 440.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-kanban:Create new board": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "omnisearch:Omnisearch": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "daily-notes:Open today's daily note": false,
@@ -203,54 +242,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b553857dabee63f",
+  "active": "64086c38a331dd59",
   "lastOpenFiles": [
-    "_IceTea/Block Chain/gno.land/BlockChain.md",
-    "HackMD_User/Programming/Go.md",
-    "_IceTea/Devops/Makefile.md",
-    "Voca/Voca.md",
-    "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
-    "_IceTea/Devops",
-    "English/Book/Docs.md",
-    "English/Book/assets/Pasted image 20240723074107.png",
-    "English/Book/assets/pronounce_i.png",
-    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
-    "Vocabulary.md",
-    "_IceTea/Block Chain/gno.land/Draft.md",
-    "_IceTea/Block Chain/gno.land/Account.md",
-    "_IceTea/Block Chain/gno.land/assets/stable-coin.png",
+    "_IceTea/Row-Based+vs+Column-Based+Databases.pdf",
+    "Blog/Custom Eslint File.md",
+    "Blog/CÁCH TRUY CẬP GITLAB KHI XÓA XÁC THỰC HAI LỚP.md",
     "Blog/How to read source Extension.md",
-    "_IceTea/Block Chain/gno.land/assets/concept-block.png",
+    "Vocabulary.md",
+    "_IceTea/Database/Fundamentals of Database Engineering.md",
+    "English/Book/Docs.md",
+    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
+    "English/Common.md",
+    "English/Pronounce.md",
+    "_IceTea/Database/assets/column-db-disks.png",
+    "_IceTea/Database/assets/column-db-writing.png",
+    "_IceTea/Database/assets/row-db-writing.png",
+    "_IceTea/Database/assets/Fb - friend.png",
+    "_IceTea/Database/assets/row - db.png",
+    "_IceTea/Database/assets/row -column.png",
+    "_IceTea/Database/assets/Pasted image 20240725231418.png",
+    "Voca/Voca.md",
+    "_IceTea/How+tables+and+indexes+are+stored+on+disk.pdf",
+    "How+tables+and+indexes+are+stored+on+disk.pdf",
+    "HackMD_User/Programming/Go.md",
+    "Entertaiment/Common.md",
+    "HackMD_User/Programming/assets/slice-2-4.png",
+    "HackMD_User/Programming/assets/Pasted image 20240724122545.png",
+    "HackMD_User/Programming/assets/slice-5.png",
+    "HackMD_User/Programming/assets",
+    "_IceTea/Block Chain/gno.land/Read - Source.md",
+    "_IceTea/Block Chain/gno.land/Draft.md",
+    "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
+    "_IceTea/Database/assets",
+    "_IceTea/Block Chain/gno.land/BlockChain.md",
+    "_IceTea/Database",
+    "_IceTea/Devops/Makefile.md",
+    "_IceTea/Devops",
+    "_IceTea/Block Chain/gno.land/Account.md",
     "_IceTea/Block Chain/gno.land/Smart Contract.md",
     "_IceTea/Design System/System Design Primer.md",
     "_IceTea/Block Chain/gno.land/Mnemonic.md",
     "2024-07-18.md",
     "HackMD_User/Books/Search inside yourself.md",
     "_IceTea/Block Chain/gno.land/Question.md",
-    "_IceTea/Block Chain/gno.land/assets/smart_contracts.png",
-    "_IceTea/Block Chain/gno.land/assets/blockchain_work0.png",
-    "_IceTea/Block Chain/gno.land/assets/blockchain_work.png",
-    "_IceTea/Block Chain/gno.land/assets/type_category_blockchain.png",
-    "English/Pronounce.md",
-    "English/Common.md",
     "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 55.mp3",
     "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 49.mp3",
-    "English/Book/assets/1.png",
-    "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 01.mp3",
-    "_IceTea/Block Chain/gno.land/assets/blockchain-concept.png",
     "Untitled Kanban.md",
     "Voca/Voc.md",
-    "Voca/Untitled.md",
-    "Untitled Kanban 2.md",
-    "English/Book/assets",
-    "English/Book/ShipOrSheep/ship or sheep.pdf",
-    "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 48.mp3",
-    "_IceTea/Block Chain/gno.land/assets",
-    "^sổ cái giao dịch.md",
-    "_resources",
-    "module path.md",
-    "Excalidraw/Demo.md",
-    "BookMark/Book Mark.md",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

@@ -30,6 +30,11 @@ kanban-plugin: board
 - [ ] above
 - [ ] mentioned
 - [ ] pronunciation
+- [ ] sport
+- [ ] crucial
+- [ ] taxes
+- [ ] afloat
+- [ ] via
 
 
 ## Remain
@@ -62,6 +67,7 @@ kanban-plugin: board
 - [ ] create list word pronounce to learn pronounce and base on elsa to mark (send sound to get mark) (áp dụng cho ipa)
 - [ ] Dựa vào https://github.com/Mrntn161/LLM-Dictionary-vn.git
 	custom cho từ điển riêng mình
+- [ ] Viết tool giống với md
 
 
 
