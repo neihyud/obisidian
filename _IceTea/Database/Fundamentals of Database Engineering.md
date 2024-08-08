@@ -1,5 +1,10 @@
-- data được lưu dưới disk dưới dạng file, thuộc 1 hoặc nhiều block of data hoặc phân mảnh nằm rải rác 
+	- data được lưu dưới disk dưới dạng file, thuộc 1 hoặc nhiều block of data hoặc phân mảnh nằm rải rác 
 - version mới (tuple)
+
+- Tạo DB với 1M records: 
+```sql
+Inser into grades_org select floor(random()*100) from generate_series (0, 10000000)
+```
 ## Database Pages
 ### A Pool of Pages
 - Database thường sử dụng fixed-size pages để store data
@@ -199,15 +204,139 @@
 - Join: duyệt từng row rồi map sang table còn lại -> nest loop
 - Độ phức tạp O(n^2) -> phù hợp table có số lượng nhỏ
 
+## Concurency Control
 ##### Shared Lock
 - khi read data, data sẽ không bị thay đổi từ lúc đọc đến lúc kết thúc
 - vẫn có thể read được data
 #### Exclusive lock
 - khi write data,  không có bất kỳ ai có thể xen vào quá trình ( không read, write)
 - không cho phép bất kì **exclusive lock** hay **shared lock** nào khác được apply trên data đã có **exclusive lock**.
+### Deadlock
+- A deadlock happens when two processes are or two clients are fighting for one or more resources an either one is waiting for the other process to release the lock on a given resource.
+- Ex: giả sử có 2 transaction run cùng run nhưng chưa commit hay rollback
+	- transaction1: insert value **10** (primary key)
+	- transaction2: insert value **20** (primary key)
+		=> success
+	- transaction1: insert vaiue **20** đến đấy nó sẽ không thực  thi ngay vì hiện tại đã có giá trị 20 ở transaction2 ( chưa được kết thúc transaction) => nó sẽ đợi transaction 1 thực hiện xong thì mới thực thi tiếp.
+		- transaction2: insert value: **10** => deadlock (vì trans1 chờ trans2, trans2 chờ trans1)
+### Two-phase Locking
+- Two-phase Locking: là ý tưởng về việc khóa cơ sở dữ liệu và giải phóng chúng theo các phase.
+	- Phase 1: lock 
+	- Phase 2: release
+=> release thì không lock lại
+Ex: **Double Booking**
 
+**Double Booking**: là khi bạn cố gắng xây dựng một hệ thống đặt chỗ rạp chiếu phim, đúng không?
+Và hai người dùng cố gắng đặt cùng một chỗ ngồi tại cùng một thời điểm.
+Khi điều đó xảy ra, bạn sẽ gặp phải vấn đề đặt chỗ trùng lặp nếu bạn không có khóa hai pha hoặc một triển khai khác.
+Và điều gì xảy ra ở đây là hai giao dịch sẽ được thực hiện cùng một lúc.
+Chúng sẽ cùng kiểm tra cơ sở dữ liệu và cả hai sẽ kiểm tra rằng chỗ ngồi còn trống. Hãy đặt nó và cả hai sẽ commit cùng một lúc, dẫn đến vấn đề đặt chỗ trùng lặp.
+
+Bởi vì bạn có hai người trả tiền cho cùng một chỗ ngồi và người cuối cùng sẽ thắng trong trường hợp này, điều đó hoàn toàn không tốt.
+
+Vì vậy, điều chúng ta muốn làm là người đầu tiên thanh toán, chúng ta sẽ ngay lập tức từ chối người thứ hai.
+
+Vì vậy, các bạn, tôi đã nói về vấn đề đặt chỗ trùng lặp từ quan điểm ứng dụng web.
+
+Nếu bạn muốn xem thêm về khung ứng dụng web, hãy xem video tôi đã làm ở đây, nhưng tôi sẽ nói từ quan điểm cấp độ cơ sở dữ liệu ở đây.
+
+Làm sao để chúng ta bắt đầu giao dịch ở đây và chúng ta sẽ bắt đầu giao dịch ở đây.
+
+
+Vì vậy, điều tôi sẽ làm ở đây là người dùng này sắp đặt chỗ ngồi số 13.
+
+Vì vậy, điều tôi sẽ làm là kiểm tra xem chỗ ngồi có còn trống không.
+
+Chọn tất cả từ bảng chỗ ngồi nơi ID bằng 13 và nó nói rằng, này, nó còn trống và giao dịch thứ hai đồng thời cũng làm điều tương tự từ bảng chỗ ngồi nơi ID bằng 13.
+
+Tuyệt, nó còn trống.
+
+Vì vậy, điều giao dịch này làm là, được rồi, cập nhật, cập nhật bảng chỗ ngồi, chỗ ngồi đã được đặt bằng 1 vì bây giờ nó đã được đặt và tên bây giờ là Hussein nơi ID bằng 13.
+
+Tuyệt vời.
+
+Và điều tương tự xảy ra với giao dịch này.
+
+Vì vậy, cập nhật bảng chỗ ngồi, chỗ ngồi đã được đặt bằng 1 tên bằng Edmund.
+
+Đó là người dùng ở đây nơi ID bằng 13.
+
+Tuyệt vời.
+
+Và bạn sẽ thấy rằng giao dịch này đang chờ.
+
+Đây là hành vi cụ thể của Postgres.
+
+Tuy nhiên, điều gì sẽ xảy ra ở đây là ngay khi tôi cam kết ở đây.
+
+Giao dịch này cũng cam kết, đúng không?
+
+Và khi tôi làm điều đó, tôi sẽ kiểm tra, hãy chọn tất cả từ trước khi cam kết giao dịch khác, tôi sẽ chọn tất cả từ bảng chỗ ngồi ở đây nơi ID bằng 13.
+```sql
+1. (in transaction)
+- T1: get place => 15 empty (exclusive lock)
+- T2: get place  (có thực thi nhưng chưa hiển thị do đang lock ở T1)
+2.
+- T1 -> order 15 (update db)
+3.
+- T1 -> commit => T2 show result get place (1.) => T2 payment (update db)
+-> commit -> T2 đã override name ticket T1
+```
+- Solution: thêm '**for update**' ở cuối câu lệnh select -> **exclusive lock**
+
+=> Có thể sử dụng flag (isBook) chưa để làm flag check
+
+
+- Thay vì sử dụng offset, hãy sử dụng ![[Pasted image 20240803000301.png]]
+=> nhanh hơn
+## Execution Strategy
+### 1. **Lập Kế Hoạch Truy Vấn (Query Planning)**
+
+- **Lập Kế Hoạch Tự Động**: PostgreSQL sử dụng trình lập kế hoạch truy vấn để quyết định cách thực thi câu lệnh SQL. Trình lập kế hoạch này sẽ chọn một chiến lược truy vấn tốt nhất dựa trên thống kê về dữ liệu và chỉ số.
+    
+- **Lập Kế Hoạch Tùy Chỉnh**: Bạn có thể tạo các chỉ số (indexes) trên các cột để cải thiện hiệu suất truy vấn. Trình lập kế hoạch sẽ cân nhắc việc sử dụng các chỉ số này trong quá trình lập kế hoạch.
+    
+
+### 2. **Chiến Lược Thực Thi Câu Lệnh**
+
+- **Full Table Scan**: Nếu không có chỉ số phù hợp, PostgreSQL có thể quét toàn bộ bảng để tìm dữ liệu cần thiết. Đây là chiến lược ít hiệu quả hơn đối với bảng lớn.
+    
+- **Index Scan**: Khi có chỉ số phù hợp, PostgreSQL sẽ thực hiện quét chỉ số để nhanh chóng tìm các hàng liên quan, sau đó truy xuất dữ liệu từ bảng.
+    
+- **Index Only Scan**: Nếu chỉ số chứa tất cả các cột cần thiết cho câu lệnh truy vấn, PostgreSQL có thể chỉ cần quét chỉ số mà không cần đọc dữ liệu từ bảng.
+    
+- **Bitmap Index Scan**: PostgreSQL sử dụng bitmap để kết hợp kết quả từ nhiều chỉ số trước khi truy xuất dữ liệu từ bảng. Điều này giúp giảm số lượng truy cập bảng trực tiếp.
+    
+
+### 3. **Chiến Lược Kết Nối (Join Strategies)**
+
+- **Nested Loop Join**: Đối với mỗi hàng của bảng bên ngoài, PostgreSQL sẽ tìm kiếm các hàng tương ứng trong bảng bên trong. Phù hợp với các truy vấn nhỏ hoặc khi chỉ số được sử dụng.
+    
+- **Hash Join**: PostgreSQL tạo một bảng băm từ một bảng và sau đó sử dụng bảng này để tìm các hàng tương ứng trong bảng còn lại. Phù hợp với các bảng lớn.
+    
+- **Merge Join**: Yêu cầu cả hai bảng đã được sắp xếp theo cột khóa. PostgreSQL sẽ kết hợp các hàng từ hai bảng đã sắp xếp.
+    
+
+### 4. **Chiến Lược Phân Tích và Tối Ưu**
+
+- **Phân Tích Câu Lệnh (ANALYZE)**: Cập nhật thống kê về dữ liệu trong bảng để cải thiện khả năng lập kế hoạch của PostgreSQL. Bạn có thể chạy lệnh `ANALYZE` để giúp PostgreSQL hiểu dữ liệu trong bảng.
+    
+- **Tối Ưu Hóa (VACUUM)**: Xóa các hàng đã bị xóa hoặc cập nhật để giữ cho các chỉ số và bảng sạch sẽ. Giúp duy trì hiệu suất của cơ sở dữ liệu.
+    
+- **Tuning**: Điều chỉnh cấu hình của PostgreSQL (như `work_mem`, `shared_buffers`, v.v.) để cải thiện hiệu suất.
+    
+
+### 5. **Chiến Lược Xử Lý Giao Dịch**
+
+- **Isolation Levels**: PostgreSQL hỗ trợ các mức độ cách ly giao dịch khác nhau (như Read Committed, Serializable) để kiểm soát mức độ cách ly giữa các giao dịch.
+    
+- **Locking**: PostgreSQL sử dụng các cơ chế khóa để quản lý truy cập đồng thời và tránh các vấn đề như deadlock.
 ## Vacuum
 - Clear **dead tuple**
 - Cập nhập statistic information để tối ưu quá trình **query plan**
 - Giải quyết vấn đề **over transaction id**
 - 
+# Partitioning
+- chia thành các partitioning, DB tự động gắn partitioning vào table chính ( nó như một bảng cha)
+## Vertical Partitioning
+## Horizontal Partitioning

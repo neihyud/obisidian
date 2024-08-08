@@ -37,6 +37,13 @@ kanban-plugin: board
 - [ ] via
 
 
+- [ ] steel
+- [ ] outsourcing
+- [ ] generated
+- [ ] corporate
+- [ ] took
+- [ ] disasstrous
+
 ## Remain
 
 - [ ] Database udemy
@@ -60,6 +67,7 @@ kanban-plugin: board
 - [ ] golang
 - [ ] udemy - fundamentals - be
 - [ ] udemy - database engines
+- [ ] aws
 
 
 ## Idea
