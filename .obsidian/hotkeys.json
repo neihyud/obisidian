@@ -118,5 +118,22 @@
       ],
       "key": "1"
     }
-  ]
+  ],
+  "editing-toolbar:editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editing-toolbar:editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link-to-element": []
 }

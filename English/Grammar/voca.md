@@ -33,3 +33,30 @@ E
 - sau  giới từ + Ving
 Unit3
 B
+F
+in time: kịp giờ
+on time: đúng giờ
+
+border with: chán chơi cái gì đấy
+crazy about: cuồng cái gì đấy
+good at: giỏi về cái gì đấy
+interesting in: hứng thú về cái gì đấy
+keen on: thích làm gì, quan tâm đến
+popular with = famous for
+
+such + a/an + adj + N
+such + adj + Ns
+
+be + once: đã từng
+
+**REVIEW 1, 2, 3**
+- ALL
+- take up: bắt đầu một thể thao
+
+Unit4
+tidy: dọn dẹp
+pick st up: nhặt cái gì lên
+pick body up: đóng ai đó
+pick flower: hái hoa
+
+D, F

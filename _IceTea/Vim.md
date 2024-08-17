@@ -12,6 +12,10 @@ tags: [Devops]
     - [ + Tab]: keyboard 
     - [ @number]: chỉ số
 
+
+History => !<stt_cua_lenh> 
+Hoặc ctrl+r => đánh 1 phần lệnh
+
 ---
 | Chế độ	| Mô tả 
 | -------- | -------- 

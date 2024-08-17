@@ -31,3 +31,8 @@ Stative verbs (động từ trạng thái): **do not** usually describe action, 
 => When on action in the past happens in the middle of another, we use the past simple and the past continuous together
 - We do not use the past continuous for regular or repeated actions in the past.
 - The past continuous is often used with word: at the moment, at one/two o’clock
+## Present perfect simple
+![[Pasted image 20240812225625.png]]
+
+## Present perfect continuous
+![[Pasted image 20240812225647.png]]

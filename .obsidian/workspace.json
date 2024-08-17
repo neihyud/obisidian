@@ -8,18 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f30ba8d716fc1fde",
+            "id": "62ab28b8ca47e5ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English/Grammar/voca.md",
+                "file": "_IceTea/Programming Language/NestJS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -96,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "English/Grammar/voca.md"
+                "file": "_IceTea/Programming Language/NestJS.md"
               }
             }
           },
@@ -106,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "English/Grammar/voca.md",
+                "file": "_IceTea/Programming Language/NestJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "English/Grammar/voca.md",
+                "file": "_IceTea/Programming Language/NestJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,11 +174,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f30ba8d716fc1fde",
+  "active": "62ab28b8ca47e5ad",
   "lastOpenFiles": [
+    "_IceTea/Programming Language/assets/Pasted image 20240817195736.png",
+    "_IceTea/Programming Language/assets/Pasted image 20240817181419.png",
+    "_IceTea/Programming Language/assets/Pasted image 20240817181113.png",
+    "_IceTea/Programming Language/assets/Pasted image 20240817162134.png",
+    "Untitled.md",
+    "_IceTea/Programming Language/NestJS.md",
+    "Vocabulary.md",
+    "_IceTea/Block Chain/gno.land/BlockChain.md",
+    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
     "English/Grammar/Grammar.md",
-    "English/Think English.md",
+    "English/Grammar/assets/Pasted image 20240812225647.png",
+    "English/Grammar/assets/Pasted image 20240812225625.png",
+    "assets/Pasted image 20240812201449.png",
+    "assets",
+    "Voca/Voca.md",
     "English/Common.md",
+    "English/Grammar/voca.md",
+    "English/Think English.md",
+    "_IceTea/Vim.md",
     "English/Book/Docs.md",
     "_IceTea/Monorepo.md",
     "_IceTea/Question - Interview.md",
@@ -185,42 +202,26 @@
     "_IceTea/Config.md",
     "_IceTea/Code 101.md",
     "Blog/IS-PORTAL.md",
-    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
     "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
     "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 24.mp3",
-    "English/Grammar/voca.md",
-    "Voca/Voca.md",
-    "Vocabulary.md",
     "English/Grammar/assets/Pasted image 20240804230714.png",
     "English/Grammar/assets/Pasted image 20240804230436.png",
     "English/Grammar/assets/Pasted image 20240804165418.png",
     "English/Grammar/assets/Pasted image 20240804161431.png",
-    "English/Grammar/assets/Pasted image 20240804160958.png",
     "English/Grammar/assets",
     "Productivity/Docs.md",
-    "Productivity/assets/Pasted image 20240804101436.png",
-    "Productivity/assets/Pasted image 20240804095827.png",
     "HackMD/Java.md",
     "HackMD/Need Learn.md",
     "_IceTea/Regex.md",
-    "_IceTea/Vim.md",
     "HackMD/IT Helper.md",
     "HackMD/Bookmark.md",
     "HackMD/Android.md",
     "HackMD/Book - Nodejs Design Pattern.md",
-    "HackMD/Programming/Typescript.md",
-    "HackMD/Programming/DOM, ES6, Promise, Async và Await.md",
-    "HackMD/Programming/Python.md",
-    "_IceTea/Programming Language/Nodejs And ExpressJs.md",
-    "HackMD/Database/assets/Pasted image 20240729210518.png",
-    "HackMD/Database/assets/Pasted image 20240729210511.png",
-    "Productivity/assets/Pasted image 20240803235552.png",
     "Productivity/assets",
     "Productivity",
     "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 17.mp3",
     "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 30.mp3",
     "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 25.mp3",
-    "_IceTea/How+tables+and+indexes+are+stored+on+disk.pdf",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
