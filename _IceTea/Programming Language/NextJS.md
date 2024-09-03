@@ -1,4 +1,4 @@
-## Terms
+s ## Terms
 ### Code Splitting
 - split app -> smaller bundles -> downloaded and executed -> decrease amount of data transfered
 ### Prefetching

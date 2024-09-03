@@ -1,4 +1,4 @@
-#flashcards
+	#flashcards
 
 #deck1
 - obsesse: ám ảnh
@@ -63,7 +63,7 @@ giảm giá
 đi mua sắm
 
 ---
-## 050824
+
 recognition
 hopes
 eventruylly
@@ -144,3 +144,67 @@ I prefer living with family because it feels safe and comfortable. There's alway
 
 ==**What do you think about using apps and social media to find relationships?**==
 Using apps and social media to find relationships can be useful. They make it easier to meet new people, but it’s important to be careful and make sure the connections are real. For me, I don't like using social media to find relationships because I only make friends with people I know.
+
+---
+**==Have you bought anything interesting recently?==**
+
+"**Yes, recently I bought a book** that I've been wanting to read for a long time. **It's called _Atomic Habits_ by James Clear**. The book is about how small changes in our daily habits can lead to significant improvements in our lives. I found it really interesting because it offers practical advice on how to build good habits and break bad ones. I'm enjoying reading it and trying to apply some of the tips in my own life."
+
+==**How important is money to you?**==
+"Money is important to me because it helps me cover my needs and live comfortably. However, it's not the most important thing. I value things like family, friends, and happiness more. I think it's important to have enough money to live well, but I don't let it control my life."
+
+==**Do you think it is ok to lend money to friends or family members?**==
+Yes, I think it's okay to lend money to friends or family, but you should be careful. Only lend what you can afford to lose and make sure you trust the person. It's important to talk about it clearly so there are no misunderstandings.
+
+==**Do you think you will have lots of money in future?**==
+I hope to have enough money in the future to live comfortably and achieve my goals. While I’m not aiming to be extremely wealthy, I want to be financially secure. This means having enough to cover my needs, support my family, and enjoy some of the things I like. I plan to work hard, save money, and make smart choices to make sure I reach this level of stability.
+
+==**Are you good at saving money?**==
+I try to be good at saving money. I set aside some of my income and keep track of my spending. I look for ways to cut costs and avoid unnecessary purchases. It’s not always easy, but I work on it to save for the future.
+
+**==Do you invest your spare money?==**
+No, I don’t invest my spare money at the moment. I haven’t made any plans for investing yet. However, I might consider investing in the future once I feel more comfortable and knowledgeable about it. For now, I’m focusing on saving and managing my finances.
+
+**==What do people in your country save money for?==**
+In my country, people save money for things like emergencies, buying a home, education, and retirement. Many also save for vacations or big purchases like a new car. Saving helps people feel more secure and prepared for the future.
+
+**==Describe an effective way to save money==**
+A simple way to save money is to make a budget. Track your income and expenses, then decide how much to save each month. Set up an automatic transfer to your savings account right after you get paid. This way, you save first and spend what's left.
+
+---
+**==Are you ever late for anything?==**
+Yes, I remember one time I was late. It was my first day at work, and I arrived late, so everyone had to wait for me. The reason was that I didn't know the bus schedule well and didn't time it right. It was a bit embarrassing, but I learned to check the bus times more carefully after that.
+
+**==How do you feel when you are late for an appointment?==**
+When I am late for an appointment, I usually feel worried because I don't like making others wait, so I feel a embarrassed. I try to apologize as soon as I arrive and explain why I was late. It makes me feel bad because I know it's important to be on time, and I don't want to cause any inconvenience to others.
+
+**==How do you feel when others are late?==**
+When others are late, I feel a uncomfortable because I don't like waiting, especially if I have been waiting for a long time. It can be annoying, but I try to understand that sometimes things happen, like traffic or other problems. If they say sorry and tell me why they are late, it makes me feel better.
+
+**==Why do some people find it hard to follow plans?==**
+Because they might forget what they need to do or have unexpected issues come up. They might also feel stressed or lack motivation. If the plan is too complicated it can be difficult to stick to it.
+
+**==When do you find it hard to allocate time?==**
+When I have many tasks to do and they are all important. It can be challenging to decide which task to do first and how much time to spend on each one. I also **struggle** when unexpected things come up, like **urgent** issues or changes in plans. It’s hard to balance everything and make sure each task gets enough attention.
+
+**==Do you like being busy?==**
+I enjoy being busy because it keeps me active and gives me a sense of purpose. But if I have too much to do at once, it can be stressful. I like to stay busy but also need time to unwind and recharge.
+
+**==Do you think planning is important for time management?==**
+Yes, I think planning is very important for time management. It helps you organize your tasks, set priorities, and use your time more efficiently. When you have a plan, it's easier to see what needs to be done and avoid missing deadlines. Good planning can also reduce stress
+
+---
+---
+**facibilies**: cơ sở vật chất
+**approaching**: đang đến gần => especially, when the project is approaching the deadline, to release project on time
+**base in**: có trụ sở
+**attends**: tham dự
+
+**"I like Tet the most because I get a long break. This time, I plan to stay in my hometown to relax and do some shopping. I'll also have more time to spend with my family."**
+	=> "I like Tet the most because it gives me a long break from my usual routine. This time, I plan to stay in my hometown, which will be a nice change of pace. I'll spend my time relaxing, catching up on rest, and doing some shopping for the holiday. Most importantly, I'll have the opportunity to enjoy quality time with my family, sharing meals, talking, and celebrating the festive atmosphere together. Tet is always a special time for bonding and making memories with loved ones."
+
+
+**It is a great way to relax after a busy day in the office**
+**formal**: chính thức
+
+informally: giản dị

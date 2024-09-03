@@ -35,14 +35,14 @@ kanban-plugin: board
 - [ ] taxes
 - [ ] afloat
 - [ ] via
-
-
 - [ ] steel
 - [ ] outsourcing
 - [ ] generated
 - [ ] corporate
 - [ ] took
 - [ ] disasstrous
+- [ ] deadlines
+
 
 ## Remain
 

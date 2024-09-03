@@ -1,3 +1,5 @@
+
+![[Pasted image 20240828113702.png]]
 Trải nghiệm phỏng vấn Senior Software Developer
 
 Hi mọi người,
