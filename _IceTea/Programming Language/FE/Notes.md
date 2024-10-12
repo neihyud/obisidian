@@ -51,3 +51,17 @@ return () => {
 
 }, [ref]);
 ```
+
+
+## React hook form
+- currently not active correct with Controller => use **reset(defaultValues)**
+## React Select 
+```react=
+<Select 
+    // other props
+    menuPortalTarget={document.body} 
+    styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+/>
+```
+=> fix **z-index**: focus-within:z-20
+![[Pasted image 20240919195349.png]]

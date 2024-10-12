@@ -1,5 +1,8 @@
 	#flashcards
 
+- **oppose**: phản đối
+- **postpone**: hoãn
+- on a typical day: vào một ngày điển hình
 #deck1
 - obsesse: ám ảnh
 - acquire: giành được, đạt được
@@ -12,8 +15,8 @@
 - eliminatin: loại bỏ
 - critical: quan trọng
 - along with: cùng với
--  significant role: vai trò thiết yếu
-- shift: sử thay đổi
+- significant role: vai trò thiết yếu
+- shift: sự thay đổi
 - absorbing: tiếp thu, hấp thụ
 - well-known: nổi tiếng
 - broken down: bị phá vỡ
@@ -200,6 +203,12 @@ Yes, I think planning is very important for time management. It helps you organi
 **base in**: có trụ sở
 **attends**: tham dự
 
+fast promotion: thăng tiến
+opportunities job : cơ hội
+high salary
+colleagues helpful
+company facilities
+
 **"I like Tet the most because I get a long break. This time, I plan to stay in my hometown to relax and do some shopping. I'll also have more time to spend with my family."**
 	=> "I like Tet the most because it gives me a long break from my usual routine. This time, I plan to stay in my hometown, which will be a nice change of pace. I'll spend my time relaxing, catching up on rest, and doing some shopping for the holiday. Most importantly, I'll have the opportunity to enjoy quality time with my family, sharing meals, talking, and celebrating the festive atmosphere together. Tet is always a special time for bonding and making memories with loved ones."
 
@@ -207,4 +216,126 @@ Yes, I think planning is very important for time management. It helps you organi
 **It is a great way to relax after a busy day in the office**
 **formal**: chính thức
 
-informally: giản dị
+**informally**: giản dị
+
+---
+**worthy to live**: một nơi đáng sống
+**being away from home**: đang xa nhà
+## Travel
+- luggage: hành lý
+	-> waiting for luggage: đang chờ hành lý 
+**B**
+2. confirm - their flight
+3. collect - their luggage
+4. go through - security
+5. queue -  at the checkin
+6. watch - an in-flight movie
+7. take - a bus or taxi
+8. book - a hotel room
+9. do - some shopping
+10. check in - at the hotel
+**D**
+2. is there a direct **flight**? -> có hộ chiếu trực tiếp k?
+3. can i take this as hand **luggage**? -> tôi có thể mang theo hành lý xách tay này không ?
+4. can i have an aisle **seat**? -> tôi có thể có một chỗ ngồi ở lối đi không?
+5. which way is passport **** control? -> which way is passport control? 
+6. please take me to the city **centre** -> 
+7. can i have a **bill** , please 
+8. i have a **reservation** for two nights. My name's ...
+9. can i have an alarm **call**  at 6.45, please
+10. i am checking out today. Can i have the receipt  , please
+11. can i have the password for the wi-fi
+
+B- Dialog
+3. - 1
+4. - 6
+5. - 5
+6. - 2
+7. - 9
+8. - 8
+9. - 7
+10. - 10
+
+
+
+F.
+1. business district: khu thương mại
+2. indoor pool: hồ bơi trong nhà
+3. sightseeing tours: 
+4. city view
+5. internet access
+6. meeting rooms
+
+---
+# Food and entertainment
+salmon: cá hồi
+tuna: cá ngừ
+cod: cá tuyết
+lamb: cừu non
+broccoli: cải xanh
+veal: bê
+grapes: quả nho
+prawns: tôm
+aubergine: cà tím
+cauliflower: súp lơ
+
+**F**
+2 - e
+3 - g
+4- a
+5 - b
+6 - f
+7 - h
+8 - d
+
+adapt: thích nghi
+![[Pasted image 20240913213450.png]]
+
+
+
+**A**
+- 1 . h
+- 2. a
+- 3 b
+- 4 j
+- 5 g
+- 6  c
+- 7 f punctual (đúng giờ)
+- 8 d motivation
+- 9 i
+- 10 e
+**B**
+Maria Karlsson is good in a team and she gets on well with her colleagues. She is extremely sociable. She is never late for meetings - she is always **punctual**. She is very **hard-working**; she always meets deadlines. She is in the office at 8:00 a.m. every day and usually stays late, so she is very **reliable**. Her boss says this is very **motivating** to others. Her colleagues have a lot of respect for her work and attitude. She is also a very **creative** person with a lot of good ideas for the future of the company.
+
+
+
+- The deadlines for the projects weren't realistic.
+- Most people didn't leave the office until 8 p.m.
+- She wasn't a good manager.
+- She didn't start meetings on time.
+- She didn't know how to motivate the staff.
+
+don't check
+
+did'n phone
+
+don't
+
+
+- **Avon sells cosmetics through shops.**  
+    **False (F)**: Avon primarily sells cosmetics through direct sales and representatives, not through traditional retail shops.
+    
+- **Andrea Jung speaks English and Chinese.**  
+    **True (T)**
+    
+- **Around 50 per cent of managers at Avon are women.**  
+    **True (T)**
+    
+- **Avon has an all-female board.**  
+    **False (F)**: Avon does not have an all-female board; it may have a significant number of women, but it is not entirely female.
+    
+- **Jung thinks all-women management teams make the best decisions.**  
+    **False (F)**: Jung advocates for diversity in management teams rather than asserting that all-women teams are the best.
+    
+- **She is on the boards of two other companies.**  
+    **True (T)**

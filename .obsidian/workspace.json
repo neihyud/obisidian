@@ -4,35 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "bcf1da8477490dbb",
+        "id": "ca771ceef6740979",
         "type": "tabs",
         "children": [
           {
-            "id": "83f7387e34479d4c",
+            "id": "c0077233380fc970",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IceTea/Programming Language/FE/Notes.md",
+                "file": "Blog/Experience.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7af81a3424a28884",
+            "id": "011515463ae6cca8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/note.md",
+                "file": "English/Common.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "925e6460fd91cbcc",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file:Prod",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/note.md"
+                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md"
               }
             }
           },
@@ -119,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/note.md",
+                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/note.md",
+                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432.5
+    "width": 432.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,60 +192,62 @@
       "command-palette:Open command palette": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "open-gate:GPT": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "open-gate:GPT": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7af81a3424a28884",
+  "active": "925e6460fd91cbcc",
   "lastOpenFiles": [
-    "Group Voca.md",
-    "Books/note.md",
-    "Vocabulary.md",
-    "English/Book/Docs.md",
-    "_IceTea/Programming Language/FE/Notes.md",
-    "_IceTea/Code 101.md",
-    "_IceTea/Programming Language/Reactjs.md",
-    "_IceTea/Programming Language/Go.md",
-    "_IceTea/Programming Language/FE",
-    "_IceTea/Programming Language/Flutter.md",
-    "_IceTea/Programming Language/NextJS.md",
-    "_IceTea/Programming Language/NestJS.md",
-    "_IceTea/Data Analyst/Data Analyst.md",
-    "_IceTea/assets/Pasted image 20240828113706.png",
-    "_IceTea/Question - Interview.md",
-    "_IceTea/assets/Pasted image 20240828113702.png",
-    "Voca/Voca.md",
+    "Excalidraw/Plan.md",
     "English/Common.md",
-    "English/Think English.md",
-    "_IceTea/Config.md",
-    "_IceTea/Git.md",
-    "Blog/Next-Auth in App Router of Next.js - Rohit Kumar - Medium.md",
-    "Blog/assets/Pasted image 20240821014834.png",
-    "Blog/assets",
-    "_IceTea/Programming Language/assets/Structure_Layout.png",
-    "_IceTea/Programming Language/assets/Pasted image 20240817195736.png",
-    "_IceTea/Programming Language/assets/Pasted image 20240817181419.png",
-    "_IceTea/Programming Language/assets/Pasted image 20240817181113.png",
-    "_IceTea/Programming Language/assets/Pasted image 20240817162134.png",
-    "_IceTea/Block Chain/gno.land/BlockChain.md",
-    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
+    "Excalidraw/Untitled.md",
+    "Excalidraw/P.md",
+    "English/assets/Pasted image 20241012172125.png",
+    "English/assets/Pasted image 20241012172121.png",
+    "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md",
+    "Blog/Experience.md",
+    "Work/Varmeta/Note.md",
+    "Work/Varmeta/assets/Pasted image 20241009170034.png",
+    "Work/Varmeta/assets",
     "English/Grammar/Grammar.md",
-    "English/Grammar/assets/Pasted image 20240812225647.png",
-    "English/Grammar/assets/Pasted image 20240812225625.png",
-    "assets",
     "English/Grammar/voca.md",
-    "_IceTea/Vim.md",
-    "_IceTea/Monorepo.md",
-    "Blog/IS-PORTAL.md",
-    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
-    "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 24.mp3",
-    "English/Grammar/assets",
+    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
+    "English/Grammar/assets/Pasted image 20241007224657.png",
+    "English/Grammar/assets/Pasted image 20241007224505.png",
+    "English/Think English.md",
+    "HackMD/Hệ điều hành.md",
+    "HackMD/Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes.md",
+    "HackMD/Bookmark.md",
+    "HackMD/Book - Nodejs Design Pattern.md",
+    "HackMD/Android.md",
+    "HackMD/Programming/Typescript.md",
+    "HackMD/Programming/DOM, ES6, Promise, Async và Await.md",
+    "HackMD/Database/MongoDB & Mongoose.md",
+    "HackMD/Database/Sequelize.md",
+    "English/assets/Pasted image 20240913213450.png",
+    "English/assets/Pasted image 20240906010757.png",
+    "English/assets/Pasted image 20240906010738.png",
+    "English/assets/Pasted image 20240906010726.png",
+    "English/assets/Pasted image 20240906010709.png",
+    "BookMark/Book Mark.md",
     "Productivity/Docs.md",
-    "Productivity/assets",
-    "Productivity",
-    "English/Book/EnglishPronunciation/CD/English pronunciation in Use CD1/Track 17.mp3",
+    "Books/Productivity Method.md",
+    "HackMD/Need Learn.md",
+    "HackMD/Java.md",
+    "HackMD/IT Helper.md",
+    "Books/Khi bạn đang mơ người khác đang nỗ lực.md",
+    "Books/Untitled",
     "Untitled.canvas",
+    "_IceTea/Programming Language/FE/assets",
+    "Work/Varmeta",
+    "Work",
+    "_IceTea/Programming Language/FE",
+    "Blog/assets",
+    "English/assets",
+    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
     "Untitled 1.canvas"
   ]
 }

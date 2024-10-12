@@ -1,4 +1,4 @@
-## Present simple
+## Present Simple
 ![[Pasted image 20240804165418.png]]
 ## Present Continuous
 
@@ -16,7 +16,7 @@ Stative verbs (động từ trạng thái): **do not** usually describe action, 
 | be        | have    | love   | seem  | want       |
 | believe   | include | need   | taste |            |
 | belong to | know    | prefer | think |            |
-- Một số stative verds sử dụng ở continous prevent để chỉ mô tả hành đồng: be, think, have
+- Một số stative verds sử dụng ở continous prevent để chỉ mô tả hành động: be, think, have
 ## Past Simple
 ![[Pasted image 20240804230436.png]]
 - Completed actions
@@ -36,3 +36,9 @@ Stative verbs (động từ trạng thái): **do not** usually describe action, 
 
 ## Present perfect continuous
 ![[Pasted image 20240812225647.png]]
+## Past perfect simple
+QKHT -> QK -> HT
+![[Pasted image 20241007224505.png]]
+## Past perfect continuous
+![[Pasted image 20241007224657.png]]
+=> nhấn mạnh về quá trình thay vì kết quả

@@ -14,8 +14,10 @@
   "command-palette",
   "editor-status",
   "bookmarks",
+  "random-note",
   "outline",
   "word-count",
   "slides",
+  "workspaces",
   "file-recovery"
 ]

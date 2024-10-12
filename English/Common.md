@@ -1,3 +1,4 @@
+![[Pasted image 20241012172125.png]]
 ## Voca
 https://learnenglish.britishcouncil.org/vocabulary
 voca -> hình dung ( voca + animation)

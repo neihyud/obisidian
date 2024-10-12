@@ -76,6 +76,7 @@ kanban-plugin: board
 - [ ] Dựa vào https://github.com/Mrntn161/LLM-Dictionary-vn.git
 	custom cho từ điển riêng mình
 - [ ] Viết tool giống với md
+- [ ] combine with podomoro custom from extendsion
 
 
 

@@ -53,10 +53,33 @@ be + once: đã từng
 - ALL
 - take up: bắt đầu một thể thao
 
-Unit4
+**Unit4**
 tidy: dọn dẹp
 pick st up: nhặt cái gì lên
 pick body up: đóng ai đó
 pick flower: hái hoa
 
 D, F
+
+**Unit 6**
+concentrate = focus on: tập trung
+revise: ôn tập
+wonder: tự hỏi
+
+cross out: loại bỏ
+look up: tìm kiếm
+point out: chỉ ra rằng
+read out: đọc thành lời
+rip up: xé thành từng mảnh
+rub out: tẩy đi
+turn over: lật   lại
+write down: viết xuống
+
+disaster: kinh khủng
+
+by heart: đọc thuộc lòng
+for instance = for example
+in conclusion: kết luận
+in fact: thực tế
+in favour (of) = suppor: ủng hộ
+in general: nhìn chung

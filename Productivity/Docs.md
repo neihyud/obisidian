@@ -58,5 +58,6 @@ Nếu lời giải thích ở bước 2 chưa thực sự dễ hiểu hay còn t
 
 # Pomodoro
 ![[Pasted image 20240804095827.png | 600]]  
+
 # Spaced Repetition
 ![[Pasted image 20240804101436.png]]
