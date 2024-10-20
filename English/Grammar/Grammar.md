@@ -42,3 +42,7 @@ QKHT -> QK -> HT
 ## Past perfect continuous
 ![[Pasted image 20241007224657.png]]
 => nhấn mạnh về quá trình thay vì kết quả
+# Future time
+![[Pasted image 20241015072342.png]]
+![[Pasted image 20241015072414.png]]
+![[Pasted image 20241015072432.png]]

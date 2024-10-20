@@ -1,3 +1,0 @@
-- private key
-- **Mnemonic Phrase** (còn gọi: **mnemonic seed, mnemonic recovery phrase, seed key**): nhóm từ tạo ra khi tạo ví lưu tiền điện tử ( hay goi la) => dễ đọc, quản lý
-- **Mnemonic Passphrase**: cho phép mã hóa mnemonic phrase bằng mật khẩu - thêm một lớp mật khẩu 

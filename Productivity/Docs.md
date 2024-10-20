@@ -28,6 +28,7 @@ b2: Chọn 5 trong 20 để làm
 - Loại bỏ tất cả các công việc có thể làm mất tập trung vào buổi sáng sớm.
 
 # Kỹ thuật Feynman
+![[Pasted image 20241012223931.png]]
 [resource](https://zim.vn/ky-thuat-feynman-4-buoc-don-gian-giup-ghi-nho-kien-thuc)
 - "Nếu bạn không thể giải thích một cách đơn giản thì bạn chưa hiểu đủ rõ"
 => để hiểu một khái niệm mới học thì phải giái thích được nó 
@@ -61,3 +62,33 @@ Nếu lời giải thích ở bước 2 chưa thực sự dễ hiểu hay còn t
 
 # Spaced Repetition
 ![[Pasted image 20240804101436.png]]
+# How to become an expert in anything
+![[Pasted image 20241012223730.png]]
+
+1. **Remembering**
+	- Focus on recalling fact, terms, basic concept
+	- => use flashcard, spaced repetition system tool
+2. **Understanding**
+	- Prove understanding of the material by explaining ideas or concepts in their words, summarizing, interpretting infomation. 
+	- => Teach the concepts you have learned to someone else. If you can explain it, you understand it well. **[Fenymann technique](https://newsletter.techworld-with-milan.com/i/115140623/how-to-deeply-understand-things)**
+3. **Applying**
+	- using knowlegde and understand to solve problem or apply concept in new situations
+	- => start side project => apply concept in real world scenario
+4. **Analyzing**
+	- breaking down complex problems into smaller, more manageable parts
+5. **Evaluating**
+	-  you assess and make judgments about different approache
+6. **Creating**
+	-  expected to generate new ideas, products, or ways of viewing things by combining or reorganizing existing elements (creation process)
+# How to Learning anything in 20 hours
+1. **Deconstruct the skill** - try understanding the craft, its parts, concepts, and how it works together. Here, you can use First Principles. This enables you to understand which steps you need to make to succeed with it.
+    
+    Start your reasoning process by considering the fundamental components you've identified. Then, analyze how each part interacts with others and contributes to the overall problem or concept. Finally, use logical reasoning to understand the relationships between the core elements and avoid relying on analogies or comparisons.
+    
+2. **Learn enough to self-correct** - when you understand the basics, start practicing and pay attention to mistakes and what you need to work on. Here, you can use **The Feynman Technique**.
+    
+    The technique helps identify gaps in understanding, which are then addressed by reviewing and refining the explanation. By repeatedly practicing this technique, the learner gains a more profound and precise grasp of the subject matter.
+    
+3. **Remove practice barriers** - create an environment that will enable you to succeed. Try to do the 1-2-2 technique. **<font color="#ff0000"><b>Focus on one skill for two hours every day for two months.</b></font>** After this, your life path will be changed.
+    
+4. **Put in the time**—deliberate practice is the most important thing. We must focus on goals and get feedback by pushing ourselves to improve daily.

@@ -1,3 +1,5 @@
+![[Pasted image 20241012231442.png]]
+![[Pasted image 20241012232606.png]]
 	- data được lưu dưới disk dưới dạng file, thuộc 1 hoặc nhiều block of data hoặc phân mảnh nằm rải rác 
 - version mới (tuple)
 

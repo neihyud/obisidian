@@ -4,45 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "ca771ceef6740979",
+        "id": "07bf2bcde8ac7f2d",
         "type": "tabs",
         "children": [
           {
-            "id": "c0077233380fc970",
+            "id": "2589439f4652f9f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/Experience.md",
+                "file": "_IceTea/Programming Language/Nodejs And ExpressJs.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Nodejs And ExpressJs"
             }
           },
           {
-            "id": "011515463ae6cca8",
+            "id": "e7ce264e2a22230d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English/Common.md",
+                "file": "_IceTea/Programming Language/NodeJS.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "925e6460fd91cbcc",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md"
-              }
+              },
+              "icon": "lucide-file",
+              "title": "NodeJS"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -62,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -77,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -85,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -110,7 +110,9 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -119,8 +121,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md"
-              }
+                "file": "_IceTea/Programming Language/NodeJS.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of NodeJS"
             }
           },
           {
@@ -129,10 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md",
+                "file": "_IceTea/Programming Language/NodeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from NodeJS"
             }
           },
           {
@@ -141,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md",
+                "file": "_IceTea/Programming Language/NodeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +155,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for NodeJS"
             }
           },
           {
@@ -157,11 +165,33 @@
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "004f4d823f75addc",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "0fc1a132531767d8",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       },
       {
         "id": "85a5928567a997e5",
@@ -172,7 +202,9 @@
             "type": "leaf",
             "state": {
               "type": "llm-dictionary-view",
-              "state": {}
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "Dictionary View"
             }
           }
         ]
@@ -190,55 +222,55 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "omnisearch:Omnisearch": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "open-gate:GPT": false,
-      "random-note:Open random note": false,
-      "workspaces:Manage workspace layouts": false
+      "open-gate:GPT": false
     }
   },
-  "active": "925e6460fd91cbcc",
+  "active": "0fc1a132531767d8",
   "lastOpenFiles": [
-    "Excalidraw/Plan.md",
-    "English/Common.md",
-    "Excalidraw/Untitled.md",
-    "Excalidraw/P.md",
-    "English/assets/Pasted image 20241012172125.png",
-    "English/assets/Pasted image 20241012172121.png",
-    "Excalidraw/Drawing 2024-10-11 23.36.34.excalidraw.md",
-    "Blog/Experience.md",
-    "Work/Varmeta/Note.md",
-    "Work/Varmeta/assets/Pasted image 20241009170034.png",
-    "Work/Varmeta/assets",
-    "English/Grammar/Grammar.md",
-    "English/Grammar/voca.md",
+    "_IceTea/Programming Language/Nodejs And ExpressJs.md",
+    "_IceTea/Programming Language/NodeJS.md",
     "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
-    "English/Grammar/assets/Pasted image 20241007224657.png",
-    "English/Grammar/assets/Pasted image 20241007224505.png",
+    "English/Grammar/Grammar.md",
+    "English/Grammar/assets/Pasted image 20241015072432.png",
+    "English/Grammar/assets/Pasted image 20241015072414.png",
+    "English/Grammar/assets/Pasted image 20241015072342.png",
+    "English/Grammar/voca.md",
     "English/Think English.md",
-    "HackMD/Hệ điều hành.md",
-    "HackMD/Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes.md",
-    "HackMD/Bookmark.md",
-    "HackMD/Book - Nodejs Design Pattern.md",
-    "HackMD/Android.md",
-    "HackMD/Programming/Typescript.md",
-    "HackMD/Programming/DOM, ES6, Promise, Async và Await.md",
-    "HackMD/Database/MongoDB & Mongoose.md",
-    "HackMD/Database/Sequelize.md",
-    "English/assets/Pasted image 20240913213450.png",
-    "English/assets/Pasted image 20240906010757.png",
-    "English/assets/Pasted image 20240906010738.png",
-    "English/assets/Pasted image 20240906010726.png",
-    "English/assets/Pasted image 20240906010709.png",
-    "BookMark/Book Mark.md",
-    "Productivity/Docs.md",
-    "Books/Productivity Method.md",
-    "HackMD/Need Learn.md",
-    "HackMD/Java.md",
-    "HackMD/IT Helper.md",
-    "Books/Khi bạn đang mơ người khác đang nỗ lực.md",
+    "English/Common.md",
+    "_IceTea/Programming Language/assets/Pasted image 20241014234542.png",
+    "English/Book/Docs.md",
+    "Blog/Experience.md",
+    "_IceTea/Design Principles in Software Development.md",
+    "_IceTea/Programming Language/NestJS.md",
+    "_IceTea/Programming Language/NextJS.md",
+    "Group Voca.md",
+    "_IceTea/Devops/Docker.md",
+    "_IceTea/Design System/System Design Primer.md",
+    "_IceTea/Database/Redis.md",
+    "_IceTea/Database/Fundamentals of Database Engineering.md",
+    "_IceTea/Block Chain/gno.land/Question.md",
+    "_IceTea/Block Chain/gno.land/Draft.md",
+    "_IceTea/Block Chain/gno.land/BlockChain.md",
+    "_IceTea/Block Chain/gno.land/Account.md",
+    "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
+    "_IceTea/Block Chain/gno.land/Mnemonic.md",
+    "_IceTea/Block Chain/gno.land/Smart Contract.md",
+    "_IceTea/Block Chain/gno.land/Read - Source.md",
+    "_IceTea/Vim.md",
+    "_IceTea/Regex.md",
+    "_IceTea/Database/assets/Pasted image 20241012232606.png",
+    "_IceTea/Database/assets/Pasted image 20241012231442.png",
+    "Productivity/assets/Pasted image 20241012223931.png",
+    "Productivity/assets/Pasted image 20241012223730.png",
+    "Productivity/assets/Pasted image 20241012223723.png",
+    "English/assets/Pasted image 20241012172125.png",
+    "Work/Varmeta/assets",
     "Books/Untitled",
     "Untitled.canvas",
     "_IceTea/Programming Language/FE/assets",

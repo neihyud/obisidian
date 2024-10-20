@@ -1,1 +1,0 @@
-- func return error if have error
