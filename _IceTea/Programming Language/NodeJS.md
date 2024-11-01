@@ -1,4 +1,4 @@
-ar# How NodeJS works
+# How NodeJS works
  - **Non block I/O:**
 	 - nếu không có data ở thời điểm hiện tại, hàm sẽ trả về một biến constant được xác định trước và cho biết không có data ở thời điểm đó
 - **Event demultiplexing**:
@@ -25,4 +25,37 @@ items to be added to the Event Demultiplexer (1).
 again on the Event Demultiplexer, which then triggers another cycle when
 a new event is available.
 ## Libuv
-- sinh 
+- a higher-level abstraction to be built for the **event demultiplexer**.  => objective to make Node.js compatible with all the major operating systems and normalize the non-blocking behavior of the different types of resource.
+## The recipe for Node.js
+![[Pasted image 20241020233106.png]]
+# Module System
+- The dynamic import happens asynchronously, so we can use the .then() hook on the returned promise to get notified when the module is ready to be used.
+## Module Load
+- **Phase 1** - Construction (or parsing): Find all the imports and recursively load the content of every module from the respective file. 
+- **Phase 2** - Instantiation: For every exported entity, keep a named reference in memory, but don't assign any value just yet. Also, references are created for all the import and export statements tracking the dependency relationship between them (linking). No JavaScript code has been executed at this stage. 
+- **Phase 3** - Evaluation: Node.js finally executes the code so that all the previously instantiated entities can get an actual value. Now running the code from the entry point is possible because all the blanks have been filled.
+
+=> 
+**Phase 1**: is about finding all the dots, 
+**Phase 2**: connects those creating paths, and, finally
+**Phase 3**: walks through the paths in the right order.
+
+
+:::error
+- CommonJS will execute all the files while the dependency graph is explored => can import in **if statements** or **for loop**
+
+
+
+# Gzip use stream
+```nodejs=
+	// gzip-stream.js
+	import { createReadStream, createWriteStream } from 'fs'
+	import { createGzip } from 'zlib'
+	
+	const filename = process.argv[2]
+	
+	createReadStream(filename)
+		.pipe(createGzip())
+		.pipe(createWriteStream(`${filename}.gz`))
+		.on('finish', () => console.log('File successfully compressed'))
+```

@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "07bf2bcde8ac7f2d",
+        "id": "337f30da6054e7d5",
         "type": "tabs",
         "children": [
           {
-            "id": "2589439f4652f9f6",
+            "id": "a0813ee04046c351",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IceTea/Programming Language/Nodejs And ExpressJs.md",
+                "file": "English/Book/Docs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nodejs And ExpressJs"
-            }
-          },
-          {
-            "id": "e7ce264e2a22230d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_IceTea/Programming Language/NodeJS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NodeJS"
+              "title": "Docs"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,10 +106,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_IceTea/Programming Language/NodeJS.md"
+                "file": "_IceTea/Road Map/Database - Postgres.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of NodeJS"
+              "title": "Outline of Database - Postgres"
             }
           },
           {
@@ -186,12 +171,152 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "8e6c115f20ec9e9a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "f853f87faf3d6686",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "2182f2fd77711f0d",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "481ea588b3888f8f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "d860811b3ab09cc2",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "289fc409e61a5ed5",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "63ce777be18d8396",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "b850d29872eb757f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "f8d29f4cb9d4324a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "d78c175a8f2c9c89",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "140cbea9d6b190f8",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "8d659c23960f7d47",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "925bd7c5384400bb",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "560e76496678c40b",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 20
       },
       {
         "id": "85a5928567a997e5",
@@ -211,8 +336,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432.5,
-    "collapsed": true
+    "width": 432.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,45 +355,47 @@
       "open-gate:GPT": false
     }
   },
-  "active": "0fc1a132531767d8",
+  "active": "a0813ee04046c351",
   "lastOpenFiles": [
-    "_IceTea/Programming Language/Nodejs And ExpressJs.md",
+    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
+    "_IceTea/Road Map/Database - Postgres.md",
+    "En.md",
+    "_IceTea/Database/Fundamentals of Database Engineering.md",
+    "_IceTea/Database/Redis.md",
+    "_IceTea/Road Map/Api.md",
+    "_IceTea/Road Map/Back end.md",
     "_IceTea/Programming Language/NodeJS.md",
-    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
+    "_IceTea/Road Map/assets/Pasted image 20241023105819.png",
+    "_IceTea/Road Map/assets",
+    "_IceTea/Road Map.md",
+    "_IceTea/Road Map",
+    "English/Book/Docs.md",
+    "Group Voca.md",
+    "Vocabulary.md",
+    "Voca - Grama.md",
+    "_IceTea/Programming Language/Nodejs And ExpressJs.md",
+    "Voca/Untitled Kanban.md",
+    "Voca/Voca.md",
+    "English/Common.md",
+    "English/assets/Pasted image 20241021080617.png",
+    "English/Think English.md",
     "English/Grammar/Grammar.md",
+    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
+    "_IceTea/Programming Language/assets/Pasted image 20241020233106.png",
     "English/Grammar/assets/Pasted image 20241015072432.png",
     "English/Grammar/assets/Pasted image 20241015072414.png",
     "English/Grammar/assets/Pasted image 20241015072342.png",
     "English/Grammar/voca.md",
-    "English/Think English.md",
-    "English/Common.md",
     "_IceTea/Programming Language/assets/Pasted image 20241014234542.png",
-    "English/Book/Docs.md",
     "Blog/Experience.md",
     "_IceTea/Design Principles in Software Development.md",
     "_IceTea/Programming Language/NestJS.md",
     "_IceTea/Programming Language/NextJS.md",
-    "Group Voca.md",
     "_IceTea/Devops/Docker.md",
     "_IceTea/Design System/System Design Primer.md",
-    "_IceTea/Database/Redis.md",
-    "_IceTea/Database/Fundamentals of Database Engineering.md",
-    "_IceTea/Block Chain/gno.land/Question.md",
-    "_IceTea/Block Chain/gno.land/Draft.md",
-    "_IceTea/Block Chain/gno.land/BlockChain.md",
-    "_IceTea/Block Chain/gno.land/Account.md",
-    "_IceTea/Block Chain/gno.land/Docs - gno.land.md",
-    "_IceTea/Block Chain/gno.land/Mnemonic.md",
-    "_IceTea/Block Chain/gno.land/Smart Contract.md",
-    "_IceTea/Block Chain/gno.land/Read - Source.md",
-    "_IceTea/Vim.md",
-    "_IceTea/Regex.md",
     "_IceTea/Database/assets/Pasted image 20241012232606.png",
     "_IceTea/Database/assets/Pasted image 20241012231442.png",
     "Productivity/assets/Pasted image 20241012223931.png",
-    "Productivity/assets/Pasted image 20241012223730.png",
-    "Productivity/assets/Pasted image 20241012223723.png",
-    "English/assets/Pasted image 20241012172125.png",
     "Work/Varmeta/assets",
     "Books/Untitled",
     "Untitled.canvas",
@@ -278,8 +404,6 @@
     "Work",
     "_IceTea/Programming Language/FE",
     "Blog/assets",
-    "English/assets",
-    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
     "Untitled 1.canvas"
   ]
 }

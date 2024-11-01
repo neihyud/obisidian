@@ -22,11 +22,13 @@ Inser into grades_org select floor(random()*100) from generate_series (0, 100000
 ### Isolation
 - [isolation - db](https://en.wikipedia.org/wiki/Isolation_(database_systems))
 - Hiện tượng **red**:
-	- **Dirty Read** là hiện tượng khi một giao dịch đọc dữ liệu chưa được commit từ một giao dịch khác. Cấp độ Repeatable Read đảm bảo rằng một giao dịch không đọc dữ liệu chưa được commit từ giao dịch khác.
+	- **Dirty Read**:
+		- Nếu một giao dịch đang cập nhật dữ liệu và chưa commit, và một giao dịch khác được phép đọc dữ liệu chưa commit.
+		- Cấp độ Repeatable Read đảm bảo rằng một giao dịch không đọc dữ liệu chưa được commit từ giao dịch khác.
 		- đọc một cái gì đó mà transacion chưa commit
 			- ex: trong tx1 có read giá trị của A nhưng chưa commit, nhưng trong thời gian đó tx2 thực hiện làm thay đổi giá trị của A, nếu ở dưới tx1 đọc lại A thì giá trị không còn giống như lúc ban đầu
 		![[db-dirty-read.png]]
-	- **non-repeatable reads (Đọc không lặp lại )**: xảy ra khi một transaction đọc dữ liệu, và sau đó dữ liệu này bị thay đổi bởi một transaction khác trước khi transaction đầu tiên hoàn thành. Cấp độ Repeatable Read đảm bảo rằng các dữ liệu được đọc bởi một giao dịch sẽ không thay đổi trong suốt thời gian giao dịch đó.
+	- **Non-repeatable reads (Đọc không lặp lại )**: xảy ra khi một transaction đọc dữ liệu, và sau đó dữ liệu này bị thay đổi bởi một transaction khác trước khi transaction đầu tiên hoàn thành. Cấp độ Repeatable Read đảm bảo rằng các dữ liệu được đọc bởi một giao dịch sẽ không thay đổi trong suốt thời gian giao dịch đó.
 		![[db-non-repeatable-reads.png]]
 	- **Phantom read**: xảy ra khi một giao dịch thực hiện một truy vấn và sau đó một giao dịch khác chèn hoặc xóa các bản ghi, dẫn đến kết quả khác khi truy vấn tương tự được thực hiện lại trong giao dịch đầu tiên
 		=> sử dụng cấp độ **Serializable** để ngăn chặn

@@ -1,0 +1,1 @@
+TLS (Transport Layer Security): là giao thức mã hóa sử dụng để bảo mật thông tin truyền tải qua internet
