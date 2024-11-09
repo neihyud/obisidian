@@ -7,6 +7,21 @@
 ```sql
 Inser into grades_org select floor(random()*100) from generate_series (0, 10000000)
 ```
+
+---
+
+- Khi dùng `GROUP BY`, SQL yêu cầu tất cả các cột trong câu lệnh `SELECT` phải thuộc một trong hai loại:
+	- Được nhóm trong `GROUP BY`.
+	- Là một phần của hàm tổng hợp (như `COUNT`, `SUM`, `AVG`, v.v.).
+
+- Group by X means put all those with the same value for X in the same row.
+- Group by X, Y put all those with the same values for both X and Y in the same row.
+---
+
+ - Prevent round when divide -> use:
+	 - **CAST**:  (1 as float) / 2
+	 - **CONVERT**: (FLOAT , 1) / 2
+	 - **Multiply By 1.0**:  (1 * 1.0) / 2
 ## Database Pages
 ### A Pool of Pages
 - Database thường sử dụng fixed-size pages để store data
@@ -344,3 +359,195 @@ Và khi tôi làm điều đó, tôi sẽ kiểm tra, hãy chọn tất cả t�
 - chia thành các partitioning, DB tự động gắn partitioning vào table chính ( nó như một bảng cha)
 ## Vertical Partitioning
 ## Horizontal Partitioning
+
+# Example
+- https://www.sqlclimber.com/assignment/fva93g/customer:-all-orders
+![[Pasted image 20241109171752.png]]
+
+```sql
+/*
+    Select detail of the last customer order:
+    - Product - Format: '{product title} ({brand})'
+	- Quantity 
+	- UnitPrice
+    - TotalPrice
+    - Currency
+*/
+DECLARE @CustomerId INT = 11
+
+
+SELECT
+    Product = p.Title + ' (' + p.Brand + ')'
+   ,l.Quantity
+   ,l.UnitPrice
+   ,TotalPrice = l.Quantity * l.UnitPrice
+   ,p.Currency
+FROM
+(
+	-- The last customer order Id.
+    SELECT TOP 1
+        o.Id
+    FROM Eshop.[Order] o
+    WHERE o.CustomerId = @CustomerId
+    ORDER BY o.OrderDate DESC
+) lastOrder
+JOIN Eshop.OrderLine l ON l.OrderId = lastOrder.Id
+JOIN Eshop.Product p ON p.Id = l.ProductId
+JOIN Eshop.Category c ON c.Id = p.CategoryId
+
+```
+
+```sql
+/*
+    Select all orders for the declared customer:
+    - Customer 
+    - OrderDate
+    - ProductTypes - count of product type 
+    - TotalProducts - the quantity of all products
+    - TotalPrice - the total price of all products
+	The newest orders show up first.
+*/
+DECLARE @CustomerId INT = 1
+
+SELECT
+    c.Customer
+   ,o.OrderDate
+   ,ProductTypes = COUNT(l.ProductId)
+   ,TotalProducts = SUM(l.Quantity)
+   ,TotalPrice = SUM(l.Quantity * l.UnitPrice)
+FROM Eshop.Customer c
+JOIN Eshop.[Order] o ON o.CustomerId = c.Id
+JOIN Eshop.OrderLine l ON l.OrderId = o.Id
+WHERE c.Id = @CustomerId
+GROUP BY c.Customer, o.OrderDate
+```
+
+
+
+
+---
+
+![[Pasted image 20241109172200.png]]
+```sql
+/*
+    Filter products by user filter: @Brand, @PriceFrom, @PriceTo
+    If some of the filters are not set, don't apply them.
+    
+    Select the following columns:
+    - Category - Format: {parent category} / {category}
+    - Brand
+    - Product
+    - Price
+    - Currency
+    The most expensive products show up first.
+*/
+DECLARE @Brand NVARCHAR(100) = 'Apple'
+DECLARE @PriceFrom DECIMAL
+DECLARE @PriceTo DECIMAL = 1500
+
+---
+
+SELECT 
+    Category = cp.Title + ' / ' + c.Title,
+    Brand = p.Brand,
+    Product = p.Title,
+    Price = p.UnitPrice,
+    Currency = p.Currency
+FROM Eshop.Product p
+JOIN Eshop.Category c ON c.Id = p.CategoryId
+JOIN Eshop.Category cp ON c.ParentCategoryId = cp.Id
+WHERE 
+    (@Brand IS NULL OR p.Brand = @Brand) AND
+    (@PriceFrom IS NULL OR p.UnitPrice >= @PriceFrom) AND
+    (@PriceTo IS NULL OR p.UnitPrice <= @PriceTo)
+ORDER BY p.UnitPrice DESC;
+```
+
+```sql
+/*
+	E-shop wants to expand to new markets:
+	- Insert products of the declared category into the table @ExpandingProduct with new currency and recalculated price.
+    - All new prices should contain 95 cents/penny, so fix it after recalculation.
+*/
+DECLARE @ExpandingProduct TABLE
+(
+	Title NVARCHAR(100)
+   ,Description NVARCHAR(1000)
+   ,Brand NVARCHAR(100)
+   ,CategoryId INT
+   ,UnitPrice DECIMAL(18,2)
+   ,Currency NVARCHAR(3)
+)
+
+DECLARE @Category NVARCHAR(100) = 'Headphones'
+DECLARE @NewCurrency TABLE (Currency NVARCHAR(3), ExchangeRate DECIMAL(18, 2))
+INSERT INTO @NewCurrency (Currency, ExchangeRate) VALUES ('EUR', 0.89), ('GBP', 0.80)
+
+
+INSERT INTO @ExpandingProduct
+SELECT	
+    p.Title
+   ,p.Description
+   ,p.Brand 
+   ,p.CategoryId
+   ,UnitPrice = CONVERT(DECIMAL(18,2), FLOOR(p.UnitPrice * cur.ExchangeRate)) + 0.95
+   ,cur.Currency
+FROM Eshop.Category c
+JOIN Eshop.Product p ON p.CategoryId = c.Id
+CROSS JOIN @NewCurrency cur
+WHERE c.Title = @Category
+```
+
+
+```sql
+/*
+    E-shop wants to change prices:
+    - Calculate new unit prices at table @PreparePrice for the declared category.
+    - All new prices higher than 100 dollars should be without cents. Round them up. 
+*/
+DECLARE @PreparePrice TABLE
+(
+	ProductId INT
+   ,Title NVARCHAR(100)
+   ,UnitPrice DECIMAL(18,2)
+   ,NewUnitPrice DECIMAL(18,2)
+)
+INSERT INTO @PreparePrice (ProductId, Title, UnitPrice)
+SELECT 
+	p.Id
+   ,p.Title
+   ,p.UnitPrice
+FROM Eshop.Product p
+
+DECLARE @ParentCategory NVARCHAR(100) = 'Men''s Accessories'
+DECLARE @PriceIncreaseInPercentage INT = 5
+
+C1:
+UPDATE pp
+SET NewUnitPrice = 
+    CASE 
+        WHEN (pp.UnitPrice  + pp.UnitPrice * @PriceIncreaseInPercentage/100.0) <= 100 
+        THEN CAST(pp.UnitPrice * (100 + @PriceIncreaseInPercentage) AS FLOAT)/100.0
+        ELSE CEILING(pp.UnitPrice * (1 + @PriceIncreaseInPercentage/100.0))
+    END
+FROM @PreparePrice pp
+JOIN Eshop.Product p ON pp.ProductId = p.Id
+JOIN Eshop.Category c ON p.CategoryId = c.Id
+JOIN Eshop.Category pc ON c.ParentCategoryId = pc.Id
+WHERE pc.Title = @ParentCategory
+
+C2:
+UPDATE pp
+SET pp.NewUnitPrice = p.UnitPrice * (100 + @PriceIncreaseInPercentage) / 100
+FROM Eshop.Category parentC
+JOIN Eshop.Category c ON c.ParentCategoryId = parentC.Id
+JOIN Eshop.Product p ON p.CategoryId = c.Id
+JOIN @PreparePrice pp ON pp.ProductId = p.Id
+WHERE parentC.Title = @ParentCategory
+
+UPDATE pp
+SET pp.NewUnitPrice = CEILING(pp.NewUnitPrice)
+FROM @PreparePrice pp
+WHERE pp.NewUnitPrice > 100
+
+```
