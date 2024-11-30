@@ -1,5 +1,6 @@
-![[Pasted image 20240828113706.png]]
+
 ## Show Less and Show More
+![[Pasted image 20240828113706.png]]
 ```md
 Show less, show more base on height
 
@@ -53,6 +54,24 @@ return () => {
 ```
 
 
+## Svg
+### Viewbox
+https://www.digitalocean.com/community/tutorials/svg-svg-viewbox
+-  **`viewport`** as the window to our image and the `viewBox` as the tool we use to scale and position the image.
+
+![[Pasted image 20241120163112.png]]
+- **x** - specify the minimum x coordinate
+- **y** - specify the minimum y coordinate
+- **width** - width in user coordinates/px units
+- **height** - height in user coordinates/px units
+
+https://www.digitalocean.com/community/tutorials/svg-preserve-aspect-ratio
+- **preserveAspectRatio**: use to scale svg when **viewBox** and **viewPort** difference
+	- ex: 'svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"'
+		- xMidYMid - center the 'viewBox' region within the 'viewPort' region
+		- meet - scale our graphic until it 'meets' the height and width of our 'viewPort'
+
+
 ## React hook form
 - currently not active correct with Controller => use **reset(defaultValues)**
 ## React Select 
@@ -65,3 +84,8 @@ return () => {
 ```
 => fix **z-index**: focus-within:z-20
 ![[Pasted image 20240919195349.png]]
+
+
+# Trick
+## Border radius
+![[Pasted image 20241121102443.png]]

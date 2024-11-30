@@ -22,6 +22,13 @@ Inser into grades_org select floor(random()*100) from generate_series (0, 100000
 	 - **CAST**:  (1 as float) / 2
 	 - **CONVERT**: (FLOAT , 1) / 2
 	 - **Multiply By 1.0**:  (1 * 1.0) / 2
+---
+- DATEPART: get day, year, second from date
+- DATEDIFF
+- DATEDIFF_BIG: milliseconds
+- CONVERT(DATE, @Datetime): convert date to start date
+- DATEFROMPARTS(@Year, @Month, @Day): create date
+- DATETIMEFROMPARTS(@Year, @Month, @Day, @Hour, @Minute, @Second, @Milliseconds)
 ## Database Pages
 ### A Pool of Pages
 - Database thường sử dụng fixed-size pages để store data
@@ -362,8 +369,10 @@ Và khi tôi làm điều đó, tôi sẽ kiểm tra, hãy chọn tất cả t�
 
 # Example
 - https://www.sqlclimber.com/assignment/fva93g/customer:-all-orders
-![[Pasted image 20241109171752.png]]
 
+### Order
+
+![[Pasted image 20241109172200.png]]
 ```sql
 /*
     Select detail of the last customer order:
@@ -423,11 +432,6 @@ GROUP BY c.Customer, o.OrderDate
 ```
 
 
-
-
----
-
-![[Pasted image 20241109172200.png]]
 ```sql
 /*
     Filter products by user filter: @Brand, @PriceFrom, @PriceTo
@@ -550,4 +554,177 @@ SET pp.NewUnitPrice = CEILING(pp.NewUnitPrice)
 FROM @PreparePrice pp
 WHERE pp.NewUnitPrice > 100
 
+```
+
+---
+
+```sql
+/*
+    There is declared the flight date.
+    Calculate how many years, months, and days have passed since this date till today.
+*/
+DECLARE @Flight DATE = '1927-05-21'
+DECLARE @Today DATE = GETDATE()
+
+
+
+DECLARE @Months INT = DATEDIFF(MONTH, @Flight, @Today)
+
+IF DATEADD(MONTH, @Months, @Flight) > @Today
+	SET @Months = @Months - 1
+
+SET @Flight = DATEADD(MONTH, @Months, @Flight)
+
+DECLARE @Days INT = DATEDIFF(DAY, @Flight, @Today)
+
+SELECT [Spirit of St. Louis] = 
+	'The first solo nonstop transatlantic flight was ' + 
+    CONVERT(NVARCHAR, @Months / 12) + ' years, ' + 
+    CONVERT(NVARCHAR, @Months % 12) + ' months, and ' + 
+    CONVERT(NVARCHAR, @Days) + ' days ago.' 
+```
+
+### Flight
+![[Pasted image 20241111222755.png]]
+
+```sql
+/*
+    There is schema Travel with tables: Airport, Flight, and Company.
+    Find direct flights from @Origin to @Destination and return flights from @Destination back to @Origin.
+    @FlightDate is a date when you want to leave the @Origin.
+    @NightInBeijing is a number of nights you want to stay on holiday.
+*/
+DECLARE @Origin NVARCHAR(100) = 'Los Angeles'
+DECLARE @Destination NVARCHAR(100) = 'Beijing'
+DECLARE @FlightDate DATE = DATEADD(DAY, 3, GETDATE())
+DECLARE @NightInBeijing INT = 10
+
+
+SELECT 
+Flight = Format(f1.DepartureTime, 'dd MMM, HH:mm, ') + UPPER(a1.City)+' -> ' + UPPER(a2.City),
+ReturnFlight = Format(f2.DepartureTime, 'dd MMM, HH:mm, ') + UPPER(a2.City)+' -> ' + UPPER(a3.City)
+FROM Travel.Flight f1
+JOIN Travel.Airport a1 ON a1.Id=f1.DepartureAirportId and a1.City=@Origin and CAST(f1.DepartureTime AS DATE)=@FlightDate
+JOIN Travel.Airport a2 ON a2.Id= f1.ArrivalAirportId and a2.City=@Destination
+JOIN Travel.Flight f2 ON f2.DepartureAirportId=a2.Id and a2.City=@Destination
+JOIN Travel.Airport a3 ON a3.Id=f2.ArrivalAirportId and a3.City=@Origin and 
+CAST(f2.DepartureTime AS DATE)= DATEADD(DAY, @NightInBeijing + DATEDIFF(DAY, f1.DepartureTime, f1.ArrivalTime), @FlightDate)
+and f2.DepartureAirportId=f1.ArrivalAirportId
+```
+
+
+```sql
+/*
+    There is schema Travel with tables: Airport, Flight, and Company.
+    Find the first flights from @CurrentTime from @Origin to declared @Destinations.
+*/
+DECLARE @Today DATE = GETDATE()
+DECLARE @CurrentTime DATETIME = DATEADD(HOUR, 19, CONVERT(DATETIME, @Today))
+DECLARE @Origin NVARCHAR(100) = 'London'
+DECLARE @Destinations TABLE (City NVARCHAR(100))
+
+INSERT INTO @Destinations (City)
+VALUES ('Madrid'), ('Frankfurt'), ('Dubai'), ('Tokyo')
+
+
+SELECT [Date],
+Flight,
+Departure, 
+Arrival, 
+Airline
+FROM (
+    SELECT
+        [Date] = CONVERT(DATE,f.DepartureTime),
+        Flight = UPPER(@Origin) + ' -> ' + UPPER(d.City),
+        Departure = FORMAT(f.DepartureTime, 'HH:mm'),
+        Arrival = FORMAT(f.ArrivalTime, 'HH:mm'),
+        Airline = c.Name,
+        ROW_NUMBER() OVER (PARTITION BY d.City ORDER BY f.DepartureTime ASC) AS Position
+    FROM Travel.Flight f
+    JOIN Travel.Airport a1 ON a1.Id = f.DepartureAirportId
+    JOIN Travel.Airport a2 ON a2.Id = f.ArrivalAirportId
+    JOIN @Destinations d ON d.City = a2.City
+    JOIN Travel.Company c ON c.Id = f.CompanyId
+    WHERE a1.City = @Origin AND f.DepartureTime >= @CurrentTime
+) AS FlightList
+WHERE Position < 2
+ORDER BY [Date], Departure;
+```
+
+```sql
+/*
+    There is schema Travel with tables: Airport, Flight, and Company.
+    Select the rank of 10 longest flights from the @Country.
+*/
+DECLARE @Country NVARCHAR(100) = 'Singapore'
+
+
+/* C1
+SELECT
+	RankNumber = RANK() OVER (ORDER BY x.FlightTimeInMinute DESC)
+   ,x.Flight
+   ,FlightTime = FORMAT(x.FlightTimeInMinute / 60, '00') + ':' +
+				 FORMAT(x.FlightTimeInMinute % 60, '00')
+FROM
+(
+	SELECT DISTINCT TOP 10
+		Flight = departure.City + ' -> ' + arrival.City
+	   ,FlightTimeInMinute = DATEDIFF(MINUTE, f.DepartureTime, f.ArrivalTime)
+	FROM Travel.Airport departure
+	JOIN Travel.Flight f ON f.DepartureAirportId = departure.Id
+	JOIN Travel.Airport arrival ON arrival.Id = f.ArrivalAirportId
+	JOIN Travel.Company c ON c.Id = f.CompanyId
+	WHERE departure.Country = @Country
+	ORDER BY FlightTimeInMinute DESC
+) x
+*/
+
+// C2
+SELECT TOP 10 RankNumber = Rank() OVER (ORDER BY DIFF DESC), Flight, FlightTime =  CONCAT( FORMAT(DIFF / 60, '00'), ':', FORMAT(DIFF % 60, '00'))  FROM (
+    SELECT 
+        DIFF = DATEDIFF(MINUTE, f.DepartureTime, f.ArrivalTime),
+        Position = ROW_NUMBER() OVER (PARTITION BY a.City, a2.City, DATEDIFF(MINUTE, f.DepartureTime, f.ArrivalTime) ORDER BY a.City, a2.City ASC),
+        FlightDeparture = f.DepartureTime,
+        Flight = a.City + ' -> ' + a2.City
+        FROM Travel.Flight f 
+        JOIN Travel.Airport a ON a.Id = f.DepartureAirportId 
+        JOIN Travel.Airport a2 ON a2.Id = f.ArrivalAirportId
+        WHERE a.Country = @Country
+) as FlightTable
+WHERE Position < 2
+ORDER BY RankNumber, Flight
+```
+
+
+```sql
+/*
+    There is schema Travel with tables: Airport, Flight, and Company.
+    Find connecting flights from @Origin to @Destination.
+    @Date is a date when you want to leave the @Origin.
+    @MinStopoverHours is the minimal time to make a transfer to connecting flight.
+    @MaxStopoverHours is the maximal time that you want to spend at the airport.
+*/
+DECLARE @Origin NVARCHAR(100) = 'New York'
+DECLARE @Destination NVARCHAR(100) = 'Beijing'
+DECLARE @Date DATE = DATEADD(DAY, 1, GETDATE())
+DECLARE @MinStopoverHours INT = 1
+DECLARE @MaxStopoverHours INT = 10
+
+SELECT
+	Flight = origin.City + ' (' + FORMAT(flight.DepartureTime, 'HH:mm') + ') -> ' + 
+		     stopover.City + ' (' + FORMAT(flight.ArrivalTime, 'HH:mm') + ')' 
+   ,ConnectingFlight = stopover.City + ' (' + FORMAT(connectingFlight.DepartureTime, 'HH:mm') + ') -> ' + 
+					   destination.City + ' (' + FORMAT(connectingFlight.ArrivalTime, 'HH:mm') + ')'
+   ,[Time] = FORMAT(DATEDIFF(MINUTE, flight.DepartureTime, connectingFlight.ArrivalTime) / 60, '00') + ':' +
+			 FORMAT(DATEDIFF(MINUTE, flight.DepartureTime, connectingFlight.ArrivalTime) % 60, '00')
+FROM Travel.Airport origin
+JOIN Travel.Flight flight ON flight.DepartureAirportId = origin.Id
+JOIN Travel.Airport stopover ON stopover.Id = flight.ArrivalAirportId
+JOIN Travel.Flight connectingFlight ON connectingFlight.DepartureAirportId = stopover.Id
+							       AND connectingFlight.DepartureTime >= DATEADD(HOUR, @MinStopoverHours, flight.ArrivalTime)
+								   AND connectingFlight.DepartureTime <= DATEADD(HOUR, @MaxStopoverHours, flight.ArrivalTime)
+JOIN Travel.Airport destination ON destination.Id = connectingFlight.ArrivalAirportId
+							   AND destination.City = @Destination
+WHERE origin.City = @Origin
+  AND CONVERT(DATE, flight.DepartureTime) = @Date
 ```
