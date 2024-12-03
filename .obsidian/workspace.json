@@ -4,33 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5cebe85bc83125d5",
+        "id": "3f1ede08897ae54f",
         "type": "tabs",
         "children": [
           {
-            "id": "b3efd784edd6543b",
+            "id": "39a52d1f3e734e7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IceTea/Programming Language/NodeJS.md",
+                "file": "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NodeJS"
-            }
-          },
-          {
-            "id": "4a92954c55d9b8d0",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Even loop.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Even loop"
+              "title": "CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps"
             }
           }
         ]
@@ -55,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Trình duyệt tệp"
             }
           },
           {
@@ -64,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#v3",
+                "query": "cicd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,7 +60,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Tìm kiếm"
             }
           },
           {
@@ -85,8 +73,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -119,10 +106,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_IceTea/Programming Language/NodeJS.md"
+                "file": "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of NodeJS"
+              "title": "Đề cương của CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps"
             }
           },
           {
@@ -131,12 +118,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_IceTea/Programming Language/FE/Notes.md",
+                "file": "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Notes"
+              "title": "Liên kết đi ra từ CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps"
             }
           },
           {
@@ -159,197 +146,47 @@
             }
           },
           {
-            "id": "925bd7c5384400bb",
+            "id": "15166f724d8fd010",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "Plugin không còn hoạt động"
             }
           },
           {
-            "id": "560e76496678c40b",
+            "id": "d4da69b93d2c97ee",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "Plugin không còn hoạt động"
             }
           },
           {
-            "id": "f8fe1c1b55dc1dd5",
+            "id": "99516e5fa7f85a3d",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "Plugin không còn hoạt động"
             }
           },
           {
-            "id": "73348c489e26fe7a",
+            "id": "ff6a371e31c2444f",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           },
           {
-            "id": "9ded675812ccc3ba",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "9988d420078147aa",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "237d619d9750cecd",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "85f3ada97caadc3b",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "d2c9f562b82bd8de",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "2436f9ed4eddcd8c",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "2e43530819022d77",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "7566e9075bab9161",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "2555b5ce10521423",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "29ba4756ef56c3ac",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "0734ccea99132923",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "c979b03a0b5731cc",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "167425d6bdebe650",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "a3c1386542f6e0ec",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "91f8b890f1798cbf",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "bd2d9b2160b974a0",
+            "id": "a779927748d8112a",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -360,22 +197,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "85a5928567a997e5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "61b01a277225debd",
-            "type": "leaf",
-            "state": {
-              "type": "llm-dictionary-view",
-              "state": {},
-              "icon": "sheets-in-box",
-              "title": "Dictionary View"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -383,14 +204,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "daily-notes:Open today's daily note": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "random-note:Open random note": false,
-      "workspaces:Manage workspace layouts": false,
+      "switcher:Mở bộ chuyển đổi nhanh": false,
+      "graph:Mở xem biểu đồ": false,
+      "canvas:Tạo bảng mới": false,
+      "daily-notes:Mở ghi chú hôm nay": false,
+      "templates:Chèn mẫu": false,
+      "command-palette:Mở khay lệnh": false,
+      "random-note:Mở ghi chú ngẫu nhiên": false,
+      "workspaces:Quản lý cấu trúc khung làm việc": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "omnisearch:Omnisearch": false,
@@ -398,8 +219,40 @@
       "open-gate:GPT": false
     }
   },
-  "active": "b3efd784edd6543b",
+  "active": "f540bab4eea88763",
   "lastOpenFiles": [
+    "_IceTea/Devops/CI-CD.md",
+    "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md",
+    "Clippings",
+    "_IceTea/Devops/assets/Pasted image 20241202231403.png",
+    "_IceTea/FE/Performance Patterns.md",
+    "_IceTea/Config.md",
+    "_IceTea/Code 101.md",
+    "_IceTea/Git.md",
+    "_IceTea/assets/Pasted image 20241201225503.png",
+    "HackMD/Programming/Typescript.md",
+    "HackMD/IT Helper - Bug.md",
+    "HackMD/IT Helper.md",
+    "HackMD/Hệ điều hành.md",
+    "HackMD/Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes.md",
+    "HackMD/Programming/DOM, ES6, Promise, Async và Await.md",
+    "HackMD/Programming/C#.md",
+    "HackMD/Android.md",
+    "HackMD/Bookmark.md",
+    "_IceTea/FE/Reactjs.md",
+    "_IceTea/Road Map/Road Map.md",
+    "_IceTea/FE/assets/Pasted image 20241121102443.png",
+    "_IceTea/FE/Notes.md",
+    "_IceTea/BE/NodeJS.md",
+    "_IceTea/assets/bundle.mp4",
+    "_IceTea/assets/even-loop.mp4",
+    "bun.md",
+    "_IceTea/Design Principles in Software Development.md",
+    "Work/Varmeta/Note.md",
+    "_IceTea/Vim.md",
+    "_IceTea/BE/Kotlin And Android.md",
+    "HackMD/Database/MongoDB & Mongoose.md",
+    "HackMD/Database/Sequelize.md",
     "_IceTea/assets/fetch4.mp4",
     "_IceTea/assets/fetch4.mp4.crdownload",
     "_IceTea/assets/fetch3.mp4",
@@ -407,45 +260,13 @@
     "_IceTea/assets/fetch2.mp4",
     "_IceTea/assets/fetch2.mp4.crdownload",
     "_IceTea/assets/fetch.mp4",
-    "_IceTea/assets/fetch.mp4.crdownload",
-    "_IceTea/assets/ExSetTimeOut.mp4",
-    "_IceTea/assets/ExSetTimeOut.mp4.crdownload",
-    "_IceTea/assets/taskqueue-to-callback.mp4",
     "_IceTea/assets/webapis-wait.png",
-    "_IceTea/Programming Language/assets/Pasted image 20241130122729.png",
-    "Excalidraw/Even loop.md",
+    "_IceTea/BE/assets/Pasted image 20241130122729.png",
     "Excalidraw/assets/Pasted Image 20241130111332_088.png",
     "Excalidraw/assets/Pasted Image 20241130111332_011.png",
-    "_IceTea/Programming Language/NodeJS.md",
-    "Excalidraw/Untitled.md",
-    "_IceTea/Programming Language/assets/Pasted image 20241130085029.png",
-    "_IceTea/Programming Language/assets/Pasted image 20241130085011.png",
-    "_IceTea/Programming Language/FE/Notes.md",
-    "_IceTea/Programming Language/FE/assets/Pasted image 20241121102443.png",
-    "_IceTea/Programming Language/FE/assets/Pasted image 20241120163112.png",
-    "Blog/FE.md",
-    "English/Book/Docs.md",
-    "_IceTea/Database/Fundamentals of Database Engineering.md",
-    "_IceTea/Devops/Docker.md",
-    "_IceTea/Database/assets/Pasted image 20241109171752.png",
-    "_IceTea/Database/assets/Pasted image 20241111222755.png",
-    "_IceTea/Database/Redis.md",
-    "_IceTea/Road Map/Database - Postgres.md",
-    "En.md",
-    "_IceTea/Road Map/Api.md",
-    "_IceTea/Road Map/Back end.md",
-    "_IceTea/Road Map.md",
-    "Group Voca.md",
-    "Vocabulary.md",
-    "Voca - Grama.md",
-    "_IceTea/Programming Language/Nodejs And ExpressJs.md",
-    "Voca/Untitled Kanban.md",
-    "Voca/Voca.md",
-    "English/Common.md",
-    "English/Think English.md",
-    "English/Grammar/Grammar.md",
-    "English/Grammar/voca.md",
-    "Blog/Experience.md",
+    "_IceTea/BE/assets/Pasted image 20241130085029.png",
+    "_IceTea/BE/assets/Pasted image 20241130085011.png",
+    "_IceTea/FE/assets/Pasted image 20241120163112.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

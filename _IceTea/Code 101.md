@@ -2,12 +2,9 @@
 title: Code 101
 
 ---
-
+![[Pasted image 20241201225503.png]]
 ```
 # Check isPng
-
-![](https://i.imgur.com/vHKeUI6.png)
-
 
 ```javascript=
 <!DOCTYPE html>
