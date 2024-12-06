@@ -1,5 +1,7 @@
 - `du -h --max-depth=3 Dev | sort -hr`  => check size folder when size folder increase sudden
 - `sudo du -sh /* 2>/dev/null`
+- `sudo find /var/lib/docker/volumes/db_events_mssql/_data/log/ -name "core.sqlservr.*.gdmp" -delete -print` : remove file 
+- `sudo find /var -type f -size +1G -exec du -h {} + | sort -rh`: find file have size > 1G in folder /var
 ### Kill port
 - lsof -i :<name_port?
 - kill -9 name_id (từ lsof)

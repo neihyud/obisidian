@@ -151,8 +151,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -164,9 +164,19 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
+          },
+          {
+            "id": "45f2fee31057f631",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -189,7 +199,7 @@
       "open-gate:GPT": false
     }
   },
-  "active": "2507ef4e833446f5",
+  "active": "45f2fee31057f631",
   "lastOpenFiles": [
     "Clippings/Gitlab CI CD.md",
     "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md",
