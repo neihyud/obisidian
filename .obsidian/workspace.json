@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3f1ede08897ae54f",
+        "id": "bde52c0eaeebc82d",
         "type": "tabs",
         "children": [
           {
-            "id": "39a52d1f3e734e7e",
+            "id": "2507ef4e833446f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md",
+                "file": "_IceTea/Config.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps"
+              "title": "Config"
             }
           }
         ]
@@ -43,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Trình duyệt tệp"
+              "title": "Files"
             }
           },
           {
@@ -106,10 +106,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md"
+                "file": "Clippings/Gitlab CI CD.md"
               },
               "icon": "lucide-list",
-              "title": "Đề cương của CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps"
+              "title": "Outline of Gitlab CI CD"
             }
           },
           {
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_IceTea/Programming Language/FE/Notes.md",
+                "file": "Clippings/Gitlab CI CD.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,41 +142,11 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Notes"
+              "title": "Backlinks for Gitlab CI CD"
             }
           },
           {
-            "id": "15166f724d8fd010",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin không còn hoạt động"
-            }
-          },
-          {
-            "id": "d4da69b93d2c97ee",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin không còn hoạt động"
-            }
-          },
-          {
-            "id": "99516e5fa7f85a3d",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin không còn hoạt động"
-            }
-          },
-          {
-            "id": "ff6a371e31c2444f",
+            "id": "3bec9a7542eb068c",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -186,7 +156,7 @@
             }
           },
           {
-            "id": "a779927748d8112a",
+            "id": "cf640af75c0be012",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -196,7 +166,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -204,14 +174,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Mở bộ chuyển đổi nhanh": false,
-      "graph:Mở xem biểu đồ": false,
-      "canvas:Tạo bảng mới": false,
-      "daily-notes:Mở ghi chú hôm nay": false,
-      "templates:Chèn mẫu": false,
-      "command-palette:Mở khay lệnh": false,
-      "random-note:Mở ghi chú ngẫu nhiên": false,
-      "workspaces:Quản lý cấu trúc khung làm việc": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "omnisearch:Omnisearch": false,
@@ -219,10 +189,11 @@
       "open-gate:GPT": false
     }
   },
-  "active": "f540bab4eea88763",
+  "active": "2507ef4e833446f5",
   "lastOpenFiles": [
-    "_IceTea/Devops/CI-CD.md",
+    "Clippings/Gitlab CI CD.md",
     "Clippings/CICD là gì? Lợi ích của việc thành thạo CICD trong DevOps.md",
+    "_IceTea/Devops/CI-CD.md",
     "Clippings",
     "_IceTea/Devops/assets/Pasted image 20241202231403.png",
     "_IceTea/FE/Performance Patterns.md",
@@ -252,7 +223,6 @@
     "_IceTea/Vim.md",
     "_IceTea/BE/Kotlin And Android.md",
     "HackMD/Database/MongoDB & Mongoose.md",
-    "HackMD/Database/Sequelize.md",
     "_IceTea/assets/fetch4.mp4",
     "_IceTea/assets/fetch4.mp4.crdownload",
     "_IceTea/assets/fetch3.mp4",

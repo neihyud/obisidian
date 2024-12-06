@@ -1,3 +1,5 @@
+- `du -h --max-depth=3 Dev | sort -hr`  => check size folder when size folder increase sudden
+- `sudo du -sh /* 2>/dev/null`
 ### Kill port
 - lsof -i :<name_port?
 - kill -9 name_id (từ lsof)
