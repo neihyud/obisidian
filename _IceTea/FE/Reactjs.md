@@ -7,6 +7,8 @@ tags: [Web, Framework]
 ###### tags: `Web` `Framework` 
 # Reactjs
 
+- React will render all nested components if a state update happen 
+
 # **Rules of HOOKS**
 
 - Chỉ gọi react hooks trong React Functions

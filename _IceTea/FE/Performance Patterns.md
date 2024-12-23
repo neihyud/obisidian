@@ -1,3 +1,12 @@
+- Server send response contain HTML -> browser parse HTML to DOM, init request when find external resource , if request block, parse HTML will pause until resource import handled
+- -> after build DOM -> build CSSOM
+
+```
+Performance tips include 
+1) minimizing the number of critical resources by deferring non-critical ones' download, marking them as async, or eliminating them altogether, 
+2) optimizing the number of requests required along with the file size of each request 
+3) optimizing the order in which critical resources are loaded by prioritizing the downloading of critical assets, thereby shortening the critical path length.
+```
 # Bundle splitting
 - when build a modern web, bundler take souce and bundle this together into one or more bundles -> user visits a website, the bundle is **requested** and **loaded** in order to display the data to the user’s screen.
 - The UI only becomes interactive after the bundle has been loaded and executed
