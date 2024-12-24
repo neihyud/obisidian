@@ -1,11 +1,25 @@
 # Devops for fresh
+- **`/etc`**: chứa tất cả file config
 - **`sudo -i`**: vào chế độ sudo
-- **config server**: `vi /etc/netplan/00-installer-config.yml`
-	- ens33: dhcp4 = true -> tự động cấp ip -> khi tắt server bật lại thì ip sẽ thay đổi
+- **config server**: **`vi /etc/netplan/00-installer-config.yml`**
+	- **ens33**: dhcp4 = true -> tự động cấp ip -> khi tắt server bật lại thì ip sẽ thay đổi
+```js
+network:
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses: [172.16.42.128/24]
+      gateway4: 172.16.42.2 -> lấy từ vmware edit
+      nameservers:
+            addresses: [8.8.8.8, 8.8.4.4] -> address google
+  version: 2
+```
+=> run `netplan apply` để áp dụng
 - **`free -m`**: trạng thái sử dụng Ram
 - **`df -h /`**: check server còn trống bao nhiều disk
 - **`hostnamectl set-hostname <name>`**: đổi tên server (-> reboot để áp dụng cập nhập)
-- **`netstat -tlpun`**: 
+- **`etc/hostname`**: config hostname (-> reboot để áp dụng cập nhập)
+- **`netstat -tlpun`**: liệt kê các kết nối mạng và các cổng mạng đang hoạt động trên hệ 
 	- **`-t`**: Hiển thị các kết nối sử dụng giao thức TCP.
 	- **`-l`**: Chỉ liệt kê các cổng đang ở trạng thái "lắng nghe" (listening).
 	- **`-p`**: Hiển thị tiến trình (process) liên kết với các cổng.
@@ -40,7 +54,8 @@
 
 ## Tư duy triển khai dự án
 - Triển khai càng nhiều dự án: <font color="#ff0000">sử dụng thư mục riêng</font> và <font color="#ff0000">user riêng cho từng dự án</font>
-	- công cụ là gì?
+	- công cụ là gì? 
+		- version của công cụ phải lớn hơn version của dự án -> check file config để lấy version của dự án
 	- file cấu hình ở đâu?
 	- làm sao để build? (how to build )
 	- làm sao để run?
@@ -66,7 +81,7 @@
 
 => Để một app chạy trên nginx
 - tạo file: **vi conf.d/todolist.conf** -> tạo file **todolist.conf** trong folder **conf.d**
-```conf.d
+```js
 server qi
 	listen 8081;
 	root /projects/todolist/dist; (path folder tạo ra sau khi run build)
@@ -80,7 +95,7 @@ server qi
 ### service
 - exit
 - **`vi /lib/systemd/system/vision.service`**: 
-```
+```js
 [Service]
 Type=simple
 User=vision -> vision: name user
@@ -91,3 +106,49 @@ ExecStart=npm run start -- --port=3000
 - `systemctl daemon-reload`
 - `systemctl start vision`
 - `systemctl status vision`
+## Triển khai dự án Backend
+1. Cài đặt công cụ cần thiết -> công cụ
+	1. how to build ....
+2. Xem và sửa file cấu hình -> file cấu hình  (pom.xml)
+3. Cài đặt và thiết lập database -> công cụ
+	-  config database spring boot (**application.properties**)
+	- config port db: **`/etc/mysql/mariadb.conf.d/50-server.cnf`** -> bind address 0.0.0.0 -> restart mariadb
+	- Access database:
+		- **`mysql -u root`** => **`create database shoeshop;`** => **`create user 'shoeshop'@'%' identified by 'shoeshop';`** (tạo user shoeshop có quyền truy cập vào all db với password shoeshop)
+		- **`grant all privileges on shoeshop.* to 'shoeshop'@'%';`**: gán quyền cho user có thể tác động lên db
+		- **`flush privileges;`** -> lưu quyền thay đổi
+		- **`mysql -h 172.16.42.128 -P 3306 -u shoeshop -p`**
+			- -h: host
+			- -P: port
+			- -u: user
+			- -p: password
+		- **`source <path_to_.sql>`** -> run file .sql
+1. Build dự án -> build
+	- **`mvn install --h`**: help
+	- **`mvn install -DskipTests=true`**
+		- DskipTests: bỏ qua test của maven
+	- **`java -jar target/<file.jar>`** -> 
+		- build (**`nohup java -jar target/<file.jar>  2>&1 &`**): out put nohub và run background
+			- **nohup**: cho phép run process background
+			- **2>&1**:  Kết hợp cả thông báo lỗi và thông báo bình thường vào cùng một nơi (thường là file log hoặc terminal).
+				- **`2`**: Tượng trưng cho "luồng lỗi chuẩn" (standard error).
+				- **`>&1`**: Chuyển hướng luồng lỗi chuẩn (stderr) sang luồng đầu ra chuẩn (stdout).
+	- **`ps -ef | grep`**: 
+		- **`ps -ef`**: process
+		- | : output của câu lệnh trước là input của câu lệnh sau
+	- **`kill -p <id_process>`**: -9 - buộc dừng
+1. Run dự án -> run
+2. Kiểm soát hoạt động -> check
+
+# Gitlab
+- create gitlab server: clone server
+	- **/etc/netplan/00-installer-config.yml**: config server [[#Devops for fresh]]
+- Access gitlab by domain but not have domain -> use add host
+	- **`vi /etc/hosts`** : thêm domain (`172.16.42.124 <name>`) -> 
+	- `vi /etc/gitlab/gitlabrc`: sửa cầu hình gitlab -> gitlab-ctl reconfigure
+	-> cần sửa trên nền tảng để có thể sử dụng hostname tự tạo:
+		- linux: /etc/hosts
+```js
+- curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+- sudo apt-get install gitlab-ee=14.4.1-ee.0
+```
