@@ -135,10 +135,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_IceTea/Devops/DevopsEdu/Devops.md"
+                "file": "_IceTea/FE/Notes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Devops"
+              "title": "Outline of Notes"
             }
           },
           {
@@ -360,12 +360,62 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "0adfacb7fd2e6644",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "6d15130d5885b2bb",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "4c830fbc42219a97",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "3e652c29c9420471",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "f67104937985bf93",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 27
       }
     ],
     "direction": "horizontal",
@@ -388,17 +438,28 @@
       "open-gate:GPT": false
     }
   },
-  "active": "a100a5321106a2ec",
+  "active": "f67104937985bf93",
   "lastOpenFiles": [
-    "_IceTea/Devops/assets/docker_ecosystem.png",
+    "_IceTea/Config.md",
+    "_IceTea/Design Principles in Software Development.md",
+    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
+    "_IceTea/Git.md",
+    "_IceTea/Monorepo.md",
+    "_IceTea/Question - Interview.md",
+    "_IceTea/Regex.md",
+    "_IceTea/Vim.md",
+    "_IceTea/FE/Notes.md",
+    "_IceTea/FE/assets/Pasted image 20241226102522.png",
     "_IceTea/Devops/DevopsEdu/Devops.md",
+    "_IceTea/Devops/DevopsEdu/assets/Pasted image 20241226000536.png",
+    "_IceTea/Devops/DevopsEdu/assets",
+    "_IceTea/Devops/assets/docker_ecosystem.png",
     "_IceTea/Devops/Makefile.md",
     "_IceTea/Devops/DevopsEdu",
     "_IceTea/Devops/CI-CD.md",
     "_IceTea/Devops/Kubernetes.md",
     "_IceTea/Devops/Docker.md",
     "_IceTea/FE/Reactjs.md",
-    "_IceTea/FE/Notes.md",
     "_IceTea/FE/NextJS.md",
     "_IceTea/FE/How does a computer find and display a web page?.md",
     "English/Book/Docs.md",
@@ -409,16 +470,9 @@
     "Books/Atomatic Habits.md",
     "Blog/IS-PORTAL.md",
     "Vocabulary.md",
-    "_IceTea/Git.md",
-    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
-    "_IceTea/Design Principles in Software Development.md",
     "_IceTea/Code 101.md",
     "_IceTea/FE/Performance Patterns.md",
     "_IceTea/FE/assets/Pasted image 20241209164538.png",
-    "_IceTea/BE/Kotlin And Android.md",
-    "Blog/Experience.md",
-    "English/Grammar/Grammar.md",
-    "Excalidraw/Demo.md",
     "Clippings",
     "_IceTea/Devops/assets/Pasted image 20241202231403.png",
     "_IceTea/assets/Pasted image 20241201225503.png",
@@ -430,12 +484,8 @@
     "_IceTea/assets/fetch3.mp4",
     "_IceTea/assets/fetch3.mp4.crdownload",
     "_IceTea/assets/fetch2.mp4",
-    "_IceTea/assets/fetch2.mp4.crdownload",
     "_IceTea/assets/webapis-wait.png",
     "_IceTea/BE/assets/Pasted image 20241130122729.png",
-    "Excalidraw/assets/Pasted Image 20241130111332_088.png",
-    "Excalidraw/assets/Pasted Image 20241130111332_011.png",
-    "_IceTea/BE/assets/Pasted image 20241130085029.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

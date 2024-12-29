@@ -1,3 +1,8 @@
+![[Pasted image 20241226102522.png]]
+```
+document.querySelectorAll('*').length;
+=> show page có bao nhiêu DOM (một page nên có tối đa 1400 DOM)
+```
 
 ## Show Less and Show More
 ![[Pasted image 20240828113706.png]]

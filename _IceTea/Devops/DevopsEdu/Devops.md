@@ -145,10 +145,112 @@ ExecStart=npm run start -- --port=3000
 	- **/etc/netplan/00-installer-config.yml**: config server [[#Devops for fresh]]
 - Access gitlab by domain but not have domain -> use add host
 	- **`vi /etc/hosts`** : thêm domain (`172.16.42.124 <name>`) -> 
-	- `vi /etc/gitlab/gitlabrc`: sửa cầu hình gitlab -> gitlab-ctl reconfigure
+	- `vi /etc/gitlab/gitlab.rb`: sửa cầu hình gitlab -> gitlab-ctl reconfigure
 	-> cần sửa trên nền tảng để có thể sử dụng hostname tự tạo:
 		- linux: /etc/hosts
 ```js
 - curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 - sudo apt-get install gitlab-ee=14.4.1-ee.0
 ```
+
+# CI/CD
+![[Pasted image 20241226000536.png]]
+- Mỗi stage sẽ xóa sạch code cũ ở stage trước:
+		- sử dụng variables: GIT_STRATEGY: clone ở stage: build và GIT_STRATEGY: none ở deploy
+- Cài đặt công cụ tự động: ex: Gitlab runner
+	- https://docs.gitlab.com/runner/install/linux-repository.html
+- Viết config file: .gitlab-ci.yml
+
+- Gitlab: set ci/cd
+		- setting -> ci/cd -> runners (vào server - terminal: gitlab-runner register) -> vào file config **`/etc/gitlab-runners/config.f`** chỉnh concurrencies thành 4 -> 
+	1. **gitlab-runner run --working-directory /home/gitlab-runner/ --config /etc/gitlab-runner/config.toml --service gitlab-runner  --user gitlab-runner**
+	- nên sử dụng để  chạy background -> **nohup gitlab-runner run --working-directory /home/gitlab-runner/ --config /etc/gitlab-runner/config.toml --service gitlab-runner  --user gitlab-runner 2>&1 &**
+	2. vào lại gitlab runner, chọn edit runnner vừa chạy bỏ checked "Lock to current project" vì mình cho phép chạy nhiều project trên runner
+- Để chạy sudo không cần password, cần config
+	- **`visudo`**: dưới config: "user privilege specification" 
+		- **giltab-runner ALL=(ALL) ALL **
+			- all: áp dụng cho tất cả máy chủ hoặc địa chỉ host
+			- (ALL): thực thi với bất kỳ quyền nào
+			- ALL: cho phép thực thi tất cả các lệnh
+			-> thêm 3 câu lệnh dưới
+		- gitlab-runner ALL=(ALL) NOPASSWD: /bin/cp*
+		- gitlab-runner ALL=(ALL) NOPASSWD: /bin/chown*
+		- gitlab-runner ALL=(ALL) NOPASSWD: /bin/su shopshoe
+		- *gitlab-runner ALL=(ALL) NOPASSWD: /bin/kill*
+- tạo folder `/datas/shoeshop`: -> chuyển file run (target/file) vào nó
+- Các bước thực hiện, sau khi build:
+	- chuyển file build ra thư mục riêng: `sudo cp target/file /datas/shoeshop`
+	- thay đổi quyền sở hữu: `sudo chown shoeshop. /datas/shoeshop` -> default permission shoeshop=shoeshop
+	- chuyển quyền quyền user: `sudo su shoeshop -c "cd /datas/shoeshop; nohup java -jar target/ "` -> chuyển quyền, run câu lệnh
+	- run file
+- `kill -9 $(ps -ef | grep shoe-ShoppingCart-0.0.1-SNAPSHOT.jar | grep -v grep | awk '{print $2}')`
+
+
+```
+variables:
+	- projectname: shoe-ShoppingCart
+	- version: 0.0.1-SNAPSHOT
+	- projectuser: shoeshop
+	- projectpath: /datas/$projectuser
+
+stages:
+	- build
+	- deploy
+	- checklog
+	- 
+build:
+	stage: build
+	variables:
+	GIT_STRATEGY: clone  #kéo code về, vì mỗi khi run một stage thì code trước bị xóa
+	script:
+		- mvn install -DskipTests=true
+	tags:
+		- lab-server
+	only:
+		- tags
+	
+deploy:
+	stage: deploy
+	variables:
+	GIT_STRATEGY: none
+	script:
+		- sudo cp target/$projectname-$version.jar $projectpath
+        - sudo chown -R $projectuser. $projectpath
+        - sudo kill -9 $(ps -ef | grep shoe-ShoppingCart-0.0.1-SNAPSHOT.jar | grep -v grep | awk '{print $2}') -> kill port đang running
+        - sudo su $projectuser -c "cd $projectpath; nohup java -jar target/$projectname-$projectpath.jar >nohup.out 2>&1 &"
+	tags:
+		- lab-server
+	only:
+		- tags -> khi nào có tag thì mới run deploy
+		
+checklog:
+	stage: checklog
+	variables:
+	GIT_STRATEGY: none
+	script:
+	- sudo su $projectuser -c "cd $projectpath; tail -n 1000 nohup.out"
+	tags:
+	- lab-server
+	only:
+	- tags
+```
+
+
+# Docker
+```
+#!/bin/bash
+
+sudo apt update
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install -y docker-ce
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker --version
+docker-compose --version
+```
+- create file `install-docker.sh` -> run file to install docker
