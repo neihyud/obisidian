@@ -1,7 +1,10 @@
+- `sudo passwd`: để đổi mật khẩu
+- `sudo nano /etc/pam.d/common-password`: sửa file config password
+	- `password requisite pam_unix.so obscure sha512` -> `password requisite pam_unix.so sha512 minlen=1`
 # Devops for fresh
 - **`/etc`**: chứa tất cả file config
 - **`sudo -i`**: vào chế độ sudo
-- **config server**: **`vi /etc/netplan/00-installer-config.yml`**
+- **config server**: **`vi /etc/netplan/00-installer-config.yaml`**
 	- **ens33**: dhcp4 = true -> tự động cấp ip -> khi tắt server bật lại thì ip sẽ thay đổi
 ```js
 network:
@@ -122,7 +125,7 @@ ExecStart=npm run start -- --port=3000
 			- -P: port
 			- -u: user
 			- -p: password
-		- **`source <path_to_.sql>`** -> run file .sql
+		-  `use <database>`  ->   `source <path_to_.sql>` -> run file .sql
 1. Build dự án -> build
 	- **`mvn install --h`**: help
 	- **`mvn install -DskipTests=true`**
@@ -141,6 +144,9 @@ ExecStart=npm run start -- --port=3000
 2. Kiểm soát hoạt động -> check
 
 # Gitlab
+- Thêm một server
+	- `/etc/netplan/00-installer-config.yml`: 
+	- `/etc/hostname`
 - create gitlab server: clone server
 	- **/etc/netplan/00-installer-config.yml**: config server [[#Devops for fresh]]
 - Access gitlab by domain but not have domain -> use add host
@@ -237,6 +243,7 @@ checklog:
 
 
 # Docker
+- File install docker: install-docker.sh
 ```
 #!/bin/bash
 
@@ -254,3 +261,78 @@ docker --version
 docker-compose --version
 ```
 - create file `install-docker.sh` -> run file to install docker
+## Dockerfile
+- dockerfile: 
+	- viết cấu hình để đưa source vào container
+	- cài đặt các công cụ cần thiết để sẵn sàng khởi chạy
+- Command
+	- **FROM**: + name docker image -> image chứa một server
+	- **WORKDIR**: chỉ định thư mục làm việc
+	- **COPY**: copy source vào container
+		- copy ..
+			- dấu chấm 1: vị trí hiện tại của dockerfile (copy all file cùng cấp)
+			- dấu chấm 2: vị trí hiện tại trong container (chỉ định của workdir)
+	- **RUN**
+	- **ENV**: 
+	- **EXPOSE**: `server:container`
+	- **CMD**: xác định lệnh và giá trị mặc định
+	- **ENTRYPOINT**: giữ nguyên lệnh cố định và cho phép chạy container khi vào cuối của nó
+- Tối ưu dockerfile:
+	- sử dụng user khác: không sử dụng root
+	- image: 
+		- docker image dựa trên alpine, 
+		- từ các nguồn oficial, verify, sponsor
+		- đúng version dự án
+		--> maven docker image with java 8 alpine
+		-> java docker image version 8: dùng image của aws
+	- sử dụng multipe stage, sử dụng công cụ quét image
+
+```dockerfile
+## build stage ##
+FROM maven:3.5.3-jdk-8-alpine as build -> gán out put bước build vào build
+
+WORKDIR /app
+
+COPY . .
+
+RUN mvn install -DskipTests=true
+
+## run stage ##
+FROM amazoncorretto:8u402-alpine-jre
+WORKDIR /run 
+COPY --from=build /app/target/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar /run/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar -> lấy file build từ bước 'build stage' -> copy vào /run
+
+EXPOSE 8080
+
+ENTRYPOINT java -jar /run/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar
+
+```
+
+```dockerfile
+FROM node:18.18-alpine AS build
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+
+RUN npm run build
+
+FROM nginx:alpine
+
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+```
+
+## Registry Server
+### Dockub
+- Format: docker image = domain/project/repo:tag
+- docker tag shoeshop:v1 neihyud/shoeshop:v1
+### Self-certified: run bằng https
+- install: open-ssl
+### habor: mua domain, vps

@@ -135,10 +135,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_IceTea/FE/Notes.md"
+                "file": "_IceTea/Devops/DevopsEdu/Devops.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Notes"
+              "title": "Outline of Devops"
             }
           },
           {
@@ -175,7 +175,7 @@
             }
           },
           {
-            "id": "3bec9a7542eb068c",
+            "id": "647b6f4d8a897365",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -185,7 +185,7 @@
             }
           },
           {
-            "id": "cf640af75c0be012",
+            "id": "6df5317eddb4524a",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -195,7 +195,7 @@
             }
           },
           {
-            "id": "45f2fee31057f631",
+            "id": "9e33bf7f21fdb76d",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -205,197 +205,7 @@
             }
           },
           {
-            "id": "26ffd5ce8c9e4784",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "8e527f219c5d299d",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "4fda53477f14264b",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "1d793d997b4e2af5",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "315ae80505a13a19",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "3da8897f4a1b556a",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "7b13022befb07d81",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "b022401c96595b09",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "f0fdd3c55de8ce86",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "537114c28a997095",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "8c58bc0cabd7aefc",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "fb95513532b392fd",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "c209cd6078d22106",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "a22832d591966f4c",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "7fa3692c23850787",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "ee19c6b703f57783",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "0adfacb7fd2e6644",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "6d15130d5885b2bb",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "4c830fbc42219a97",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "3e652c29c9420471",
+            "id": "ad7d81f44790b814",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -405,7 +215,7 @@
             }
           },
           {
-            "id": "f67104937985bf93",
+            "id": "a001835ae8cb7365",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -415,7 +225,7 @@
             }
           }
         ],
-        "currentTab": 27
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -438,8 +248,10 @@
       "open-gate:GPT": false
     }
   },
-  "active": "f67104937985bf93",
+  "active": "f540bab4eea88763",
   "lastOpenFiles": [
+    "_IceTea/Django.md",
+    "_IceTea/Devops/DevopsEdu/Devops.md",
     "_IceTea/Config.md",
     "_IceTea/Design Principles in Software Development.md",
     "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
@@ -450,7 +262,6 @@
     "_IceTea/Vim.md",
     "_IceTea/FE/Notes.md",
     "_IceTea/FE/assets/Pasted image 20241226102522.png",
-    "_IceTea/Devops/DevopsEdu/Devops.md",
     "_IceTea/Devops/DevopsEdu/assets/Pasted image 20241226000536.png",
     "_IceTea/Devops/DevopsEdu/assets",
     "_IceTea/Devops/assets/docker_ecosystem.png",
@@ -471,7 +282,6 @@
     "Blog/IS-PORTAL.md",
     "Vocabulary.md",
     "_IceTea/Code 101.md",
-    "_IceTea/FE/Performance Patterns.md",
     "_IceTea/FE/assets/Pasted image 20241209164538.png",
     "Clippings",
     "_IceTea/Devops/assets/Pasted image 20241202231403.png",
