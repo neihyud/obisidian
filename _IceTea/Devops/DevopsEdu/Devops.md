@@ -1,4 +1,4 @@
-- `sudo passwd`: để đổi mật khẩu
+- `sudo passwd <name>`: để đổi mật khẩu
 - `sudo nano /etc/pam.d/common-password`: sửa file config password
 	- `password requisite pam_unix.so obscure sha512` -> `password requisite pam_unix.so sha512 minlen=1`
 # Devops for fresh
@@ -331,8 +331,65 @@ CMD ["nginx", "-g", "daemon off;"]
 
 ## Registry Server
 ### Dockub
-- Format: docker image = domain/project/repo:tag
+- **Format**: docker image = domain/project/repo:tag
 - docker tag shoeshop:v1 neihyud/shoeshop:v1
 ### Self-certified: run bằng https
 - install: open-ssl
+```shell
+# apt get update  
+# apt-get install openssl  
+# mkdir -p /tools/registry/ && cd /tools/registry  
+# mkdir data certs  
+# openssl req -newkey rsa:4096 -nodes -sha256 -keyout certs/domain.key -subj "/CN=<ip>" -addext "subjectAltName = DNS:<ip>,IP:<ip: 172.16.42.120>" -x509 -days 365 -out certs/domain.crt  
+# vi docker-compose.yml
+```
+
+```dockerfile
+version: '3'
+services:
+  registry:
+    image: registry:2
+    restart: always
+    container_name: registry-server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/var/lib/registry
+      - ./certs:/certs
+    environment:
+      REGISTRY_HTTP_TLS_CERTIFICATE: ./certs/domain.crt
+      REGISTRY_HTTP_TLS_KEY: ./certs/domain.key
+```
+
+-> docker-compose up -d
+-> `mkdir -p /etc/docker/certs.d/<ip>:<port>`
+-> `cp certs/domain.crt /etc/docker/certs.d/<ip>:<port>/ca.crt`
+-> `systemctl restart docker`
+-> `docker log <ip>:<port>`
+
+- Ở lab-server cũng phải tạo một folder tương tự
+	- `mkdir -p /etc/docker/certs.d/<ip>:<port>`
+	- ở registry server:`scp certs/domain.crt <user>/<ip>:/home/<user>`
+	- `mkdir -p /etc/docker/certs.d/<ip>:<port>` -> ip giống ở registry server
+	- `cp /home/neihyud/domain.crt /etc/docker/certs.d/<ip-registry>:<port>/ca.crt`
+	- `systemctl restart docker`
+	- `docker login <ip-registry-server>:<port>`
+	- `docker tag shoeshop:v1 <ip-registry>:<port>/neihyud/shoeshop:v1`
+	- `docker push <ip-registry>:<port>/neihyud/shoeshop:v1`
 ### habor: mua domain, vps
+
+# Jenkins
+```jenkins script install
+#!/bin/bash
+
+apt install openjdk-11-jdk -y
+java --version
+wget -p -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5BA31D57EF5975CA
+apt-get update
+apt install jenkins -y
+systemctl start jenkins
+systemctl enable jenkins
+ufw allow 8080
+```

@@ -1,4 +1,7 @@
-s ## Terms
+- [rendering on web](https://web.dev/articles/rendering-on-the-web)
+![[Pasted image 20250110145316.png]]
+- [z-index](https://web.dev/learn/css/z-index)
+# Terms
 ### Code Splitting
 - split app -> smaller bundles -> downloaded and executed -> decrease amount of data transfered
 ### Prefetching
@@ -168,3 +171,6 @@ export default function Search() {
   }
 }
 ```
+
+# Code Spliting with dynamic import
+https://web.dev/articles/code-splitting-with-dynamic-imports-in-nextjs#route-based-and-component-based-code-splitting

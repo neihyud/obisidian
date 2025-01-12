@@ -2,6 +2,7 @@
 title: Git
 
 ---
+- https://linuxpip.org/fix-fatal-not-possible-to-fast-forward-aborting-in-git/
 ## Setup
 - 1. `ssh-keygen`: để tạo một key mới
 - 2. `eval "$(ssh-agent -s)"`

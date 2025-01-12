@@ -3,18 +3,9 @@ title: Code 101
 
 ---
 ![[Pasted image 20241201225503.png]]
-```
 # Check isPng
 
 ```javascript=
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>File Type Detect Demo</title>
-    </head>
     <body>
         <div>
             <input type="file" id="inputFile" accept="image/*" onchange="handleChange(event)"/>
@@ -51,7 +42,6 @@ title: Code 101
             }
         </script>
     </body>
-</html>
 ```
 
 # Format and Convert Number
@@ -74,5 +64,31 @@ const number2 = 3.1415926535;     // Có ít hơn 10 chữ số thập phân
 
 console.log(formatAndConvertToNumber(number1)); // 3.1415926536
 console.log(formatAndConvertToNumber(number2)); // 3.1415926535
+
+```
+# Transaction to Height Auto
+```html
+.wrapper {
+  display: flex;
+}
+
+.inner {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.wrapper.is-open .inner {
+  max-height: 100%;
+}
+
+
+--- 
+
+<div class="wrapper">
+  <div>
+    <div class="inner">Expandable content</div>
+  </div>
+</div>
 
 ```
