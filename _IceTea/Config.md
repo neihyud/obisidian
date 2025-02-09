@@ -9,105 +9,53 @@
 ### Vscode config
 ```json
 {
-
-"editor.bracketPairColorization.enabled": true,
-
-"editor.guides.bracketPairs": "active",
-
-"workbench.iconTheme": "material-icon-theme",
-
-"redhat.telemetry.enabled": true,
-
-"vs-kubernetes": {
-
-"vscode-kubernetes.kubectl-path.linux": "/home/neihyud/.local/state/vs-kubernetes/tools/kubectl/kubectl",
-
-"vscode-kubernetes.minikube-path.linux": "/home/neihyud/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
-
-"vscode-kubernetes.helm-path.linux": "/home/neihyud/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm"
-
-},
-
-"editor.tabSize": 2,
-
-"terminal.integrated.enableMultiLinePasteWarning": "never",
-
-"gitlens.graph.layout": "editor",
-
-"eslint.debug": true,
-
-"workbench.editor.enablePreview": false,
-
-"explorer.confirmDelete": false,
-
-"files.autoSave": "afterDelay",
-
-"liveServer.settings.donotShowInfoMsg": true,
-
-"editor.formatOnSave": true,
-
-"explorer.confirmDragAndDrop": false,
-
-"javascript.updateImportsOnFileMove.enabled": "always",
-
-"eslint.format.enable": true,
-
-"editor.codeActionsOnSave": {
-
-"source.fixAll.eslint": "always",
-
-// "source.organizeImports": "always",
-
-"source.addMissingImports": "always",
-
-"source.removeUnusedImports": "always",
-
-},
-
-"typescript.updateImportsOnFileMove.enabled": "always",
-
-"[javascriptreact]": {
-
-"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-
-},
-
-"[javascript]": {
-
-"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-
-},
-
-"eslint.run": "onSave",
-
-"[typescriptreact]": {
-
-"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-
-},
-
-"scm.showChangesSummary": false,
-
-"editor.fontFamily": "JetBrains Mono",
-
-"editor.fontLigatures": false,
-
-"workbench.colorTheme": "One Dark Pro Flat",
-
-"prettier.configPath": ".prettierrc",
-
-"terminal.integrated.defaultProfile.linux": "zsh",
-
-"typescript.preferences.importModuleSpecifier": "non-relative",
-
-"[typescript]": {
-
-"editor.defaultFormatter": "esbenp.prettier-vscode"
-
-}
-
-// "editor.fontFamily": "Fira Code",
-
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.iconTheme": "material-icon-theme",
+  "redhat.telemetry.enabled": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.kubectl-path.linux": "/home/neihyud/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.linux": "/home/neihyud/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vscode-kubernetes.helm-path.linux": "/home/neihyud/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm"
+  },
+  "editor.tabSize": 2,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "gitlens.graph.layout": "editor",
+  "eslint.debug": true,
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.addMissingImports": "always",
+    "source.removeUnusedImports": "always"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.run": "onSave",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "scm.showChangesSummary": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": false,
+  "workbench.colorTheme": "One Dark Pro Flat",
+  "prettier.configPath": ".prettierrc",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
 ```
 

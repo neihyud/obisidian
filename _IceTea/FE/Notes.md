@@ -1,3 +1,5 @@
+
+
 ![[Pasted image 20241226102522.png]]
 ```
 document.querySelectorAll('*').length;
@@ -21,14 +23,12 @@ but its not correct with image because image not load -> dimension incorrect
 
 => Solution
 useLayoutEffect(() => {
-
 	const element = ref?.current;
 	const handleImageLoad = () => {
 		if (element?.clientHeight && element?.scrollHeight) {
 			if (element?.clientHeight < element.scrollHeight) {
 				setIsVisible(true);
 			}
-
 		}
 };
 
@@ -38,8 +38,7 @@ const images = element?.querySelectorAll("img");
 			img.addEventListener("load", handleImageLoad);
 		}
 	);
-	} else {
-	
+	} else {	
 		if (element && element.clientHeight < element.scrollHeight) {
 			setIsVisible(true);
 		}

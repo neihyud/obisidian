@@ -1,7 +1,16 @@
 {
 	"nodes":[
 		{"id":"b780561c89df23ed","type":"file","file":"_IceTea/Code 101.md","x":-940,"y":-20,"width":913,"height":540},
-		{"id":"23649b39cf978d7e","x":120,"y":-20,"width":820,"height":540,"type":"file","file":"_IceTea/Config.md"}
+		{"id":"23649b39cf978d7e","type":"file","file":"_IceTea/Config.md","x":120,"y":-20,"width":820,"height":540},
+		{"id":"4f9466f0bbdb93f8","type":"text","text":"Base FE","x":-733,"y":961,"width":125,"height":60},
+		{"id":"deb7c887e0ddc28c","type":"text","text":"Base BE","x":-733,"y":1100,"width":126,"height":60},
+		{"id":"035c72298067daad","type":"text","text":"Gitlab CI/CD","x":-500,"y":1040,"width":159,"height":60},
+		{"id":"f902fcc99ba3bffa","type":"text","text":"Deploy","x":-201,"y":942,"width":117,"height":60},
+		{"id":"7d7da20d4238f3a1","type":"text","text":"Database","x":-733,"y":1240,"width":136,"height":60}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"1bdf44d9bb1e4370","fromNode":"4f9466f0bbdb93f8","fromSide":"right","toNode":"035c72298067daad","toSide":"left"},
+		{"id":"627c50a29d5d21ad","fromNode":"deb7c887e0ddc28c","fromSide":"right","toNode":"035c72298067daad","toSide":"left"},
+		{"id":"0aa157160584ee75","fromNode":"deb7c887e0ddc28c","fromSide":"bottom","toNode":"7d7da20d4238f3a1","toSide":"top"}
+	]
 }

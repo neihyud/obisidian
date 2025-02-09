@@ -1,14 +1,14 @@
 [[#^DesignSystem]]: Design System
 
-| #Important   |                                                                                    |       |
-| ------------ | ---------------------------------------------------------------------------------- | ----- |
-| **Database** | https://www.sqlservertutorial.net/sql-server-indexes/sql-server-clustered-indexes/ | #docs |
-|              | https://studio3t.com/academy/courses/mongodb-301-aggregation/                      |       |
-| **AI**       | https://cognitiveclass.ai/learn/data-science                                       |       |
-| **JS**       | https://javascriptpatterns.vercel.app/patterns/design-patterns/factory-pattern     |       |
-| Book         | https://toihocdesignpattern.com/series-bai-dich-clean-code-tieng-viet.html         |       |
-|              | https://assets.digitalocean.com/books/python/how-to-code-in-python.pdf             |       |
-|              |                                                                                    |       |
+| #Important   |                                                                                    |       |     |
+| ------------ | ---------------------------------------------------------------------------------- | ----- | --- |
+| **Database** | https://www.sqlservertutorial.net/sql-server-indexes/sql-server-clustered-indexes/ | #docs |     |
+|              | https://studio3t.com/academy/courses/mongodb-301-aggregation/                      |       |     |
+| **AI**       | https://cognitiveclass.ai/learn/data-science                                       |       |     |
+| **JS**       | https://javascriptpatterns.vercel.app/patterns/design-patterns/factory-pattern     |       |     |
+| Book         |                                                                                    |       |     |
+|              | https://assets.digitalocean.com/books/python/how-to-code-in-python.pdf             |       |     |
+|              |                                                                                    |       |     |
 
 | #Backend |                                                                 |
 | -------- | --------------------------------------------------------------- |
@@ -61,7 +61,7 @@
 | **Python**           | https://realpython.com/                                                           | #docs     |
 | **Machine Learning** | https://github.com/chiphuyen/machine-learning-systems-design                      |           |
 | **Rust**             | https://rust-trends.com/newsletter/rust-101-the-best-learning-resources-compiled/ |           |
-| Hands-on hacking     | https://tryhackme.com/r/hacktivities                                              |           |
+| Hands-on Hacking     | https://tryhackme.com/r/hacktivities                                              |           |
 | **#Golang**          | https://github.com/avelino/awesome-go                                             |           |
  
 
@@ -100,7 +100,7 @@
 | Parallel             | https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html                                                                                                                                                  |
 |                      | https://freecontent.manning.com/.well-known/sgcaptcha/?r=%2Fconcurrency-vs-parallelism%2F&y=ipc:35.166.24.88:1720283962.973                                                                                                             |
 | Cluster, Process     | https://medium.com/beyond-coding/take-advantage-of-node-js-cluster-and-child-processes-with-pm2-rabbitmq-redis-and-nginx-c83eccfb8af8#:~:text=Differences%20between%20the%20child_process%20module,one%20of%20the%20worker%20instances. |
-| Animation: Even loop | https://dev.to/nodedoctors/an-animated-guide-to-nodejs-event-loop-3g62                                                                                                                                                                  |
+| Animation: Even loop |                                                                                                                                                                                                                                         |
 |                      | https://www.freecodecamp.org/news/do-you-want-a-better-understanding-of-buffer-in-node-js-check-this-out-2e29de2968e8/                                                                                                                  |
 |                      | https://www.freecodecamp.org/news/scaling-node-js-applications-8492bd8afadc/                                                                                                                                                            |
 | Buffer               | https://www.freecodecamp.org/news/node-js-buffer-explained/                                                                                                                                                                             |

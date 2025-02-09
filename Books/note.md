@@ -1,4 +1,0 @@
-- khi giao việc cần
-	- xác định và mô tả rõ công việc
-	- yêu cầu liệt kê để đảm bảo hiểu rõ
-	- xác định thời gian hoàn thành

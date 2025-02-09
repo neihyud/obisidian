@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"026191aeb16b574a","type":"text","text":"## **CRP**","x":-1100,"y":-63,"width":125,"height":68},
+		{"id":"89ec17eddcef56b1","type":"text","text":"AKA: Brower rendering pipeline\n- Trình tự thực hiện để  chuyển (HTM, CSS, JS) thành pixel trên màn hình","x":-840,"y":-369,"width":449,"height":135},
+		{"id":"5c24fe96f2ed6010","type":"file","file":"Canvas/assets/critical_render_path.png","x":-880,"y":40,"width":693,"height":295},
+		{"id":"50f638680ad74454","type":"text","text":"The browser downloads and parses the HTML markup and creates the DOM.","x":0,"y":-100,"width":540,"height":65},
+		{"id":"6eb41eda0bcc8bda","type":"text","text":"Next, it downloads and processes the CSS markup and constructs the CSS Object Model (CSSOM).","x":0,"y":112,"width":480,"height":76},
+		{"id":"949102c0ff44d94c","type":"text","text":"It combines the necessary nodes from the DOM and CSSOM to create the Render Tree, a tree structure of all visible nodes required to render the page.","x":9,"y":250,"width":463,"height":97},
+		{"id":"b85f80c6462d7dbb","type":"text","text":"It calculates the dimensions and position of every element on the page through the Layout process.","x":15,"y":400,"width":525,"height":84},
+		{"id":"2a3891f5e3793833","type":"text","text":"Pain pixel to screen","x":28,"y":600,"width":250,"height":60},
+		{"id":"2c71414f348a8d50","type":"text","text":"Each node corresponds to an HTML element and has properties that describe its attributes, content, and position in the tree.","x":620,"y":-115,"width":410,"height":95,"color":"4"},
+		{"id":"bb13e5b7975e3642","type":"text","text":" The browser builds the DOM gradually, allowing us to optimize the rendering of the page by constructing an efficient structure and avoiding excessive DOM sizes.","x":620,"y":-320,"width":480,"height":120,"color":"1"},
+		{"id":"6a5e8e3a1183d7a9","type":"file","file":"Canvas/assets/dom_tree.png","x":-1180,"y":800,"width":647,"height":404},
+		{"id":"dd1f2b025c02d36d","type":"file","file":"Canvas/assets/css_dom.png","x":-399,"y":800,"width":666,"height":404},
+		{"id":"37affa18a9e5dc58","type":"file","file":"Canvas/assets/render_tree.png","x":377,"y":800,"width":776,"height":404}
+	],
+	"edges":[
+		{"id":"39c94bc981aaf88c","fromNode":"026191aeb16b574a","fromSide":"right","toNode":"89ec17eddcef56b1","toSide":"left"},
+		{"id":"68fd0760283862f8","fromNode":"026191aeb16b574a","fromSide":"right","toNode":"5c24fe96f2ed6010","toSide":"left"},
+		{"id":"542eed9ccaddcda6","fromNode":"5c24fe96f2ed6010","fromSide":"right","toNode":"50f638680ad74454","toSide":"left"},
+		{"id":"347e047580ad06f1","fromNode":"5c24fe96f2ed6010","fromSide":"right","toNode":"6eb41eda0bcc8bda","toSide":"left"},
+		{"id":"444cb2a45972b3a2","fromNode":"5c24fe96f2ed6010","fromSide":"right","toNode":"949102c0ff44d94c","toSide":"left"},
+		{"id":"10aac8dbea0978f6","fromNode":"5c24fe96f2ed6010","fromSide":"right","toNode":"b85f80c6462d7dbb","toSide":"left"},
+		{"id":"d92568a836abe0a7","fromNode":"5c24fe96f2ed6010","fromSide":"right","toNode":"2a3891f5e3793833","toSide":"left"},
+		{"id":"721b1191802b3628","fromNode":"50f638680ad74454","fromSide":"right","toNode":"2c71414f348a8d50","toSide":"left"},
+		{"id":"df31596a258138a2","fromNode":"50f638680ad74454","fromSide":"right","toNode":"bb13e5b7975e3642","toSide":"left"}
+	]
+}

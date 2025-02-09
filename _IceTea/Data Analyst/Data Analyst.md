@@ -37,27 +37,18 @@ Giờ đi ngủ hàng đêm
 Ví dụ, bạn có thể tạo ra một danh sách khám phá lượng cà phê hàng ngày như sau:
 
 Lượng cà phê uống hàng ngày
-
 Ngày 8 tháng 1, 8 giờ sáng - mua cà phê - một cốc 10 oz
-
 Ngày 8 tháng 1, 10 giờ sáng - pha cà phê ở nhà - một cốc 12 oz
-
 Ngày 9 tháng 1, 8 giờ sáng - mua cà phê - ly
-
 Ngày 10 tháng 1, 11 giờ sáng - mua cà phê lớn - 20 oz.
-
 Ngày 11 tháng 1, 8 giờ sáng - pha cà phê ở nhà - ly
 
 Ví dụ này bao gồm một số chi tiết khác nhau như ngày và giờ, liệu cà phê được mua hay tự pha, và số lượng. Bạn có thể chọn tập trung vào bất kỳ lĩnh vực nào bạn muốn và ghi lại các chi tiết mà bạn quan tâm để khám phá thêm. Hãy ghi lại trong một hoặc hai tuần. Sau đó, bạn sẽ tổng hợp danh sách này trong một mẫu nhật ký học tập, được liên kết bên dưới.
-
 
 - Trả lời 3 câu hỏi
     - Có bất kỳ xu hướng bạn nhận thấy trong hành vi của bạn? 
     - Có yếu tố nào ảnh hưởng đến việc ra quyết định của bạn không? 
     - Có bất cứ điều gì bạn xác định có thể ảnh hưởng đến hành vi trong tương lai của bạn?
-
-
-
 
 # Gosy
 - **Dữ liệu**: Một tập hợp các sự thật

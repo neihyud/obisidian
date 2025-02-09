@@ -174,3 +174,11 @@ export default function Search() {
 
 # Code Spliting with dynamic import
 https://web.dev/articles/code-splitting-with-dynamic-imports-in-nextjs#route-based-and-component-based-code-splitting
+
+# Rendering
+## (Client-Side Rendering) CSR
+
+![[csr.png]]
+
+##  (Server-Side Rendering) SSR
+![[ssr.png]]
