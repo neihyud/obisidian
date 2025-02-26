@@ -30,13 +30,63 @@ npx nx g @nx/react:library shared-ui --directory=libs/shared/ui --unitTestRunner
 ```
 
 ```shell
-nx g @nx/js:lib my-prisma-schema --unitTestRunner=none --bundler=none --simple-name --minimal
+npx nx g @nx/nest:app <folder-name> (apps/be-demo)
+
+npx nx g @nx/react:app <folder-name> (apps/demo)
+
+nx g @nx/js:lib libs/prisma --unitTestRunner=none --bundler=none --simple-name --minimal (config prisma)
 ```
+>[!info]
+>**`--unitTestRunner=none`**  → Không thiết lập bất kỳ framework kiểm thử nào (bình thường Nx có thể thiết lập Jest hoặc Vitest).
+> **`--bundler=none`**:  Không thiết lập bất kỳ trình bundler nào (bình thường Nx hỗ trợ `esbuild`, `rollup`, v.v.).
+>**`--simple-name`**: Đặt tên thư viện đơn giản mà không có tiền tố namespace.
+>**`--minimal`**: Tạo thư viện **tối giản nhất có thể**, chỉ tạo những file cần thiết.
 
+## NestJS Prisma Clients
+https://github.com/nrwl/nx-recipes/tree/main/nestjs-prisma#nx--nestjs--prisma
+https://www.prisma.io/docs/guides/use-prisma-in-pnpm-workspaces
+```
+nx g @nx/nest:lib my-prisma-client
+```
 # Prisma
+- **install prisma**: pnpm install -D prisma
+- pnpm prisma init --db
+## Config path to schema.prisma
+https://www.prisma.io/docs/orm/prisma-schema/overview/location
+**package.json**: 
+```javascript
+"prisma": {
+  "schema": "db/schema.prisma"
+}
+```
 - `npx prisma studio`: view db on web
+## Prisma generator
+- update file node_module/@prisma/client  => giúp truy vấn db type-safe.
+![[prisma_generator.png]]
+## Prisma pull
+![[prisma_pull.png]]
+![[prisma_pull_db-change.png]]
+## Prisma Migrate
+
+![[prisma-migrate.png]]
+
+- querying (with [Prisma Client](https://www.prisma.io/docs/orm/prisma-client))
+- data modeling (in the [Prisma schema](https://www.prisma.io/docs/orm/prisma-schema))
+- migrations (with [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate))
+- prototyping (via [`prisma db push`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-push))
+- seeding (via [`prisma db seed`](https://www.prisma.io/docs/orm/reference/prisma-cli-reference#db-seed))
+- visual viewing and editing (with [Prisma Studio](https://www.prisma.io/studio))
 
 
+
+=> 
+- `prisma db pull`: db -> schema.prisma
+- `prisma db push`: schema.prisma -> db => create migration file
+- `prisma migrate dev`: sync with db and create migration file
+
+## Prisma migrate deploy
+- áp dụng các file migrate chưa được áp dụng
+- `npx prisma migrate deploy`
 ---
 
 1. **Khởi tạo Migrations (Initial Migrations):** Khi bạn bắt đầu một dự án mới hoặc thêm Prisma vào một dự án hiện có, bạn cần khởi tạo một migration ban đầu để thiết lập cơ sở dữ liệu của bạn. Điều này được thực hiện bằng lệnh
@@ -46,20 +96,12 @@ nx g @nx/js:lib my-prisma-schema --unitTestRunner=none --bundler=none --simple-n
     Lệnh này sẽ tạo ra một migration mới dựa trên schema hiện tại của bạn và áp dụng nó vào cơ sở dữ liệu.
     
 2. **Tạo Migration mới (Creating New Migrations):** Khi bạn thay đổi schema của mình (ví dụ: thêm, sửa hoặc xóa models hoặc fields), bạn cần tạo một migration mới để phản ánh các thay đổi này. Bạn có thể làm điều này bằng lệnh:
-    
-    bash
-    
-    Copy code
+
     
     `npx prisma migrate dev --name <tên_migration>`
     
-    Lệnh này sẽ tạo ra các tệp migration mới mô tả các thay đổi và áp dụng chúng vào cơ sở dữ liệu.
     
 3. **Áp dụng Migrations (Applying Migrations):** Nếu bạn có sẵn các migration chưa được áp dụng, bạn có thể áp dụng chúng vào cơ sở dữ liệu bằng lệnh:
-    
-    bash
-    
-    Copy code
     
     `npx prisma migrate deploy`
     

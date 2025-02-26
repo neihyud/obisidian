@@ -56,6 +56,9 @@ class SocketServices{
 module.exports = new SocketServices();
 ```
 - Có thể tuyền io qua middleware
+# Database 
+- EAV
+	- [Variant product db](https://anonystick.com/blog-developer/neu-su-dung-mongoose-de-luu-products-thi-day-la-cach-chuan-nhat-cho-app-tmdt-designing-an-e-commerce-website-aliconcon-3-2022062135197708)
 # LRUCache
 - Thường áp dụng trong các bài toán cần tối ưu lưu trữ và truy cập nhanh nhưng bị giới hạn về bộ nhớ
 - Nếu cache đầy => xóa dữ liệu cũ và giữ lại dữ liệu hay sử dụng
@@ -106,6 +109,11 @@ Array.prototype.forEach = function (callback, thisAgr) {
 		callback.call(thisAgr, this[i], i, this)
 	}
 }
+```
+# Use toString instead of typeOf
+- https://www.youtube.com/watch?v=kPRyWBzzUJE
+```javascript
+const typeof = value => Object.prototype.toString().call(value) 
 ```
 # Handle image send to server
 - Client split file image -> server merge file 

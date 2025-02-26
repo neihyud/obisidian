@@ -1,6 +1,6 @@
 - `sudo apt install python3-venv`
 - `python3 install -m venv <name_venv>`: tạo virtual env
-- `source venv/bin/activate`: truy cập vào virtual env
+- `source <name_venv>/bin/activate`: truy cập vào virtual env
 	- `deactivate`: thoát khỏi venv
 	- `rm -f <name_venv>`: remove venv 
 - `pip install -r requirements.txt`: install dependencies in file requirement

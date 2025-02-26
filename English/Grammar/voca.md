@@ -1,4 +1,4 @@
-### unit 1
+ta### unit 1
 - theatre
 - come to
 - expedition
@@ -83,3 +83,25 @@ in conclusion: kết luận
 in fact: thực tế
 in favour (of) = suppor: ủng hộ
 in general: nhìn chung
+
+---
+---
+# Unit 7
+- Lend money: cho mượn tiền
+- Borrow money: cho vay tiền
+- có cái gì đẩy: sử dụng have ( sở hữu)
+- có cái gì đấy: there are, there is (không sở hữu)
+
+- arrrive in: đến địa điểm lớn
+- arrive at: đến địa điểm nhỏ
+
+# Unit 9
+- car: đi vào, đi ra  => get in, get out of
+- train/bus: đi lên, đi xuống => get on, get off
+
+# Review 7, 8,9 
+- famous for that + N
+- ask sb about sth: hỏi ai đó về vấn đề gì
+- provider sb with sth: cung cấp cho ai cái gì
+- tobe + N: nó là cái gì
+- tobe + adj: nó như thế nào

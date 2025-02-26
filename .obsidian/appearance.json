@@ -2,5 +2,6 @@
   "nativeMenus": false,
   "theme": "obsidian",
   "baseFontSize": 16,
-  "accentColor": ""
+  "accentColor": "",
+  "textFontFamily": "Bodoni 72"
 }

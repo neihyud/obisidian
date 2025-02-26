@@ -1,4 +1,6 @@
-![[Pasted image 20241202231403.png]]
+![[ci-cd-cycle.png]]
+
+https://about.gitlab.com/blog/2025/01/06/ultimate-guide-to-ci-cd-fundamentals-to-advanced-implementation/
 - CI: integrate code -> always check before merge
 - Steps
 1. **Functional tests**: Kiểm tra xem phần mềm có hoạt động đúng theo mong đợi hay không. Đây thường là các bài kiểm tra tự động mà đội ngũ QA (Quality Assurance) phát triển để đảm bảo tính năng hoạt động đúng. VD: Người dùng có thể thêm sản phẩm vào giỏ hàng và thực hiện thanh toán thành công hay không.

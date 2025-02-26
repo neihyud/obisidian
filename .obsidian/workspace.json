@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f7cc2e323ae8ee44",
+        "id": "a89c7dfcb3ae32ee",
         "type": "tabs",
         "children": [
           {
-            "id": "51b287f90a25306a",
+            "id": "f19bebcbb229bb80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BookMark/Book Mark.md",
+                "file": "_IceTea/Monorepo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Book Mark"
+              "title": "Monorepo"
             }
           },
           {
-            "id": "05915287398716fc",
+            "id": "ddb75e4b586405a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_IceTea/Config.md",
+                "file": "English/Grammar/voca.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Config"
+              "title": "voca"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Client-Side Rendering",
+                "query": "PROCESSLIST",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,13 +122,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips JS.md",
+                "file": "English/Grammar/voca.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tips JS"
+              "title": "Outline of voca"
             }
           },
           {
@@ -180,12 +180,182 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
             "id": "0948b2d0df0926b6",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "d84aaf1200e93339",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "6e761f1892f877df",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "ab9b88861d3e5a9d",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "e5acc7ee9f528538",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "8c22a4850d469570",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "76f7bc04ce9817e9",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "410578d34e184506",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "c883129257fb0aa1",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "089a822351d42fb6",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "deb05321deddabf3",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "7aff2c3312817fdf",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "58b39ff8a3957549",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "8f81d54475eb81db",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "ff0e7376c1a726dd",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "782df9e76938560e",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "ae14bb9440ef9888",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "54317f3e9adba3da",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -195,7 +365,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 23
       }
     ],
     "direction": "horizontal",
@@ -218,47 +388,49 @@
       "open-gate:GPT": false
     }
   },
-  "active": "05915287398716fc",
+  "active": "ddb75e4b586405a1",
   "lastOpenFiles": [
-    "Tips JS.md",
-    "assets/Pasted image 20250208220048.png",
-    "assets/Jwt and Token.png",
-    "assets",
-    "BookMark/Book Mark.md",
-    "Books/note.md",
-    "_IceTea/FE/config/vscode.md",
-    "_IceTea/FE/config/biome.md",
-    "_IceTea/FE/Config.md",
-    "_IceTea/Data Analyst/Data Analyst.md",
-    "_IceTea/FE/Reactjs.md",
-    "_IceTea/FE/Tips.md",
-    "_IceTea/FE/Notes.md",
-    "_IceTea/FE/Performance Patterns.md",
-    "_IceTea/FE/NextJS.md",
-    "_IceTea/Config.md",
-    "_IceTea/Tips JS.md",
-    "_IceTea/Regex.md",
-    "_IceTea/Question - Interview.md",
     "_IceTea/Monorepo.md",
-    "_IceTea/Group.canvas",
-    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
-    "_IceTea/Code 101.md",
-    "_IceTea/Devops/Note.md",
-    "_IceTea/Devops/assets/Pasted image 20250121212417.png",
+    "Tips JS 1.md",
+    "Tips JS.md",
+    "_IceTea/Question - Interview.md",
+    "_IceTea/Regex.md",
+    "_IceTea/Vim.md",
+    "_IceTea/Config.md",
+    "English/Grammar/voca.md",
+    "English/Common.md",
+    "English/Book/Docs.md",
+    "_IceTea/assets/prisma_generator.png",
+    "_IceTea/assets/prisma_pull_db-change.png",
+    "_IceTea/assets/prisma_pull.png",
+    "_IceTea/assets/prisma-migrate.png",
+    "_IceTea/assets/Pasted image 20250224111320.png",
+    "_IceTea/assets/Pasted image 20250224111251.png",
     "_IceTea/Devops/Docker.md",
     "_IceTea/Devops/Kubernetes.md",
-    "_IceTea/Devops/Makefile.md",
+    "_IceTea/Database/Fundamentals of Database Engineering.md",
+    "English/Grammar/Grammar.md",
+    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
+    "English/Think English.md",
+    "Productivity/Deal Salary.md",
+    "Productivity/Docs.md",
+    "_IceTea/FE/NextJS.md",
+    "_IceTea/FE/assets/rsc.png",
     "_IceTea/Devops/CI-CD.md",
-    "_IceTea/FE/How does a computer find and display a web page?.md",
-    "_IceTea/FE/assets/ssr.png",
-    "_IceTea/FE/assets/Pasted image 20250120112446.png",
-    "_IceTea/FE/assets/csr.png",
+    "_IceTea/Devops/assets/Pasted image 20241202231403.png",
+    "_IceTea/Devops/assets/ci-cd-cycle.png",
+    "_IceTea/Devops/assets/Pasted image 20250220131449.png",
+    "Other.md",
+    "_IceTea/BE/Backend Cheats.md",
+    "_IceTea/Code 101.md",
+    "_IceTea/Django.md",
+    "_IceTea/Git.md",
+    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
+    "_IceTea/Design Principles in Software Development.md",
+    "assets",
+    "_IceTea/Group.canvas",
     "Canvas/CRP - Critical Rendering Path.canvas",
-    "Canvas/assets/render_tree.png",
-    "Canvas/assets/css_dom.png",
     "Canvas/FE.canvas",
-    "Canvas/assets/dom_tree.png",
-    "Canvas/assets/critical_render_path.png",
     "Canvas/FE_Performance_Tool.canvas",
     "Canvas",
     "Canvas/assets",
@@ -268,7 +440,6 @@
     "_IceTea/Devops/DevopsEdu/assets",
     "_IceTea/Devops/DevopsEdu",
     "Clippings",
-    "_IceTea/assets/bundle.mp4",
     "Untitled 1.canvas"
   ]
 }
