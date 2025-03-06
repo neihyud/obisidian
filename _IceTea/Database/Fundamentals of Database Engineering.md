@@ -351,7 +351,6 @@ Và khi tôi làm điều đó, tôi sẽ kiểm tra, hãy chọn tất cả t�
     
 - **Tuning**: Điều chỉnh cấu hình của PostgreSQL (như `work_mem`, `shared_buffers`, v.v.) để cải thiện hiệu suất.
     
-
 ### 5. **Chiến Lược Xử Lý Giao Dịch**
 
 - **Isolation Levels**: PostgreSQL hỗ trợ các mức độ cách ly giao dịch khác nhau (như Read Committed, Serializable) để kiểm soát mức độ cách ly giữa các giao dịch.

@@ -1,5 +1,7 @@
+- Em có dự định gắn bó lâu dài với công ty không?”
+"Em muốn tìm một môi trường mà mình có thể học hỏi và phát triển dài hạn. Với công ty mình, em rất ấn tượng với [một giá trị/văn hóa cụ thể của công ty]. Nếu có cơ hội, em hy vọng được gắn bó lâu dài và phát triển cùng team, đồng thời đóng góp giá trị thật sự. Không biết công ty mình có lộ trình phát triển nào cho nhân viên không ạ?"
 
-![[Pasted image 20240828113702.png]]
+---
 Trải nghiệm phỏng vấn Senior Software Developer
 
 Hi mọi người,

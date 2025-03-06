@@ -1,7 +1,8 @@
 {
   "nativeMenus": false,
-  "theme": "obsidian",
+  "theme": "moonstone",
   "baseFontSize": 16,
   "accentColor": "",
-  "textFontFamily": "Bodoni 72"
+  "textFontFamily": "Consolas",
+  "interfaceFontFamily": "Consolas"
 }
