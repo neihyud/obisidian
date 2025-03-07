@@ -4,7 +4,6 @@ tags: [Programming]
 
 ---
 
-###### tags: `Programming`
 # Regex
 ### Flags
 - g (global): tìm tất cả các đoạn ký tự khớp

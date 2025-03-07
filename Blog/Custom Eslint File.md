@@ -1,4 +1,4 @@
-clea[custom-rule-eslint](https://eslint.org/docs/latest/extend/custom-rule-tutorial)
+[custom-rule-eslint](https://eslint.org/docs/latest/extend/custom-rule-tutorial)
 - **b1: Tạo folder ở root project**
 ```shell
 mkdir eslint-plugin-custom-rules

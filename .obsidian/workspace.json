@@ -4,43 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "19eb3b0df5f35c45",
+        "id": "a84405526879ae7f",
         "type": "tabs",
-        "dimension": 45.27486102532428,
         "children": [
           {
-            "id": "03a0e49df358dcdc",
+            "id": "ec39b6becf5392f2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_IceTea/Devops/Docker.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Docker"
-            }
-          }
-        ]
-      },
-      {
-        "id": "e2881b8142bc5fba",
-        "type": "tabs",
-        "dimension": 54.72513897467572,
-        "children": [
-          {
-            "id": "5934ac6f540d9fc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_IceTea/Devops/Docker-v1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Docker-v1"
+              "title": "New tab"
             }
           }
         ]
@@ -96,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -131,13 +106,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_IceTea/Devops/Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Docker"
+              "title": "Outline"
             }
           },
           {
@@ -160,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips JS.md",
+                "file": "_IceTea/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Tips JS"
+              "title": "Backlinks for Git"
             }
           }
         ],
@@ -178,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 439.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,61 +167,60 @@
       "obsidian-kanban:Create new board": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
       "open-gate:GPT": false
     }
   },
-  "active": "03a0e49df358dcdc",
+  "active": "97690381c26176f6",
   "lastOpenFiles": [
-    "_IceTea/Question - Interview.md",
-    "_IceTea/Devops/Docker.md",
-    "_IceTea/Devops/Docker-v1.md",
-    "_IceTea/Devops/assets/docker_registry.png",
-    "_IceTea/Devops/DevopsEdu/Devops.md",
-    "_IceTea/Devops/Note.md",
-    "_IceTea/Devops/Makefile.md",
-    "_IceTea/Devops/Kubernetes.md",
-    "_IceTea/Devops/CI-CD.md",
-    "_IceTea/Road Map/Api.md",
-    "_IceTea/Road Map/Database - Postgres.md",
-    "_IceTea/Road Map/Road Map.md",
-    "_IceTea/Road Map/Back end.md",
-    "_IceTea/Code 101.md",
-    "_IceTea/Config.md",
-    "_IceTea/Design Principles in Software Development.md",
-    "_IceTea/Django.md",
-    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
-    "_IceTea/Vim.md",
-    "_IceTea/Group.canvas",
+    "Other.md",
+    "Voca/Voca - Grama.md",
+    "Voca/Group Voca.md",
+    "Productivity/Question - Interview.md",
+    "Work/Varmeta/assets/Pasted image 20241009170034.png",
+    "Work/Varmeta/Note.md",
+    "Productivity/Docs.md",
+    "Productivity/Deal Salary.md",
     "_IceTea/Monorepo.md",
-    "_IceTea/BE/Backend Cheats.md",
+    "_IceTea/Group.canvas",
     "_IceTea/Git.md",
-    "_IceTea/Database/PostgeSQL.md",
-    "_IceTea/Database/Fundamentals of Database Engineering.md",
-    "_IceTea/Database/assets/Pasted image 20250304091925.png",
-    "_IceTea/Database/assets/bitmap_scan.png",
-    "_IceTea/Database/assets/index_scan.png",
-    "_IceTea/Database/Redis.md",
-    "_IceTea/Database/assets/row-db-writing.png",
-    "_IceTea/Database/assets/row -column.png",
-    "_IceTea/Database/assets/row - db.png",
-    "_IceTea/Database/assets/Pasted image 20241111222755.png",
-    "_IceTea/Database/assets/Pasted image 20241109172200.png",
-    "_IceTea/Database/assets/Pasted image 20241012232606.png",
-    "_IceTea/Database/AWS/S3.md",
+    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
+    "_IceTea/Design Principles in Software Development.md",
+    "_IceTea/FE/Performance Patterns.md",
+    "_IceTea/FE/How does a computer find and display a web page?.md",
+    "Excalidraw/Plan.md",
+    "Excalidraw/Note.md",
+    "Excalidraw/Demo.md",
+    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
+    "Voca/Vocabulary.md",
+    "Voca/Voca.md",
+    "Voca/En.md",
+    "Tips JS.md",
+    "Blog/Cách truy cập Gitlab khi xóa xác thực hai lớp.md",
+    "Blog/How to read source Extension.md",
+    "Blog/IS-PORTAL.md",
+    "Blog/Next-Auth in App Router of Next.js - Rohit Kumar - Medium.md",
+    "Blog/Custom Eslint File.md",
+    "_IceTea/Code101/assets/magic_number.png",
+    "_IceTea/Code101/assets",
+    "_IceTea/Bytebytego/system_design.jpeg",
+    "_IceTea/Code101",
+    "_IceTea/Bytebytego/dead_lock.gif",
+    "_IceTea/Bytebytego/assets/system_design.jpeg",
+    "_IceTea/Bytebytego/solid.jpeg",
+    "_IceTea/Bytebytego/design_system_concept.jpeg",
+    "_IceTea/Bytebytego/design_pattern.gif",
+    "_IceTea/Bytebytego/optimise_db.jpeg",
+    "Books/Atomic Habits Thay doi ti hon hieu qua bat ngo - James Clear.pdf",
+    "_IceTea/Bytebytego/1738505285750.gif",
+    "_IceTea/Bytebytego/assets",
+    "_IceTea/Bytebytego",
+    "_IceTea/Untitled",
     "_IceTea/Database/AWS/assets",
     "_IceTea/Database/AWS",
     "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
-    "assets",
     "Canvas/CRP - Critical Rendering Path.canvas",
     "Canvas/FE.canvas",
     "Canvas/FE_Performance_Tool.canvas",
-    "Canvas",
-    "Canvas/assets",
-    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
-    "_IceTea/FE/config",
-    "piecesdb.json",
-    "_IceTea/Devops/DevopsEdu/assets",
     "Untitled 1.canvas"
   ]
 }

@@ -20,6 +20,11 @@
 ## Docker Compose
 - One best practice for containers is that **each container should do one thing and do it well.**
 - **Docker Compose** cho phép bạn **định nghĩa tất cả container và cấu hình của chúng trong một tệp YAML duy nhất**.
+## Networking
+**Mạng trong container** là khả năng cho phép các **container kết nối và giao tiếp với nhau** hoặc với các **ứng dụng bên ngoài Docker**.
+- **Mạng mặc định:** Các container có **mạng được kích hoạt sẵn** và có thể **gửi kết nối ra ngoài** mà không cần cấu hình thêm.
+### Driver
+<table><thead class="bg-gray-light-100 dark:bg-gray-dark-200"><tr><th class="p-2" style="text-align:left">Driver</th><th class="p-2" style="text-align:left">Description</th></tr></thead><tbody><tr><td class="p-2" style="text-align:left"><code>bridge</code></td><td class="p-2" style="text-align:left">The default network driver.</td></tr><tr><td class="p-2" style="text-align:left"><code>host</code></td><td class="p-2" style="text-align:left">Remove network isolation between the container and the Docker host.</td></tr><tr><td class="p-2" style="text-align:left"><code>none</code></td><td class="p-2" style="text-align:left">Completely isolate a container from the host and other containers.</td></tr><tr><td class="p-2" style="text-align:left"><code>overlay</code></td><td class="p-2" style="text-align:left">Overlay networks connect multiple Docker daemons together.</td></tr><tr><td class="p-2" style="text-align:left"><code>ipvlan</code></td><td class="p-2" style="text-align:left">IPvlan networks provide full control over both IPv4 and IPv6 addressing.</td></tr><tr><td class="p-2" style="text-align:left"><code>macvlan</code></td><td class="p-2" style="text-align:left">Assign a MAC address to a container.</td></tr></tbody></table>
 
 
 # Building Image
@@ -77,7 +82,13 @@ Hãy cùng xem quá trình diễn ra thế nào nhé!
     Docker sẽ **theo dõi các thay đổi** trong thư mục dự án của bạn. Nếu nội dung file, **quyền hạn**, hoặc **thuộc tính** của file thay đổi, Docker sẽ **xóa cache của layer liên quan** và build lại từ đầu.
 3. **Hiệu ứng domino khi một layer bị vô hiệu hóa:**  
     Nếu **bất kỳ layer nào bị vô hiệu hóa**, tất cả các **layer phía sau cũng sẽ bị ảnh hưởng**.
-
+## Build context
+- **Build context** là tập hợp **các tệp và thư mục** mà quá trình build có thể truy cập. **Tham số vị trí** mà bạn truyền vào lệnh **`docker build`** sẽ xác định **context** mà Docker sử dụng trong quá trình build:
+```
+docker build [OPTIONS] PATH | URL | -
+```
+- Docker sẽ gửi **toàn bộ thư mục** (có thể chứa file thừa như `.git`, `node_modules`). => giảm tốc độ build
+=> sử dụng .dockerignore để loại bỏ file không cần thiết
 # Multi-stage builds 
 
 Trong một quá trình build truyền thống, **tất cả các chỉ thị** trong Dockerfile được thực thi **tuần tự trong cùng một container build**:  downloading dependencies, compiling code, and packaging the application. Tất cả các **layer này** sẽ tồn tại trong image cuối cùng, => **image**, **dung lượng lớn**, và **tăng nguy cơ bảo mật**.
@@ -140,5 +151,47 @@ COPY --from=build-stage /path/in/build/stage /path/to/place/in/final/stage
 
 - `CMD ["<command>", "<arg1>"]` - sets the default command a container using this image will run.
 
+# Volumn
+**Volumes** là một cơ chế lưu trữ cho phép bạn **lưu trữ dữ liệu bên ngoài vòng đời của container**. Bạn có thể tưởng tượng nó như một **đường dẫn tắt (shortcut) hoặc symlink** từ bên trong container ra môi trường bên ngoài.
+
+## **Volume và Bind Mounts**
+- **Volumes:** (`-v`)
+    - Dùng để **lưu trữ và duy trì dữ liệu lâu dài**, ngay cả khi container bị dừng hoặc xóa.
+    - Tệp được lưu **ngoài container**, **Docker quản lý dữ liệu này.**
+    - Phù hợp khi bạn muốn **bảo vệ dữ liệu** khỏi các thay đổi không mong muốn hoặc cần **chia sẻ dữ liệu giữa nhiều container**.
+    - **Ví dụ:** Lưu trữ database hoặc logs của ứng dụng.
+- **Bind Mounts:** 
+- (`--mount type=bind,source=/HOST/PATH,target=/CONTAINER/PATH,readonly`)
+    - Dùng để **gắn kết trực tiếp thư mục hoặc tệp trên máy chủ vào container**.
+    - Mọi thay đổi trong thư mục được gắn sẽ **phản ánh ngay lập tức** ở cả máy chủ và container.
+
+
+# Best Practice
+- 
+
 # Command
 - docker image history: you see that each command in the Dockerfile becomes a new layer in the image
+## Tag:
+- `docker image history` command, you can see the command that was used to create each layer within an image.
+### Volumn
+- `-v <path_folder_host>:<path_folder_container>` :
+	- Khi container chạy, tất cả các tệp được ghi vào thư mục `<folder_container>` trong container sẽ được lưu trữ trong volume.
+	- Nếu bạn **xóa container** và tạo một container mới nhưng **dùng lại volume cũ**, thì các tệp vẫn **còn nguyên vẹn**
+
+- `docker volume ls` - list all volumes
+- `docker volume rm <volume-name-or-id>` - remove a volume (only works when the volume is not attached to any containers)
+- `docker volume prune` - remove all unused (unattached) volumes
+
+- `--mount type=bind,source=<path_host>,target=<path_container>,readonly`
+	- sử dụng thêm permission: ro
+### Port
+- `-p HOST_PORT:CONTAINER_PORT`: 
+	- **HOST_PORT**: **Cổng trên máy chủ** nơi bạn muốn nhận lưu lượng.
+	- **CONTAINER_PORT**: **Cổng trong container** đang lắng nghe kết nối.
+	- Có thể bỏ qua **HOST_PORT** -> auto chọn port ngẫu nhiên
+	- Khi publish cổng, nó sẽ **mở ra tất cả các interface mạng** mặc định.
+	=> **mọi máy trong mạng** đều có thể truy cập vào ứng dụng đã publish.
+### Env
+- `docker run --env-file .env postgres env`:
+	- xác định file .env cho Dockerfile
+	- env -> in ra list env sử dụng trong file
