@@ -5,7 +5,7 @@ title: NestJS
 # NestJS 
 - **Serialization**:  is a process that happens before objects are returned in a network response (vd: k return passwork )
 # Lifecycle
-![[Pasted image 20240817181419.png]]
+![[life_circle.png]]
 ![[Pasted image 20240817181113.png]]
 ![[Pasted image 20240729181917.png | 700]]
 ![[Pasted image 20240817162134.png]]

@@ -8,6 +8,8 @@
 - **Di động:** Container có thể chạy ở bất kỳ đâu!
 ## Image
 - Một **container image** là một gói chuẩn hóa chứa tất cả các tệp, binary, thư viện và cấu hình cần thiết để chạy một container.
+![[docker_image.png | 400]]
+
 ### Hai nguyên tắc quan trọng của image:
 - **Image là bất biến:** Một khi image được tạo ra, nó không thể bị thay đổi. Bạn chỉ có thể tạo một image mới hoặc thêm các thay đổi lên trên image cũ.
 - **Image được tạo thành từ các lớp (layers):** Mỗi lớp là một tập hợp các thay đổi trên hệ thống tệp — thêm, xóa hoặc chỉnh sửa tệp.
@@ -126,7 +128,7 @@ COPY --from=build-stage /path/in/build/stage /path/to/place/in/final/stage
 
 # Docker file
  [Dockerfile reference](https://docs.docker.com/engine/reference/builder/).
- ![[dockerfile.png]]
+ ![[dockerfile.png | 600]]
 
 - **FROM**: chỉ đình parent image đang build
 - **WORKDIR**: bên trong Image này tạo folder `app` và chuyển tới `/app` =>  **mkdir /app && cd /app
@@ -151,28 +153,117 @@ COPY --from=build-stage /path/in/build/stage /path/to/place/in/final/stage
 
 - `CMD ["<command>", "<arg1>"]` - sets the default command a container using this image will run.
 
+![[flow_dockerfile.png | 600]]
+![[flow_dockerfile_2.png | 600]]
+# Docker compose
+- `post_start`: run after container started
+- `pre_stop`: run before container stopped
+- `profiles`: chỉ định những service nào chạy trong một môi trường nhất định
+## Sample 1
+```javascript=
+version: "3.4"
+
+services:
+  app:
+    image: learning-docker/docker-node-mongo-redis:v1
+    volumes:
+      - ./:/app # mount từ môi trường gốc vào trong để nếu các bạn thay đổi code thì bên trong sẽ tự động cập nhật
+    environment: # phần này ta định nghĩa ở file .env nhé
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - PORT=${PORT}
+    ports:
+      - "${PORT}:${PORT}" # phần này ta định nghĩa ở file .env nhé
+    restart: unless-stopped
+    depends_on:
+        - redis
+        - db
+  
+  db:
+    image: mongo:4.4
+    volumes:
+      - .docker/data/db:/data/db
+    restart: unless-stopped
+  
+  redis:
+    image: redis:5-alpine
+    volumes:
+      - .docker/data/redis:/data
+    restart: unless-stopped
+```
+    
+- .docker/data/db:/data/db
+    - .docker/data/db: tham chiếu folder trong thư mục gốc (folder này là ta tạo) vào bên trong container ở dường dẫn data/db (để biết được tại sao là đường dẫn data/db trong mongo thì xem mô tả image trong docker hub)
+    
+- Ở service app chúng ta có để một trường tên là **depends_on**, ý bảo là service app sẽ phụ thuộc vào 2 service db và redis, điều này thực tế sẽ xảy ra như sau:
+    - Khi chạy docker-compose up thì service db và redis sẽ khởi động trước service app
+    - Khi chạy docker-compose up app thì đồng thời sẽ tạo ra 2 service db và redis (dù khi khởi động ta chỉ nói là "khởi động mỗi service app")
+    - Khi chạy docker-compose stop thì service app sẽ bị stop trước 2 service kia
+>Mặc dù service app chạy sau db, redis n cx k đảm bảo là db kết nối khi app khởi động vì db tôn một khoảng thời gian để kết nối => cần có option `connectionRetry` để chạy thử cho đến khi nào thành công
+    
+
+## Sample 2
+```Dockerfile
+version: '3.5'    // phiên bản docker-compose
+services:         // liệt kê các service
+    mysql:
+        image: mysql:5.7      => chỉ định image để khởi động
+        container_name: mysql => chỉ định tên container tùy chỉnh
+        restart: always       => default: no, `always` sẽ khởi động 
+                                lại nếu code thoát cho biết lỗi fail 
+        environment:          => thêm các biến môi trường
+          MYSQL_ROOT_PASSWORD: root
+        volumes:              => chia sẻ dữ liệu giữa container (máy ảo) 
+                                với host (máy thật) hoặc giữa các 
+                                container với nhau
+          - docker/database:/var/lib/mysql 
+            =>khi `container mysql` tạo và lưu dữ liệu sẽ lưu trong thư  
+            mục var/lib/mysql của container, nếu container bị xóa 
+            thì sẽ mất toàn bộ dữ liệu
+    app:
+        container_name: app
+        build: .  
+            => sử dụng khi built từ Dockerfile và 
+                Dockerfile thuộc folder docker
+        volumes:
+          - .:/my_app
+        ports:         => cấu hình cổng kết nối (host:container)
+          - "3000:3000"
+        environment:
+          DATABASE_HOST: mysql
+          DATABASE_USER_NAME: root
+          DATABASE_PASSWORD: root
+```
 # Volumn
 **Volumes** là một cơ chế lưu trữ cho phép bạn **lưu trữ dữ liệu bên ngoài vòng đời của container**. Bạn có thể tưởng tượng nó như một **đường dẫn tắt (shortcut) hoặc symlink** từ bên trong container ra môi trường bên ngoài.
 
 ## **Volume và Bind Mounts**
 - **Volumes:** (`-v`)
     - Dùng để **lưu trữ và duy trì dữ liệu lâu dài**, ngay cả khi container bị dừng hoặc xóa.
-    - Tệp được lưu **ngoài container**, **Docker quản lý dữ liệu này.**
+    - Tệp được lưu **ngoài container**, **Docker quản lý dữ liệu này.** (`-v <name_volume>:<path_folder_data_container>`)
     - Phù hợp khi bạn muốn **bảo vệ dữ liệu** khỏi các thay đổi không mong muốn hoặc cần **chia sẻ dữ liệu giữa nhiều container**.
     - **Ví dụ:** Lưu trữ database hoặc logs của ứng dụng.
-- **Bind Mounts:** 
+- **Bind Mounts:**  (`-v <path_host_data>:<path_container_data>`)
 - (`--mount type=bind,source=/HOST/PATH,target=/CONTAINER/PATH,readonly`)
     - Dùng để **gắn kết trực tiếp thư mục hoặc tệp trên máy chủ vào container**.
     - Mọi thay đổi trong thư mục được gắn sẽ **phản ánh ngay lập tức** ở cả máy chủ và container.
 
 
 # Best Practice
-- 
+- sử dụng multi-stage
+- sử dụng .dockerfileignore
 
-# Command
-- docker image history: you see that each command in the Dockerfile becomes a new layer in the image
-## Tag:
+# Command Docker
 - `docker image history` command, you can see the command that was used to create each layer within an image.
+- `docker exec <name_container> <command>` = chạy tiến trình bổ sung cho một container
+- `docker rename <old_container> <new_container>`
+- `docker create`: giống với `docker run` chỉ khác là container tạo ra ở trạng thái stopped
+- `docker run --rm`: tự động xóa khi stop container
+- `docker volume prune`: Remove all unused local volumes
+- `docker image prune`: Remove all unused local volumes
+- `docker network prune`: Remove all unused networks
 ### Volumn
 - `-v <path_folder_host>:<path_folder_container>` :
 	- Khi container chạy, tất cả các tệp được ghi vào thư mục `<folder_container>` trong container sẽ được lưu trữ trong volume.
@@ -184,6 +275,13 @@ COPY --from=build-stage /path/in/build/stage /path/to/place/in/final/stage
 
 - `--mount type=bind,source=<path_host>,target=<path_container>,readonly`
 	- sử dụng thêm permission: ro
+
+---
+- `docker volume list`: hiển thị tất cả các volume
+- `docker volume remove <id_volume>`: remove volume
+- `docker volume prune`: remove all volume
+- `docker volume prune --filter <condition>`: remove have condition
+
 ### Port
 - `-p HOST_PORT:CONTAINER_PORT`: 
 	- **HOST_PORT**: **Cổng trên máy chủ** nơi bạn muốn nhận lưu lượng.
@@ -195,3 +293,54 @@ COPY --from=build-stage /path/in/build/stage /path/to/place/in/final/stage
 - `docker run --env-file .env postgres env`:
 	- xác định file .env cho Dockerfile
 	- env -> in ra list env sử dụng trong file
+### Image
+- `docker images`: List of images downloaded
+- `docker images -a`: Hiển thị tất cả các images
+- `docker pull <image>` = kéo image từ dockerhub
+- `docker run <image>` = pull + start, **start new container from a an image** if not in the container will pull in docker hub
+    - have ***tag***: -p, -d, --name
+- `docker run -d <image>` = cho phép chạy ngầm
+- `docker rmi <image_id/name>`: delete image
+- `docker images --digests`: Hiển thị tất cả các digests:
+
+### Container
+- `docker rm -f <container_id/name>`: xóa một container
+- `docker exec -it <container_name> /bin/bash`: truy cập container đang chạy 
+- `docker stop <id_container>` = stop container
+- `docker start <id_container>` = docker stopped container
+    - don't have ***tag***
+    
+### Debugging a container
+- `docker logs <id_or_name>`: docker ps để lấy id or name container
+- `docker exec -it <id_container> /bin/bash`: get a terminal of the container (-it: interactive terminal) 
+    - `env`: display env của container
+    - có thể sử dụng các command: ls, pwd
+### Network
+- `docker network ls`: list network in docker
+- `docker create network <name>`: create new network
+- `docker inspect --format '{{ .NetworkSettings.IPAddress }}' <name_container>`: xem địa chỉ IP của container
+### Flag
+- `--name`: đặt tên cho container
+- `-t`: đặt tên cho images
+- `-d (--detach)`: chạy ngầm ( chạy background )
+- `-p`: host_post:container_port
+- `--net`: network
+- `\`: multiline
+- `docker run --rm`: chạy xong tự xoá
+- `-v`: volume
+- `-w`: workdir
+- `-i`:  Giữ luồng đầu vào chuẩn (stdin) mở cho container ngay cả khi không có bất kỳ terminal nào được gắn kết.
+- `-tty`:  Cấp phát một terminal ảo cho container, giúp bạn gửi tín hiệu đến container. => thường dùng cho chương trình dòng lệnh ( thường dùng với -i)
+- `-f`: buộc dừng trước khi remove
+# Command Docker Compose
+- `docker-compose up`: Create and start containers
+- `docker-compose up -d`: Create and start containers in detached mode
+- `docker-compose down`: Stop and remove containers, networks, images, and volumes
+- `docker-compose logs`: View output from containers
+- `docker-compose restart`: Restart all service
+- `docker-compose pull`: Pull all image service 
+- `docker-compose build`: Build all image service
+- `docker-compose config`: Validate and view the Compose file
+- `docker-compose scale <service_name>=<replica>`: Scale special service(s)
+- `docker-compose top`: Display the running processes
+- `docker-compose run -rm -p 2022:22 web bash`: Start web service and runs bash as its command, remove old container.

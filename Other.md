@@ -44,3 +44,11 @@ Message - and - Query
 5️⃣ **Làm sao để đảm bảo các service trong Microservices giao tiếp ổn định? (Circuit Breaker, Retry...)**
 
 📌 **Ví dụ bài tập Kubernetes**
+
+
+---
+
+NodeJS, race condition có thể xảy ra khi:
+- đọc/ghi file ( lúc này nodejs xử lý đa luồng) => sử dụng file lock
+- truy cập vào tài nguyên chung: ví dụ về biến cục bộ => sử dụng mutex
+![[assets/Pasted image 20250311230602.png]]

@@ -17,7 +17,6 @@ tags: [Course]
 - Gap analysis là một phương pháp được sử dụng để xem xét và đánh giá cách một quy trình hoạt động hiện tại với mục tiêu đến nơi bạn muốn đạt được trong tương lai.
 - Tư duy phân tích (Analytical thinking ) liên quan đến việc xác định và định nghĩa vấn đề, sau đó giải quyết nó bằng cách sử dụng dữ liệu theo cách có tổ chức, từng bước.
 ## Data analyst skill
-
 - Tư duy kĩ thuật: Kỹ năng phân tích liên quan đến việc chia nhỏ các quy trình thành các bước nhỏ hơn và làm việc với chúng một cách có trật tự, hợp lý
 - Kỹ năng thiết kế: Kỹ năng phân tích liên quan đến cách bạn tổ chức thông tin 
 - Hiểu về ngữ cảnh: Kỹ năng phân tích liên quan đến cách bạn nhóm mọi thứ thành các danh mục Kỹ năng

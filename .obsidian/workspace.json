@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a84405526879ae7f",
+        "id": "00285cc15db36d31",
         "type": "tabs",
         "children": [
           {
-            "id": "ec39b6becf5392f2",
+            "id": "f5b8daceeefc9a4a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Other.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Other"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:Docker",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,12 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 429.5
   },
   "right": {
     "id": "8d80bffdbad3e785",
@@ -106,12 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Other.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Other"
             }
           },
           {
@@ -167,57 +171,58 @@
       "obsidian-kanban:Create new board": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "open-gate:GPT": false
+      "open-gate:GPT": false,
+      "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "97690381c26176f6",
+  "active": "f5b8daceeefc9a4a",
   "lastOpenFiles": [
+    "assets/Pasted image 20250311230602.png",
     "Other.md",
-    "Voca/Voca - Grama.md",
-    "Voca/Group Voca.md",
+    "Tips JS.md",
+    "_IceTea/FE/VueJS.md",
+    "_IceTea/FE/Reactjs.md",
+    "_IceTea/FE/Tips.md",
+    "_IceTea/BE/NodeJS.md",
+    "_IceTea/BE/NestJS.md",
+    "_IceTea/BE/Nodejs And ExpressJs.md",
     "Productivity/Question - Interview.md",
-    "Work/Varmeta/assets/Pasted image 20241009170034.png",
-    "Work/Varmeta/Note.md",
-    "Productivity/Docs.md",
-    "Productivity/Deal Salary.md",
-    "_IceTea/Monorepo.md",
-    "_IceTea/Group.canvas",
+    "Pasted image 20240729204449.png.md",
+    "_IceTea/Config.md",
+    "_IceTea/FE/assets/vue_life_circle_instance.png",
+    "_IceTea/Vim.md",
+    "_IceTea/Regex.md",
+    "_IceTea/assets/taskqueue-to-callback.mp4",
+    "_IceTea/assets/slice-5.png",
+    "_IceTea/assets/slice-2-4.png",
+    "_IceTea/assets/Pasted image 20240729211245.png",
+    "_IceTea/assets/Pasted image 20240729173419.png",
+    "_IceTea/assets/Pasted image 20240709215532.png",
+    "_IceTea/assets/Pasted image 20240709175205.png",
+    "_IceTea/assets/Pasted image 20240729211252.png",
+    "_IceTea/assets/ExSetTimeOut.mp4",
+    "_IceTea/assets/call-stack.mp4",
+    "_IceTea/assets/bundle.mp4",
+    "_IceTea/assets/add-task-queue.mp4",
+    "_IceTea/Data Analyst/Coursea/k8.cac_tinh_huong_phan_tich_slide.pdf",
+    "_IceTea/Data Analyst/Coursea/k7.lap_trinh_R_doc.pdf",
+    "_IceTea/Data Analyst/Coursea/k6.truc_quan_hoa_slide.pdf",
+    "_IceTea/Data Analyst/Coursea/k5.phan_tich_du_lieu_cau_hoi_slide.pdf",
+    "_IceTea/Data Analyst/Coursea/k4.xu_ly_va_lam_sach_du_lieu_doc.pdf",
+    "_IceTea/Data Analyst/Data Analyst.md",
+    "_IceTea/Bytebytego/system_design.jpeg",
+    "English/Book/Docs.md",
     "_IceTea/Git.md",
-    "_IceTea/Fundamentals Of Backend Communications And Protocols.md",
-    "_IceTea/Design Principles in Software Development.md",
-    "_IceTea/FE/Performance Patterns.md",
-    "_IceTea/FE/How does a computer find and display a web page?.md",
-    "Excalidraw/Plan.md",
+    "_IceTea/Monorepo.md",
+    "_IceTea/Database/PostgeSQL.md",
+    "_IceTea/Database/AWS/S3.md",
+    "Books/Atomatic Habits.md",
+    "Voca/Group Voca.md",
     "Excalidraw/Note.md",
     "Excalidraw/Demo.md",
-    "English/Grammar/Destination B1 Pre Intermediate Student Book + key.pdf",
-    "Voca/Vocabulary.md",
-    "Voca/Voca.md",
-    "Voca/En.md",
-    "Tips JS.md",
-    "Blog/Cách truy cập Gitlab khi xóa xác thực hai lớp.md",
-    "Blog/How to read source Extension.md",
-    "Blog/IS-PORTAL.md",
-    "Blog/Next-Auth in App Router of Next.js - Rohit Kumar - Medium.md",
-    "Blog/Custom Eslint File.md",
-    "_IceTea/Code101/assets/magic_number.png",
-    "_IceTea/Code101/assets",
-    "_IceTea/Bytebytego/system_design.jpeg",
-    "_IceTea/Code101",
-    "_IceTea/Bytebytego/dead_lock.gif",
-    "_IceTea/Bytebytego/assets/system_design.jpeg",
-    "_IceTea/Bytebytego/solid.jpeg",
-    "_IceTea/Bytebytego/design_system_concept.jpeg",
-    "_IceTea/Bytebytego/design_pattern.gif",
-    "_IceTea/Bytebytego/optimise_db.jpeg",
-    "Books/Atomic Habits Thay doi ti hon hieu qua bat ngo - James Clear.pdf",
-    "_IceTea/Bytebytego/1738505285750.gif",
-    "_IceTea/Bytebytego/assets",
-    "_IceTea/Bytebytego",
-    "_IceTea/Untitled",
-    "_IceTea/Database/AWS/assets",
-    "_IceTea/Database/AWS",
-    "English/Book/EnglishPronunciation/Marks - English Pronunciation in Use - Elementary.pdf",
+    "English/Think English.md",
+    "Entertaiment/Common.md",
+    "_IceTea/Group.canvas",
     "Canvas/CRP - Critical Rendering Path.canvas",
     "Canvas/FE.canvas",
     "Canvas/FE_Performance_Tool.canvas",

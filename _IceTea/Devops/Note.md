@@ -1,1 +1,1 @@
-![[Pasted image 20250121212417.png]]
+![[linux_file_system.png]]
